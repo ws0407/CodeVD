@@ -1,0 +1,24 @@
+ssh://ws@10.103.22.26:22/data/data/ws/anaconda3/envs/CodeVD/bin/python3 -u /data/data/ws/CodeVD/VulDeePecker/vuldeepecker.py cwe119_cgd.txt
+2023-08-08 11:51:33.632963: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2023-08-08 11:51:33.633008: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-08 11:51:33.633820: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-08 11:51:34.825313: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Epoch 1/4
+261/261 [==============================] - 32s 111ms/step - loss: 0.6266 - accuracy: 0.6404
+Epoch 2/4
+261/261 [==============================] - 28s 107ms/step - loss: 0.5503 - accuracy: 0.7050
+Epoch 3/4
+261/261 [==============================] - 28s 106ms/step - loss: 0.5288 - accuracy: 0.7174
+Epoch 4/4
+261/261 [==============================] - 28s 106ms/step - loss: 0.5060 - accuracy: 0.7331
+66/66 [==============================] - 4s 51ms/step - loss: 0.6109 - accuracy: 0.7205
+Accuracy is... 0.7205459475517273
+False positive rate is... 0.5459770114942529
+False negative rate is... 0.01293103448275862
+True positive rate is... 0.9870689655172413
+Precision is... 0.6438612933458294
+F1 score is... 0.7793533749290981
+
+进程已结束,退出代码0
