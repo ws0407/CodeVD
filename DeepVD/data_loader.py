@@ -251,17 +251,17 @@ class MyLargeDataset(Dataset):
         ii = 0
         for file in findAllFile(params.input_path, True):
 
-            if not file.endswith("entities_1hop.json"):
+            if not file.endswith("entities.json"):
                 continue
 
             # if ii > 100:
             #     break
 
             # repoName = file.split("/")[6]
-            cve_id = file.split("/")[-1].replace("-entities_1hop.json", "")
+            cve_id = file.split("/")[-1].replace("-entities.json", "")
             print("cve_id: ", cve_id)
 
-            edges_file = file.replace("entities_1hop", "edges_1hop")
+            edges_file = file.replace("entities", "edges")
 
             if not os.path.exists(edges_file):
                 logging.info("== no edges file: {}".format(edges_file))

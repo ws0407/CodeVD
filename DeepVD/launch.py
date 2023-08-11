@@ -21,15 +21,14 @@ search_space = {
 }
 
 experiment = Experiment('local')
-experiment.config.experiment_name = 'DeepVD'
-experiment.config.trial_concurrency = 1
-experiment.config.max_trial_number = 2
+# experiment.config.experiment_name = 'DeepVD'
+experiment.config.trial_concurrency = 4
+# experiment.config.max_trial_number = 16
 experiment.config.search_space = search_space
-experiment.config.trial_command = 'python main.py'
+experiment.config.trial_command = 'python3 main.py'
 experiment.config.trial_code_directory = Path(__file__).parent
 experiment.config.tuner.name = 'TPE'
-experiment.config.tuner.class_args[
-    'optimize_mode'] = 'maximize'  # If ‘maximize’, the tuner will try to maximize metrics. If ‘minimize’, the tuner will try to minimize metrics.
+experiment.config.tuner.class_args['optimize_mode'] = 'maximize'
 experiment.config.training_service.use_active_gpu = True
 
-experiment.run(8015)
+experiment.run(8088)

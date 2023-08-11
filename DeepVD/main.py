@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import torch.optim as optim
 import torch
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix, ndcg_score
-from model import DLVP, DLVP_nocc
+from model import DLVP  # , DLVP_nocc
 from tqdm import tqdm
 try:
     import cPickle as pickle
@@ -224,7 +224,7 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
     ns_obj.load_model()
     ns_weight_matrix = torch.tensor( ns_obj.vectors, dtype=torch.float)
 
-    model = DLVP_nocc(params, lp_weight_matrix, ns_weight_matrix)
+    model = DLVP(params, lp_weight_matrix, ns_weight_matrix)
     model.to(device)
 
     total_params_1 = count_params(model)

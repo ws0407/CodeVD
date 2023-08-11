@@ -1,0 +1,21 @@
+# This is the minimal config file for an NNI experiment.
+# Use "nnictl create --config config.yml" to launch this experiment.
+# Afterwards, you can check "config_detailed.yml" for more explanation.
+
+#authorName: Sawyer
+experimentName: DeepVD  # 必填
+
+searchSpaceFile: search_space.json
+trialCommand: python3 main.py  # NOTE: change "python3" to "python" if you are using Windows
+trialGpuNumber: 1
+trialConcurrency: 4   # 指定同时运行的 Trial 任务的最大数量。
+
+tuner:
+  name: TPE # 指定内置的调参算法
+  classArgs:
+    optimize_mode: maximize
+trainingService:
+  platform: local
+  useActiveGpu: True
+  maxTrialNumberPerGpu: 4
+  gpuIndices: [0,1,2,3]

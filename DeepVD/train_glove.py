@@ -160,8 +160,8 @@ def generate_corpus_for_NS(to_file):
     ns_length = [] # 每个 ns 有多少 token
     all_file = findAllFile(INPUT_PATH)
     # print('total file: ', len(list(all_file)))
-    # for file in tqdm.tqdm(all_file, desc='Processing'):
-    for file in all_file:
+    for file in tqdm.tqdm(all_file, desc='Processing', mininterval=30):
+    # for file in all_file:
 
         if file.endswith("entities.json"):  # if file.endswith("entities_1hop.json"):
             with open(file) as f:
@@ -326,8 +326,8 @@ def generate_corpus_for_LP(to_file):
     lp_num = []    # 纪录每个 function 有多少 lp
     all_file = findAllFile(INPUT_PATH)
     # print('total file: ', len(list(all_file)))
-    # for file in tqdm.tqdm(all_file, desc='Processing'):
-    for file in all_file:
+    for file in tqdm.tqdm(all_file, desc='Processing', mininterval=30):
+    # for file in all_file:
         if file.endswith("entities.json"):     # if file.endswith("entities_1hop.json"):
             with open(file) as f:
                 entities = json.loads(f.read())

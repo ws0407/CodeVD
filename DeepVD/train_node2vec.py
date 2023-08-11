@@ -135,7 +135,7 @@ class Node2vec():
         walk_length = 10
         weighted_walks = []
         print("start training node2vec...")
-        for g in tqdm(graphs):
+        for g in tqdm(graphs, desc='Training', mininterval=60, maxinterval=120):
             if g['G'] is not None:
                 G = g['G']
                 G = G.to_undirected()
@@ -157,8 +157,8 @@ class Node2vec():
         print("training node2vec...")
         print("Number of random walks: {}".format(len(weighted_walks)))
         print("training node2vec...")
-        weighted_model = Word2Vec(
-            weighted_walks, size=128, window=5, min_count=1, sg=1, workers=1, iter=1
+        weighted_model = Word2Vec(  # https://blog.csdn.net/sweet_tea_/article/details/124798182
+            weighted_walks, vector_size=128, window=5, min_count=1, sg=1, workers=1, epochs=1
         )
 
         weighted_model.save(self.model_path)
@@ -190,7 +190,6 @@ class Node2vec():
             embeddings[func_key] = self.get_embedding(func_key)
 
         pickle.dump(embeddings, open(self.embedding_file, "wb"))
-        print("len(n2v_embeddings): {}, saved to {}".format(len(embeddings), self.embedding_file))
         print("len(n2v_embeddings): {}, saved to {}".format(len(embeddings), self.embedding_file))
 
     def load_embeddings(self):
