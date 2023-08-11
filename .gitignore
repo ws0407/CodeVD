@@ -1,3 +1,5 @@
 *.zip
 *.gz
+*.pkl
+*.json
 /.idea/

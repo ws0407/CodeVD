@@ -1,0 +1,10 @@
+digraph "fprintf" {  
+"86" [label = <(METHOD,fprintf)> ]
+"90" [label = <(METHOD_RETURN,ANY)> ]
+"87" [label = <(PARAM,p1)> ]
+"88" [label = <(PARAM,p2)> ]
+  "87" -> "90"  [ label = "DDG: p1"] 
+  "88" -> "90"  [ label = "DDG: p2"] 
+  "86" -> "87"  [ label = "DDG: "] 
+  "86" -> "88"  [ label = "DDG: "] 
+}

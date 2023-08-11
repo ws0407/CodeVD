@@ -1,0 +1,10 @@
+digraph "strcmp" {  
+"76" [label = <(METHOD,strcmp)> ]
+"80" [label = <(METHOD_RETURN,ANY)> ]
+"77" [label = <(PARAM,p1)> ]
+"78" [label = <(PARAM,p2)> ]
+  "77" -> "80"  [ label = "DDG: p1"] 
+  "78" -> "80"  [ label = "DDG: p2"] 
+  "76" -> "77"  [ label = "DDG: "] 
+  "76" -> "78"  [ label = "DDG: "] 
+}

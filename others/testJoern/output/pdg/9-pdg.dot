@@ -1,0 +1,7 @@
+digraph "exit" {  
+"91" [label = <(METHOD,exit)> ]
+"94" [label = <(METHOD_RETURN,ANY)> ]
+"92" [label = <(PARAM,p1)> ]
+  "92" -> "94"  [ label = "DDG: p1"] 
+  "91" -> "92"  [ label = "DDG: "] 
+}
