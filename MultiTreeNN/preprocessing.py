@@ -1,9 +1,10 @@
 import json
 
+import glob
 import pandas as pd
-import re
 import numpy as np
-import torch
+import os
+from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 import os
 
@@ -23,12 +24,105 @@ def prepare_folder(input_json, key, out_path):
         # print(func_name)
         # break
 
-def gen_PDG(input_json):
-    pass
+
+def read(path, json_file):
+    """读取path+json_file文件并返回DataFrame格式
+    :param path: str
+    :param json_file: str
+    :return DataFrame
+    """
+    return pd.read_json(path + json_file)
+
+
+def get_ratio(dataset, ratio):
+    """从前往后截取ratio比例的数据
+    :param dataset:
+    :param ratio: 0~1
+    :return:
+    """
+    approx_size = int(len(dataset) * ratio)
+    return dataset[:approx_size]
+
+
+def load(path, pickle_file, ratio=1):
+    """加载path+pickle_file的dataset文件
+    :param path: str
+    :param pickle_file: str
+    :param ratio: 0~1
+    :return: dataset
+    """
+    dataset = pd.read_pickle(path + pickle_file)
+    dataset.info(memory_usage='deep')
+    if ratio < 1:
+        dataset = get_ratio(dataset, ratio)
+    return dataset
+
+
+def write(data_frame: pd.DataFrame, path, file_name):
+    """将数据集导出为pickle文件
+    :param data_frame: pd.DataFrame
+    :param path: str
+    :param file_name: str
+    """
+    data_frame.to_pickle(path + file_name)
+
+
+def apply_filter(data_frame: pd.DataFrame, filter_func):
+    """根据过滤函数过滤数据集
+    :param data_frame: pd.DataFrame
+    :param filter_func: func 过滤函数
+    """
+    return filter_func(data_frame)
+
+
+def rename(data_frame: pd.DataFrame, old, new):
+    """DataFrame的某一列重命名
+    :param data_frame: DataFrame
+    :param old: str
+    :param new: str
+    """
+    return data_frame.rename(columns={old: new})
+
+
+def to_files(data_frame: pd.DataFrame, out_path):
+    """将数据集内每个函数导出为单个的c文件
+    :param data_frame: 是一个slice，数据集的一部分
+    :param out_path: str
+    """
+    # path = f"{self.out_path}/{self.dataset_name}/"
+    os.makedirs(out_path)
+
+    for idx, row in data_frame.iterrows():
+        file_name = f"{idx}.c"
+        with open(out_path + file_name, 'w') as f:
+            f.write(row.func)
+
+
+def clean(data_frame: pd.DataFrame):
+    """去除重复的函数（subset="func"）"""
+    return data_frame.drop_duplicates(subset="func", keep=False)
+
+
+def drop(data_frame: pd.DataFrame, keys):
+    """移除keys的列"""
+    for key in keys:
+        del data_frame[key]
+
+
+def slice_frame(data_frame: pd.DataFrame, size: int):
+    """根据size切片数据集，结果是按顺序每size个数据组成的DataFrame
+    >>> np.arange(10)
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    >>> np.arange(10) // 2
+    array([0, 0, 1, 1, 2, 2, 3, 3, 4, 4])
+    """
+    data_frame_size = len(data_frame)
+    return data_frame.groupby(np.arange(data_frame_size) // size)
 
 
 if __name__ == '__main__':
-    prepare_folder('/data/data/ws/CodeVD/IVDetect/data/Reveal/vulnerables.json', 'code', '/data/data/ws/CodeVD/IVDetect/data/Reveal/vulnerable/')
+    prepare_folder('/data/data/ws/CodeVD/IVDetect/data/Reveal/vulnerables.json', 'code',
+                   '/data/data/ws/CodeVD/IVDetect/data/Reveal/vulnerable/')
     # prepare_folder('/data/data/ws/CodeVD/IVDetect/data/FFMPeg_Qemu/function.json')
 
     # _code = 'digraph v4l2_free_buffer {  \r\n\"1000100\" [label = \"(METHOD,v4l2_free_buffer)\" ]\r\n\"1000101\" [label = \"(PARAM,void *opaque)\" ]\r\n\"1000102\" [label = \"(PARAM,uint8_t *unused)\" ]\r\n\"1000103\" [label = \"(BLOCK,,)\" ]\r\n\"1000104\" [label = \"(LOCAL,avbuf: V4L2Buffer *)\" ]\r\n\"1000105\" [label = \"(<operator>.assignment,* avbuf = opaque)\" ]\r\n\"1000106\" [label = \"(IDENTIFIER,avbuf,* avbuf = opaque)\" ]\r\n\"1000107\" [label = \"(IDENTIFIER,opaque,* avbuf = opaque)\" ]\r\n\"1000108\" [label = \"(LOCAL,s: V4L2m2mContext *)\" ]\r\n\"1000109\" [label = \"(<operator>.assignment,*s = buf_to_m2mctx(avbuf))\" ]\r\n\"1000110\" [label = \"(IDENTIFIER,s,*s = buf_to_m2mctx(avbuf))\" ]\r\n\"1000111\" [label = \"(buf_to_m2mctx,buf_to_m2mctx(avbuf))\" ]\r\n\"1000112\" [label = \"(IDENTIFIER,avbuf,buf_to_m2mctx(avbuf))\" ]\r\n\"1000113\" [label = \"(CONTROL_STRUCTURE,if (atomic_fetch_sub(&avbuf->context_refcount, 1) == 1),if (atomic_fetch_sub(&avbuf->context_refcount, 1) == 1))\" ]\r\n\"1000114\" [label = \"(<operator>.equals,atomic_fetch_sub(&avbuf->context_refcount, 1) == 1)\" ]\r\n\"1000115\" [label = \"(atomic_fetch_sub,atomic_fetch_sub(&avbuf->context_refcount, 1))\" ]\r\n\"1000116\" [label = \"(<operator>.addressOf,&avbuf->context_refcount)\" ]\r\n\"1000117\" [label = \"(<operator>.indirectFieldAccess,avbuf->context_refcount)\" ]\r\n\"1000118\" [label = \"(IDENTIFIER,avbuf,atomic_fetch_sub(&avbuf->context_refcount, 1))\" ]\r\n\"1000119\" [label = \"(FIELD_IDENTIFIER,context_refcount,context_refcount)\" ]\r\n\"1000120\" [label = \"(LITERAL,1,atomic_fetch_sub(&avbuf->context_refcount, 1))\" ]\r\n\"1000121\" [label = \"(LITERAL,1,atomic_fetch_sub(&avbuf->context_refcount, 1) == 1)\" ]\r\n\"1000122\" [label = \"(BLOCK,,)\" ]\r\n\"1000123\" [label = \"(atomic_fetch_sub_explicit,atomic_fetch_sub_explicit(&s->refcount, 1, memory_order_acq_rel))\" ]\r\n\"1000124\" [label = \"(<operator>.addressOf,&s->refcount)\" ]\r\n\"1000125\" [label = \"(<operator>.indirectFieldAccess,s->refcount)\" ]\r\n\"1000126\" [label = \"(IDENTIFIER,s,atomic_fetch_sub_explicit(&s->refcount, 1, memory_order_acq_rel))\" ]\r\n\"1000127\" [label = \"(FIELD_IDENTIFIER,refcount,refcount)\" ]\r\n\"1000128\" [label = \"(LITERAL,1,atomic_fetch_sub_explicit(&s->refcount, 1, memory_order_acq_rel))\" ]\r\n\"1000129\" [label = \"(IDENTIFIER,memory_order_acq_rel,atomic_fetch_sub_explicit(&s->refcount, 1, memory_order_acq_rel))\" ]\r\n\"1000130\" [label = \"(CONTROL_STRUCTURE,if (s->reinit),if (s->reinit))\" ]\r\n\"1000131\" [label = \"(<operator>.indirectFieldAccess,s->reinit)\" ]\r\n\"1000132\" [label = \"(IDENTIFIER,s,if (s->reinit))\" ]\r\n\"1000133\" [label = \"(FIELD_IDENTIFIER,reinit,reinit)\" ]\r\n\"1000134\" [label = \"(BLOCK,,)\" ]\r\n\"1000135\" [label = \"(CONTROL_STRUCTURE,if (!atomic_load(&s->refcount)),if (!atomic_load(&s->refcount)))\" ]\r\n\"1000136\" [label = \"(<operator>.logicalNot,!atomic_load(&s->refcount))\" ]\r\n\"1000137\" [label = \"(atomic_load,atomic_load(&s->refcount))\" ]\r\n\"1000138\" [label = \"(<operator>.addressOf,&s->refcount)\" ]\r\n\"1000139\" [label = \"(<operator>.indirectFieldAccess,s->refcount)\" ]\r\n\"1000140\" [label = \"(IDENTIFIER,s,atomic_load(&s->refcount))\" ]\r\n\"1000141\" [label = \"(FIELD_IDENTIFIER,refcount,refcount)\" ]\r\n\"1000142\" [label = \"(sem_post,sem_post(&s->refsync))\" ]\r\n\"1000143\" [label = \"(<operator>.addressOf,&s->refsync)\" ]\r\n\"1000144\" [label = \"(<operator>.indirectFieldAccess,s->refsync)\" ]\r\n\"1000145\" [label = \"(IDENTIFIER,s,sem_post(&s->refsync))\" ]\r\n\"1000146\" [label = \"(FIELD_IDENTIFIER,refsync,refsync)\" ]\r\n\"1000147\" [label = \"(CONTROL_STRUCTURE,else,else)\" ]\r\n\"1000148\" [label = \"(CONTROL_STRUCTURE,if (avbuf->context->streamon),if (avbuf->context->streamon))\" ]\r\n\"1000149\" [label = \"(<operator>.indirectFieldAccess,avbuf->context->streamon)\" ]\r\n\"1000150\" [label = \"(<operator>.indirectFieldAccess,avbuf->context)\" ]\r\n\"1000151\" [label = \"(IDENTIFIER,avbuf,if (avbuf->context->streamon))\" ]\r\n\"1000152\" [label = \"(FIELD_IDENTIFIER,context,context)\" ]\r\n\"1000153\" [label = \"(FIELD_IDENTIFIER,streamon,streamon)\" ]\r\n\"1000154\" [label = \"(ff_v4l2_buffer_enqueue,ff_v4l2_buffer_enqueue(avbuf))\" ]\r\n\"1000155\" [label = \"(IDENTIFIER,avbuf,ff_v4l2_buffer_enqueue(avbuf))\" ]\r\n\"1000156\" [label = \"(av_buffer_unref,av_buffer_unref(&avbuf->context_ref))\" ]\r\n\"1000157\" [label = \"(<operator>.addressOf,&avbuf->context_ref)\" ]\r\n\"1000158\" [label = \"(<operator>.indirectFieldAccess,avbuf->context_ref)\" ]\r\n\"1000159\" [label = \"(IDENTIFIER,avbuf,av_buffer_unref(&avbuf->context_ref))\" ]\r\n\"1000160\" [label = \"(FIELD_IDENTIFIER,context_ref,context_ref)\" ]\r\n\"1000161\" [label = \"(METHOD_RETURN,static void)\" ]\r\n  \"1000100\" -> \"1000101\"  [ label = \"AST: \"] \r\n  \"1000100\" -> \"1000102\"  [ label = \"AST: \"] \r\n  \"1000100\" -> \"1000103\"  [ label = \"AST: \"] \r\n  \"1000100\" -> \"1000161\"  [ label = \"AST: \"] \r\n  \"1000103\" -> \"1000104\"  [ label = \"AST: \"] \r\n  \"1000103\" -> \"1000105\"  [ label = \"AST: \"] \r\n  \"1000103\" -> \"1000108\"  [ label = \"AST: \"] \r\n  \"1000103\" -> \"1000109\"  [ label = \"AST: \"] \r\n  \"1000103\" -> \"1000113\"  [ label = \"AST: \"] \r\n  \"1000105\" -> \"1000106\"  [ label = \"AST: \"] \r\n  \"1000105\" -> \"1000107\"  [ label = \"AST: \"] \r\n  \"1000109\" -> \"1000110\"  [ label = \"AST: \"] \r\n  \"1000109\" -> \"1000111\"  [ label = \"AST: \"] \r\n  \"1000111\" -> \"1000112\"  [ label = \"AST: \"] \r\n  \"1000113\" -> \"1000114\"  [ label = \"AST: \"] \r\n  \"1000113\" -> \"1000122\"  [ label = \"AST: \"] \r\n  \"1000114\" -> \"1000115\"  [ label = \"AST: \"] \r\n  \"1000114\" -> \"1000121\"  [ label = \"AST: \"] \r\n  \"1000115\" -> \"1000116\"  [ label = \"AST: \"] \r\n  \"1000115\" -> \"1000120\"  [ label = \"AST: \"] \r\n  \"1000116\" -> \"1000117\"  [ label = \"AST: \"] \r\n  \"1000117\" -> \"1000118\"  [ label = \"AST: \"] \r\n  \"1000117\" -> \"1000119\"  [ label = \"AST: \"] \r\n  \"1000122\" -> \"1000123\"  [ label = \"AST: \"] \r\n  \"1000122\" -> \"1000130\"  [ label = \"AST: \"] \r\n  \"1000122\" -> \"1000156\"  [ label = \"AST: \"] \r\n  \"1000123\" -> \"1000124\"  [ label = \"AST: \"] \r\n  \"1000123\" -> \"1000128\"  [ label = \"AST: \"] \r\n  \"1000123\" -> \"1000129\"  [ label = \"AST: \"] \r\n  \"1000124\" -> \"1000125\"  [ label = \"AST: \"] \r\n  \"1000125\" -> \"1000126\"  [ label = \"AST: \"] \r\n  \"1000125\" -> \"1000127\"  [ label = \"AST: \"] \r\n  \"1000130\" -> \"1000131\"  [ label = \"AST: \"] \r\n  \"1000130\" -> \"1000134\"  [ label = \"AST: \"] \r\n  \"1000130\" -> \"1000147\"  [ label = \"AST: \"] \r\n  \"1000131\" -> \"1000132\"  [ label = \"AST: \"] \r\n  \"1000131\" -> \"1000133\"  [ label = \"AST: \"] \r\n  \"1000134\" -> \"1000135\"  [ label = \"AST: \"] \r\n  \"1000135\" -> \"1000136\"  [ label = \"AST: \"] \r\n  \"1000135\" -> \"1000142\"  [ label = \"AST: \"] \r\n  \"1000136\" -> \"1000137\"  [ label = \"AST: \"] \r\n  \"1000137\" -> \"1000138\"  [ label = \"AST: \"] \r\n  \"1000138\" -> \"1000139\"  [ label = \"AST: \"] \r\n  \"1000139\" -> \"1000140\"  [ label = \"AST: \"] \r\n  \"1000139\" -> \"1000141\"  [ label = \"AST: \"] \r\n  \"1000142\" -> \"1000143\"  [ label = \"AST: \"] \r\n  \"1000143\" -> \"1000144\"  [ label = \"AST: \"] \r\n  \"1000144\" -> \"1000145\"  [ label = \"AST: \"] \r\n  \"1000144\" -> \"1000146\"  [ label = \"AST: \"] \r\n  \"1000147\" -> \"1000148\"  [ label = \"AST: \"] \r\n  \"1000148\" -> \"1000149\"  [ label = \"AST: \"] \r\n  \"1000148\" -> \"1000154\"  [ label = \"AST: \"] \r\n  \"1000149\" -> \"1000150\"  [ label = \"AST: \"] \r\n  \"1000149\" -> \"1000153\"  [ label = \"AST: \"] \r\n  \"1000150\" -> \"1000151\"  [ label = \"AST: \"] \r\n  \"1000150\" -> \"1000152\"  [ label = \"AST: \"] \r\n  \"1000154\" -> \"1000155\"  [ label = \"AST: \"] \r\n  \"1000156\" -> \"1000157\"  [ label = \"AST: \"] \r\n  \"1000157\" -> \"1000158\"  [ label = \"AST: \"] \r\n  \"1000158\" -> \"1000159\"  [ label = \"AST: \"] \r\n  \"1000158\" -> \"1000160\"  [ label = \"AST: \"] \r\n  \"1000105\" -> \"1000111\"  [ label = \"CFG: \"] \r\n  \"1000109\" -> \"1000119\"  [ label = \"CFG: \"] \r\n  \"1000111\" -> \"1000109\"  [ label = \"CFG: \"] \r\n  \"1000114\" -> \"1000161\"  [ label = \"CFG: \"] \r\n  \"1000114\" -> \"1000127\"  [ label = \"CFG: \"] \r\n  \"1000115\" -> \"1000114\"  [ label = \"CFG: \"] \r\n  \"1000116\" -> \"1000115\"  [ label = \"CFG: \"] \r\n  \"1000117\" -> \"1000116\"  [ label = \"CFG: \"] \r\n  \"1000119\" -> \"1000117\"  [ label = \"CFG: \"] \r\n  \"1000123\" -> \"1000133\"  [ label = \"CFG: \"] \r\n  \"1000124\" -> \"1000123\"  [ label = \"CFG: \"] \r\n  \"1000125\" -> \"1000124\"  [ label = \"CFG: \"] \r\n  \"1000127\" -> \"1000125\"  [ label = \"CFG: \"] \r\n  \"1000131\" -> \"1000141\"  [ label = \"CFG: \"] \r\n  \"1000131\" -> \"1000152\"  [ label = \"CFG: \"] \r\n  \"1000133\" -> \"1000131\"  [ label = \"CFG: \"] \r\n  \"1000136\" -> \"1000146\"  [ label = \"CFG: \"] \r\n  \"1000136\" -> \"1000160\"  [ label = \"CFG: \"] \r\n  \"1000137\" -> \"1000136\"  [ label = \"CFG: \"] \r\n  \"1000138\" -> \"1000137\"  [ label = \"CFG: \"] \r\n  \"1000139\" -> \"1000138\"  [ label = \"CFG: \"] \r\n  \"1000141\" -> \"1000139\"  [ label = \"CFG: \"] \r\n  \"1000142\" -> \"1000160\"  [ label = \"CFG: \"] \r\n  \"1000143\" -> \"1000142\"  [ label = \"CFG: \"] \r\n  \"1000144\" -> \"1000143\"  [ label = \"CFG: \"] \r\n  \"1000146\" -> \"1000144\"  [ label = \"CFG: \"] \r\n  \"1000149\" -> \"1000154\"  [ label = \"CFG: \"] \r\n  \"1000149\" -> \"1000160\"  [ label = \"CFG: \"] \r\n  \"1000150\" -> \"1000153\"  [ label = \"CFG: \"] \r\n  \"1000152\" -> \"1000150\"  [ label = \"CFG: \"] \r\n  \"1000153\" -> \"1000149\"  [ label = \"CFG: \"] \r\n  \"1000154\" -> \"1000160\"  [ label = \"CFG: \"] \r\n  \"1000156\" -> \"1000161\"  [ label = \"CFG: \"] \r\n  \"1000157\" -> \"1000156\"  [ label = \"CFG: \"] \r\n  \"1000158\" -> \"1000157\"  [ label = \"CFG: \"] \r\n  \"1000160\" -> \"1000158\"  [ label = \"CFG: \"] \r\n  \"1000100\" -> \"1000105\"  [ label = \"CFG: \"] \r\n  \"1000142\" -> \"1000161\"  [ label = \"DDG: sem_post(&s->refsync)\"] \r\n  \"1000105\" -> \"1000161\"  [ label = \"DDG: opaque\"] \r\n  \"1000156\" -> \"1000161\"  [ label = \"DDG: &avbuf->context_ref\"] \r\n  \"1000114\" -> \"1000161\"  [ label = \"DDG: atomic_fetch_sub(&avbuf->context_refcount, 1) == 1\"] \r\n  \"1000123\" -> \"1000161\"  [ label = \"DDG: atomic_fetch_sub_explicit(&s->refcount, 1, memory_order_acq_rel)\"] \r\n  \"1000114\" -> \"1000161\"  [ label = \"DDG: atomic_fetch_sub(&avbuf->context_refcount, 1)\"] \r\n  \"1000154\" -> \"1000161\"  [ label = \"DDG: ff_v4l2_buffer_enqueue(avbuf)\"] \r\n  \"1000123\" -> \"1000161\"  [ label = \"DDG: &s->refcount\"] \r\n  \"1000123\" -> \"1000161\"  [ label = \"DDG: memory_order_acq_rel\"] \r\n  \"1000154\" -> \"1000161\"  [ label = \"DDG: avbuf\"] \r\n  \"1000102\" -> \"1000161\"  [ label = \"DDG: unused\"] \r\n  \"1000111\" -> \"1000161\"  [ label = \"DDG: avbuf\"] \r\n  \"1000101\" -> \"1000161\"  [ label = \"DDG: opaque\"] \r\n  \"1000109\" -> \"1000161\"  [ label = \"DDG: s\"] \r\n  \"1000142\" -> \"1000161\"  [ label = \"DDG: &s->refsync\"] \r\n  \"1000136\" -> \"1000161\"  [ label = \"DDG: !atomic_load(&s->refcount)\"] \r\n  \"1000156\" -> \"1000161\"  [ label = \"DDG: av_buffer_unref(&avbuf->context_ref)\"] \r\n  \"1000137\" -> \"1000161\"  [ label = \"DDG: &s->refcount\"] \r\n  \"1000109\" -> \"1000161\"  [ label = \"DDG: buf_to_m2mctx(avbuf)\"] \r\n  \"1000115\" -> \"1000161\"  [ label = \"DDG: &avbuf->context_refcount\"] \r\n  \"1000136\" -> \"1000161\"  [ label = \"DDG: atomic_load(&s->refcount)\"] \r\n  \"1000100\" -> \"1000101\"  [ label = \"DDG: \"] \r\n  \"1000100\" -> \"1000102\"  [ label = \"DDG: \"] \r\n  \"1000101\" -> \"1000105\"  [ label = \"DDG: opaque\"] \r\n  \"1000100\" -> \"1000105\"  [ label = \"DDG: \"] \r\n  \"1000111\" -> \"1000109\"  [ label = \"DDG: avbuf\"] \r\n  \"1000100\" -> \"1000109\"  [ label = \"DDG: \"] \r\n  \"1000105\" -> \"1000111\"  [ label = \"DDG: avbuf\"] \r\n  \"1000100\" -> \"1000111\"  [ label = \"DDG: \"] \r\n  \"1000115\" -> \"1000114\"  [ label = \"DDG: &avbuf->context_refcount\"] \r\n  \"1000115\" -> \"1000114\"  [ label = \"DDG: 1\"] \r\n  \"1000100\" -> \"1000115\"  [ label = \"DDG: \"] \r\n  \"1000100\" -> \"1000114\"  [ label = \"DDG: \"] \r\n  \"1000100\" -> \"1000123\"  [ label = \"DDG: \"] \r\n  \"1000137\" -> \"1000136\"  [ label = \"DDG: &s->refcount\"] \r\n  \"1000123\" -> \"1000137\"  [ label = \"DDG: &s->refcount\"] \r\n  \"1000111\" -> \"1000154\"  [ label = \"DDG: avbuf\"] \r\n  \"1000100\" -> \"1000154\"  [ label = \"DDG: \"] \r\n  \"1000114\" -> \"1000125\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000131\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000127\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000158\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000156\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000123\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000124\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000160\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000133\"  [ label = \"CDG: \"] \r\n  \"1000114\" -> \"1000157\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000153\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000137\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000141\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000152\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000150\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000139\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000136\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000149\"  [ label = \"CDG: \"] \r\n  \"1000131\" -> \"1000138\"  [ label = \"CDG: \"] \r\n  \"1000136\" -> \"1000143\"  [ label = \"CDG: \"] \r\n  \"1000136\" -> \"1000142\"  [ label = \"CDG: \"] \r\n  \"1000136\" -> \"1000146\"  [ label = \"CDG: \"] \r\n  \"1000136\" -> \"1000144\"  [ label = \"CDG: \"] \r\n  \"1000149\" -> \"1000154\"  [ label = \"CDG: \"] \r\n}\r\n'
