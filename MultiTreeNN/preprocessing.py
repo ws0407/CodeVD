@@ -1,6 +1,9 @@
 import json
 
 import glob
+import re
+import subprocess
+
 import pandas as pd
 import numpy as np
 import os
@@ -118,6 +121,114 @@ def slice_frame(data_frame: pd.DataFrame, size: int):
     """
     data_frame_size = len(data_frame)
     return data_frame.groupby(np.arange(data_frame_size) // size)
+
+
+def create_with_index(data, columns):
+    """根据提供的数据和列名创建一个DataFrame，并根据"Index"列设置索引到数据中"""
+    data_frame = pd.DataFrame(data, columns=columns)
+    data_frame.index = list(data_frame["Index"])
+    return data_frame
+
+
+def inner_join_by_index(df1, df2):
+    """按照索引进行内连接（内部联接），即只保留两个DataFrame中索引相同的行。"""
+    return pd.merge(df1, df2, left_index=True, right_index=True)
+
+
+def joern_parse(joern_path, input_path, output_path, file_name):
+    """将每个slice下的所有c文件一同处理成一个bin文件
+    :param joern_path: str
+    :param input_path: str
+    :param output_path: str 输出文件夹路径
+    :param file_name: str 输出文件名，为slice索引
+    :return: str
+    """
+    out_file = file_name + ".bin"
+    joern_parse_call = subprocess.run(["./" + joern_path + "joern-parse", input_path, "--out", output_path + out_file],
+                                      stdout=subprocess.PIPE, text=True, check=True)
+    print(str(joern_parse_call))
+    return out_file
+
+
+def joern_create(joern_path, in_path, out_path, cpg_files):
+    """将所有的cpg的bin文件处理成json的格式，通过执行joern命令打开交互窗口，并运行script脚本处理
+    :param joern_path:
+    :param in_path: 输入路径
+    :param out_path: 输出路径
+    :param cpg_files: bin文件，list
+    :return:
+    """
+    joern_process = subprocess.Popen(["./" + joern_path + "joern"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    json_files = []
+    for cpg_file in cpg_files:
+        json_file_name = f"{cpg_file.split('.')[0]}.json"
+        json_files.append(json_file_name)
+
+        print(in_path+cpg_file)
+        if os.path.exists(in_path+cpg_file):
+            json_out = f"{os.path.abspath(out_path)}/{json_file_name}"
+            import_cpg_cmd = f"importCpg(\"{os.path.abspath(in_path)}/{cpg_file}\")\r".encode()
+            script_path = f"{os.path.dirname(os.path.abspath(joern_path))}/graph-for-funcs.sc"
+            run_script_cmd = f"cpg.runScript(\"{script_path}\").toString() |> \"{json_out}\"\r".encode()
+            joern_process.stdin.write(import_cpg_cmd)
+            print(joern_process.stdout.readline().decode())
+            joern_process.stdin.write(run_script_cmd)
+            print(joern_process.stdout.readline().decode())
+            joern_process.stdin.write("delete\r".encode())
+            print(joern_process.stdout.readline().decode())
+    try:
+        outs, errs = joern_process.communicate(timeout=60)
+    except subprocess.TimeoutExpired:
+        joern_process.kill()
+        outs, errs = joern_process.communicate()
+    if outs is not None:
+        print(f"Outs: {outs.decode()}")
+    if errs is not None:
+        print(f"Errs: {errs.decode()}")
+    return json_files
+
+
+# def funcs_to_graphs(funcs_path):
+#     client = CPGClientWrapper()
+#     # query the cpg for the dataset
+#     print(f"Creating CPG.")
+#     graphs_string = client(funcs_path)
+#     # removes unnecessary namespace for object references
+#     graphs_string = re.sub(r"io\.shiftleft\.codepropertygraph\.generated\.", '', graphs_string)
+#     graphs_json = json.loads(graphs_string)
+#
+#     return graphs_json["functions"]
+
+
+def graph_indexing(graph):
+    """根据graph文件名提取graph的索引，并返回索引+函数"""
+    idx = int(graph["file"].split(".c")[0].split("/")[-1])
+    del graph["file"]
+    return idx, {"functions": [graph]}
+
+
+def json_process(in_path, json_file):
+    """处理json文件，移除无用字段，并返回函数的列表+索引"""
+    if os.path.exists(in_path+json_file):
+        with open(in_path+json_file) as jf:
+            cpg_string = jf.read()
+            cpg_string = re.sub(r"io\.shiftleft\.codepropertygraph\.generated\.", '', cpg_string)
+            cpg_json = json.loads(cpg_string)
+            container = [graph_indexing(graph) for graph in cpg_json["functions"] if graph["file"] != "N/A"]
+            return container
+    return None
+
+
+def select(dataset):
+    """测试使用，选取FFmpeg中的200个函数作为测试"""
+    result = dataset.loc[dataset['project'] == "FFmpeg"]
+    len_filter = result.func.str.len() < 1200
+    result = result.loc[len_filter]
+    # print(len(result))
+    # result = result.iloc[11001:]
+    # print(len(result))
+    result = result.head(200)
+    return result
 
 
 if __name__ == '__main__':
