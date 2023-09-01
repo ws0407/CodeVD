@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/VulnerabilityDetectionResearch-e93a3b664babe5551361d176df6e07ee8c81e1ee/IVDetect/data/graph_data" />
+    </content>
+    <orderEntry type="jdk" jdkName="Remote Python 3.6.13 (sftp://ws@10.103.22.26:22/data/data/ws/anaconda3/envs/CodeVD/bin/python3)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

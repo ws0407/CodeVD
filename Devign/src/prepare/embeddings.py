@@ -1,8 +1,8 @@
 import numpy as np
 import torch
 from torch_geometric.data import Data
-from src.utils.functions.parse import tokenizer
-from src.utils import log as logger
+from Devign.src.utils.functions.parse import tokenizer
+from Devign.src.utils import log as logger
 from gensim.models.keyedvectors import Word2VecKeyedVectors
 
 

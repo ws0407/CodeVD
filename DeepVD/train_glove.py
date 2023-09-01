@@ -1,4 +1,3 @@
-
 import networkx as nx
 import os
 import json
@@ -10,10 +9,11 @@ import re
 import time
 import tqdm
 from embeddings.ns import code2tokens
+
 try:
-   import cPickle as pickle
+    import cPickle as pickle
 except:
-   import pickle
+    import pickle
 from config import *
 from pathlib import Path
 
@@ -25,6 +25,7 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(levelname)s %(filename)s line: %(lineno)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     filename=BASE_DIR + '/logs/' + now_time + '.log')
+
 
 def findAllFile(base, full=True):
     for root, ds, fs in os.walk(base):
@@ -40,7 +41,8 @@ print("OUTPUT_PATH: {}".format(OUTPUT_PATH))
 
 Path(OUTPUT_PATH).mkdir(parents=True, exist_ok=True)
 
-#树结构
+
+# 树结构
 class Tree(object):
     def __init__(self):
         self.parent = None
@@ -74,7 +76,6 @@ class Tree(object):
             count += 1
         self._depth = count
         return self._depth
-
 
 
 class MyGlove():
@@ -124,10 +125,7 @@ class MyGlove():
         pickle.dump(vectors, open(self.vector_file, "wb"))
         pickle.dump(word2idx, open(self.idx_file, "wb"))
         print("vectors: {}, saved to {}".format(vectors.shape, self.vector_file))
-        print("word2idx: {}, saved to {}".format( len(word2idx), self.idx_file))
-
-
-
+        print("word2idx: {}, saved to {}".format(len(word2idx), self.idx_file))
 
 
 def split_trees(tree):
@@ -142,7 +140,7 @@ def split_trees(tree):
             continue
         if line[0] == '#':
             if tree_type != "" and tree_body != "":
-                res[ tree_type ] = tree_body
+                res[tree_type] = tree_body
                 tree_body = ""
 
             tree_type = line[2:].strip()
@@ -153,15 +151,16 @@ def split_trees(tree):
         res[tree_type] = tree_body
     return res
 
+
 def generate_corpus_for_NS(to_file):
     print("generate_corpus_for_NS")
     corpus = []
-    ns_num = [] # 每个 function 有多少 ns
-    ns_length = [] # 每个 ns 有多少 token
+    ns_num = []  # 每个 function 有多少 ns
+    ns_length = []  # 每个 ns 有多少 token
     all_file = findAllFile(INPUT_PATH)
     # print('total file: ', len(list(all_file)))
     for file in tqdm.tqdm(all_file, desc='Processing', mininterval=30):
-    # for file in all_file:
+        # for file in all_file:
 
         if file.endswith("entities.json"):  # if file.endswith("entities_1hop.json"):
             with open(file) as f:
@@ -219,8 +218,6 @@ def generate_corpus_for_NS(to_file):
     """
 
     return corpus
-
-
 
 
 # ===================================================================================================================
@@ -318,17 +315,18 @@ def ast2lp(str_ast):
 
     return token_list
 
+
 def generate_corpus_for_LP(to_file):
     print("generate_corpus_for_LP")
     corpus = []
     ii = 0
-    lp_length = [] # 纪录每个 lp 的长度是多少
-    lp_num = []    # 纪录每个 function 有多少 lp
+    lp_length = []  # 纪录每个 lp 的长度是多少
+    lp_num = []  # 纪录每个 function 有多少 lp
     all_file = findAllFile(INPUT_PATH)
     # print('total file: ', len(list(all_file)))
     for file in tqdm.tqdm(all_file, desc='Processing', mininterval=30):
-    # for file in all_file:
-        if file.endswith("entities.json"):     # if file.endswith("entities_1hop.json"):
+        # for file in all_file:
+        if file.endswith("entities.json"):  # if file.endswith("entities_1hop.json"):
             with open(file) as f:
                 entities = json.loads(f.read())
 
@@ -353,8 +351,9 @@ def generate_corpus_for_LP(to_file):
     logging.info("saved to: {}".format(to_file))
 
     print("collected: {}".format(len(corpus)))
-    logging.info("lp_length: max: {}, min: {}, mean: {}".format( np.max(lp_length), np.min(lp_length), np.mean(lp_length) ))
-    logging.info("lp_num: max: {}, min: {}, mean: {}".format( np.max(lp_num), np.min(lp_num), np.mean(lp_num) ))
+    logging.info(
+        "lp_length: max: {}, min: {}, mean: {}".format(np.max(lp_length), np.min(lp_length), np.mean(lp_length)))
+    logging.info("lp_num: max: {}, min: {}, mean: {}".format(np.max(lp_num), np.min(lp_num), np.mean(lp_num)))
     lp_statistics = {
         'lp_length': lp_length,
         'lp_num': lp_num
@@ -402,6 +401,7 @@ def generate_corpus_for_LP(to_file):
 
     return corpus
 
+
 # =====================================================================================================================
 
 def train_glove_for_NS():
@@ -439,4 +439,3 @@ def train_glove_for_LP():
 if __name__ == '__main__':
     train_glove_for_NS()
     train_glove_for_LP()
-

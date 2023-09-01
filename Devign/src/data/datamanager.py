@@ -1,18 +1,14 @@
 import glob
-
 import pandas as pd
 import numpy as np
 import os
-import src.utils.functions.parse as parse
-
-from os import listdir
-from os.path import isfile, join
-from src.utils.objects.input_dataset import InputDataset
+from ..utils.functions import parse
+from ..utils.objects.input_dataset import InputDataset
 from sklearn.model_selection import train_test_split
 
 
 def read(path, json_file):
-    """
+    """读取path+json_file文件并返回DataFrame格式
     :param path: str
     :param json_file: str
     :return DataFrame
@@ -21,28 +17,52 @@ def read(path, json_file):
 
 
 def get_ratio(dataset, ratio):
+    """从前往后截取ratio比例的数据
+    :param dataset:
+    :param ratio: 0~1
+    :return:
+    """
     approx_size = int(len(dataset) * ratio)
     return dataset[:approx_size]
 
 
 def load(path, pickle_file, ratio=1):
+    """加载path+pickle_file的dataset文件
+    :param path: str
+    :param pickle_file: str
+    :param ratio: 0~1
+    :return: dataset
+    """
     dataset = pd.read_pickle(path + pickle_file)
     dataset.info(memory_usage='deep')
     if ratio < 1:
         dataset = get_ratio(dataset, ratio)
-
     return dataset
 
 
 def write(data_frame: pd.DataFrame, path, file_name):
+    """将数据集导出为pickle文件
+    :param data_frame: pd.DataFrame
+    :param path: str
+    :param file_name: str
+    """
     data_frame.to_pickle(path + file_name)
 
 
 def apply_filter(data_frame: pd.DataFrame, filter_func):
+    """根据过滤函数过滤数据集
+    :param data_frame: pd.DataFrame
+    :param filter_func: func 过滤函数
+    """
     return filter_func(data_frame)
 
 
 def rename(data_frame: pd.DataFrame, old, new):
+    """DataFrame的某一列重命名
+    :param data_frame: DataFrame
+    :param old: str
+    :param new: str
+    """
     return data_frame.rename(columns={old: new})
 
 
@@ -55,6 +75,10 @@ def tokenize(data_frame: pd.DataFrame):
 
 
 def to_files(data_frame: pd.DataFrame, out_path):
+    """将数据集内每个函数导出为单个的c文件
+    :param data_frame: 是一个slice，数据集的一部分
+    :param out_path: str
+    """
     # path = f"{self.out_path}/{self.dataset_name}/"
     os.makedirs(out_path)
 
@@ -102,7 +126,7 @@ def get_directory_files(directory):
 
 
 def loads(data_sets_dir, ratio=1):
-    data_sets_files = sorted([f for f in listdir(data_sets_dir) if isfile(join(data_sets_dir, f))])
+    data_sets_files = sorted([f for f in os.listdir(data_sets_dir) if os.path.isfile(os.path.join(data_sets_dir, f))])
 
     if ratio < 1:
         data_sets_files = get_ratio(data_sets_files, ratio)
@@ -117,14 +141,22 @@ def loads(data_sets_dir, ratio=1):
 
 
 def clean(data_frame: pd.DataFrame):
+    """去除重复的函数（subset="func"）"""
     return data_frame.drop_duplicates(subset="func", keep=False)
 
 
 def drop(data_frame: pd.DataFrame, keys):
+    """移除keys的列"""
     for key in keys:
         del data_frame[key]
 
 
 def slice_frame(data_frame: pd.DataFrame, size: int):
+    """根据size切片数据集，结果是按顺序每size个数据组成的DataFrame
+    >>> np.arange(10)
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    >>> np.arange(10) // 2
+    array([0, 0, 1, 1, 2, 2, 3, 3, 4, 4])
+    """
     data_frame_size = len(data_frame)
     return data_frame.groupby(np.arange(data_frame_size) // size)

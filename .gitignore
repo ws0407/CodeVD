@@ -1,5 +1,4 @@
 *.zip
-*.gz
-*.pkl
-*.json
-/.idea/
+/*/data
+/MultiTreeNN/test_data/
+/*/glove

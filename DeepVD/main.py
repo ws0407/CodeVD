@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import logging
@@ -18,6 +17,7 @@ import torch
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix, ndcg_score
 from model import DLVP  # , DLVP_nocc
 from tqdm import tqdm
+
 try:
     import cPickle as pickle
 except:
@@ -25,12 +25,13 @@ except:
 
 from config import *
 import nni
+
 pd.set_option('display.max_columns', None)
 
 # setting device on GPU if available, else CPU
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-#Additional Info when using cuda
+# Additional Info when using cuda
 if device.type == 'cuda':
     print('#', torch.cuda.get_device_name(0))
     # print('# Memory Usage:')
@@ -40,13 +41,9 @@ if device.type == 'cuda':
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-
-
-
 def get_params():
     # args
     parser = argparse.ArgumentParser(description='Test for argparse')
-
 
     parser.add_argument('--input_path', help='input_path', type=str,
                         default=INPUT_PATH)
@@ -67,6 +64,7 @@ def get_params():
 
     return args
 
+
 def train_socre(y_true, y_pred):
     tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
     res = {
@@ -80,6 +78,7 @@ def train_socre(y_true, y_pred):
         "tp": tp
     }
     return res
+
 
 def test(loader, model, is_validation=False):
     model.eval()
@@ -126,7 +125,8 @@ def test(loader, model, is_validation=False):
     #     logging.info("y_pred: {}".format(y_pred))
     return res
 
-def print_result(phase, score, epoch = -1):
+
+def print_result(phase, score, epoch=-1):
     if phase in ['train', 'vali']:
         score['phase'] = phase
         score['epoch'] = epoch
@@ -141,16 +141,16 @@ def print_result(phase, score, epoch = -1):
 def collate_batch(batch):
     # _data = batch[0]
     # return _data
-    y = [ data.y for data in batch ]
-    y = torch.tensor(y , dtype=torch.long)
+    y = [data.y for data in batch]
+    y = torch.tensor(y, dtype=torch.long)
 
     return (batch, y)
-
 
 
 def count_params(model):
     model_parameters = filter(lambda p: p.requires_grad, model.parameters())
     return sum([np.prod(p.size()) for p in model_parameters])
+
 
 def count_params2(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
@@ -184,18 +184,17 @@ def plot_figures(history, trail_id, mode='train'):
     plt.savefig(figure_save_path + "/dlvp_{}_{}.pdf".format(trail_id, mode))
 
 
-def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_dataset, model_save_path, writer, plot=False, print_grad=False, max_patience=20):
+def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_dataset, model_save_path, writer,
+          plot=False, print_grad=False, max_patience=20):
     learning_rate = tuner_params['learning_rate']
     hid_size = tuner_params['hidden_dim']
     batch_size = tuner_params['batch_size']
     dropout = tuner_params['dropout']
 
-
     params = vars(params)
     params['hidden_dim'] = hid_size
     params['batch_size'] = batch_size
     params['dropout'] = dropout
-
 
     # logging.info("train: {}, vali: {}, test: {}".format(len(train_dataset), len(vali_dataset), len(test_dataset)))
     print("train: {}, vali: {}, test: {}".format(len(train_dataset), len(vali_dataset), len(test_dataset)))
@@ -207,22 +206,19 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
     # for batch in loader:
     #     logging.info("batch.y: {}".format(batch.y))
 
-
     # build model
-
 
     # gpu_tracker = MemTracker()  # define a GPU tracker
     # gpu_tracker.track()
     # print(model)
     # exit()
 
-
     lp_obj = Longpath(args.input_path, args.output_path)
     lp_obj.load_model()
-    lp_weight_matrix = torch.tensor( lp_obj.vectors, dtype=torch.float)
+    lp_weight_matrix = torch.tensor(lp_obj.vectors, dtype=torch.float)
     ns_obj = NaturalSeq(args.input_path, args.output_path)
     ns_obj.load_model()
-    ns_weight_matrix = torch.tensor( ns_obj.vectors, dtype=torch.float)
+    ns_weight_matrix = torch.tensor(ns_obj.vectors, dtype=torch.float)
 
     model = DLVP(params, lp_weight_matrix, ns_weight_matrix)
     model.to(device)
@@ -240,7 +236,7 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
     min_valid_loss = np.inf
     best_f1_score = -1
     best_model_path = ""
-    best_model_list = [] # 存储最好的 model_path 及其 F1-score，排序后，取 top5 个 model，进行测试
+    best_model_list = []  # 存储最好的 model_path 及其 F1-score，排序后，取 top5 个 model，进行测试
     patience_counter = 0
 
     train_accuracies, vali_accuracies = list(), list()
@@ -254,19 +250,17 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
         model.train()
         bb = 0
         for batch in tqdm(loader):
-
-            opt.zero_grad() # 清空梯度
+            opt.zero_grad()  # 清空梯度
             pred = model(batch).to(device)
 
             label = batch[-1].to(device)
-
 
             loss = model.loss(pred, label)
 
             # gpu_tracker.track()
 
-            loss.backward() # 反向计算梯度，累加到之前梯度上
-            opt.step() # 更新参数
+            loss.backward()  # 反向计算梯度，累加到之前梯度上
+            opt.step()  # 更新参数
             total_loss += loss.item()
 
             # gpu_tracker.track()
@@ -287,10 +281,8 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
         train_history.append(train_score)
         valid_history.append(vali_score)
 
-
         # train_accuracies.append(train_score['accuracy'])
         vali_accuracies.append(vali_score['accuracy'])
-
 
         print("Epoch: {}, loss: {:.6f}".format(epoch, total_loss))
         if total_loss < min_valid_loss:
@@ -304,9 +296,10 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
             best_model_path = model_save_path + "/dlvp_model_{}_epoch{}.pth".format(trail_id, epoch)
 
             torch.save(model.state_dict(), best_model_path)
-            best_model_list.append( [vali_score['f1'], best_model_path] )
+            best_model_list.append([vali_score['f1'], best_model_path])
 
-            print("New best F1: {:.4f} --> {:.4f}. Saved model: {}".format(best_f1_score, vali_score['f1'], best_model_path))
+            print("New best F1: {:.4f} --> {:.4f}. Saved model: {}".format(best_f1_score, vali_score['f1'],
+                                                                           best_model_path))
             # logging.info("New best F1: {:.4f} --> {:.4f}. Saved model: {}".format(best_f1_score, vali_score['f1'], best_model_path))
             best_f1_score = vali_score['f1']
         else:
@@ -315,12 +308,10 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
         # report intermediate result
         nni.report_intermediate_result(vali_score['f1'])
 
-
         print_result("train", train_score, epoch)
         print_result("vali", vali_score, epoch)
         # if patience_counter == max_patience:
         #     break
-
 
         # writer.add_scalar("test_accuracy", vali_score['accuracy'], epoch)
 
@@ -336,8 +327,6 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
             model.load_state_dict(torch.load(best_model_path))
             test_score = test(test_loader, model)
             print_result("test", test_score)
-
-
 
     if plot:
         plt.plot(train_accuracies, label="Train accuracy")
@@ -355,6 +344,7 @@ def train(params, tuner_params, trail_id, train_dataset, vali_dataset, test_data
     print("=== Tuner Parameters: {}".format(tuner_params))
     return model
 
+
 if __name__ == '__main__':
     args = get_params()
 
@@ -370,7 +360,7 @@ if __name__ == '__main__':
     logging.info("args: {}".format(args))
 
     try:
-        i = 0 # index of random_dataset
+        i = 0  # index of random_dataset
 
         tuner_params = nni.get_next_parameter()
         print("tuner_params", tuner_params)
@@ -398,7 +388,8 @@ if __name__ == '__main__':
 
         model_save_path = args.output_path + '/models_{}'.format(i)
         Path(model_save_path).mkdir(parents=True, exist_ok=True)
-        model = train(args, tuner_params, trail_id, train_dataset, vali_dataset, test_dataset, model_save_path, writer=None, plot=False, print_grad=False)
+        model = train(args, tuner_params, trail_id, train_dataset, vali_dataset, test_dataset, model_save_path,
+                      writer=None, plot=False, print_grad=False)
 
 
     except Exception as exception:

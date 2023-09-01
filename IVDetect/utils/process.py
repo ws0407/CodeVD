@@ -6,11 +6,14 @@ from tqdm import tqdm
 
 
 class Tree(object):
+    """树结构，用于存储AST"""
     def __init__(self):
+        self._size = None
+        self._depth = None
         self.parent = None
         self.num_children = 0
         self.children = list()
-        self.id = None
+        self.id = None      # 构建的时候
 
     def add_child(self, child):
         child.parent = self
@@ -46,6 +49,7 @@ def read_data(file_name, lines):
 
 
 def remove_comment(code):
+    """去除注释"""
     in_comment = 0
     output = []
     for line in code:
@@ -67,6 +71,8 @@ def remove_comment(code):
 
 
 def merge_code(code):
+    """将连续的大写字母合并为一个token，例如['V', 'D', 'A', 'Decoder'] -> ['VDA', 'Decoder']
+    """
     output = []
     combine_ = 0
     temp = ""
@@ -89,17 +95,21 @@ def merge_code(code):
 
 
 def collect_code_data(data):
+    """
+    :param data: 处理好的csv文件
+    :return big_code: 预处理后的代码token序列
+    """
     big_code = []
     data_length = data.shape[0]
     for i in range(data_length):
-        code_ = data.at[i, "code"]
-        code_ = code_.splitlines()
-        code_ = remove_comment(code_)
+        code_ = data.at[i, "code"]  # 一段原始代码
+        code_ = code_.splitlines()  # 分行
+        code_ = remove_comment(code_)   # 去除注释
         code_ = " ".join(code_)
-        code_ = re.sub('[^a-zA-Z0-9]', ' ', code_)
-        code_ = re.sub(' +', ' ', code_)
-        code_ = re.sub(r"([A-Z])", r" \1", code_).split()
-        code_ = merge_code(code_)
+        code_ = re.sub('[^a-zA-Z0-9]', ' ', code_)  # 去除其他字符，例如运算符，下划线，指针
+        code_ = re.sub(' +', ' ', code_)            # 去除空格
+        code_ = re.sub(r"([A-Z])", r" \1", code_).split()   # 按照大写分开，例如VDADecoderContext -> ['V', 'D', 'A', 'Decoder', 'Context']
+        code_ = merge_code(code_)   # 合并连续的大写字母，例如['V', 'D', 'A', 'Decoder'] -> ['VDA', 'Decoder']
         big_code.append(code_)
     return big_code
 
@@ -322,6 +332,7 @@ def collect_nodes(root, edges, order):
 
 
 def collect_tree_info(data):
+    """获取代码AST信息"""
     big_ast = []
     trees = collect_ast(data)
     for tree in trees:

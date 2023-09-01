@@ -27,6 +27,13 @@ def graph_indexing(graph):
 
 
 def joern_parse(joern_path, input_path, output_path, file_name):
+    """将每个slice下的所有c文件一同处理成一个bin文件
+    :param joern_path: str
+    :param input_path: str
+    :param output_path: str 输出文件夹路径
+    :param file_name: str 输出文件名，为slice索引
+    :return: str
+    """
     out_file = file_name + ".bin"
     joern_parse_call = subprocess.run(["./" + joern_path + "joern-parse", input_path, "--out", output_path + out_file],
                                       stdout=subprocess.PIPE, text=True, check=True)
@@ -35,6 +42,13 @@ def joern_parse(joern_path, input_path, output_path, file_name):
 
 
 def joern_create(joern_path, in_path, out_path, cpg_files):
+    """将所有的cpg的bin文件处理成json的格式，通过执行joern命令打开交互窗口，并运行script脚本处理
+    :param joern_path:
+    :param in_path: 输入路径
+    :param out_path: 输出路径
+    :param cpg_files: bin文件，list
+    :return:
+    """
     joern_process = subprocess.Popen(["./" + joern_path + "joern"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     json_files = []
     for cpg_file in cpg_files:

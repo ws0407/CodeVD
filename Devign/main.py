@@ -30,9 +30,9 @@ def select(dataset):
     result = dataset.loc[dataset['project'] == "FFmpeg"]
     len_filter = result.func.str.len() < 1200
     result = result.loc[len_filter]
-    #print(len(result))
-    #result = result.iloc[11001:]
-    #print(len(result))
+    # print(len(result))
+    # result = result.iloc[11001:]
+    # print(len(result))
     result = result.head(200)
 
     return result
@@ -45,6 +45,7 @@ def create_task():
     filtered = data.clean(filtered)
     data.drop(filtered, ["commit_id", "project"])
     slices = data.slice_frame(filtered, context.slice_size)
+    # s是序号(0,1,2,...), slice是切片，slice_size行n列的数据
     slices = [(s, slice.apply(lambda x: x)) for s, slice in slices]
 
     cpg_files = []
@@ -54,7 +55,7 @@ def create_task():
         cpg_file = prepare.joern_parse(context.joern_cli_dir, PATHS.joern, PATHS.cpg, f"{s}_{FILES.cpg}")
         cpg_files.append(cpg_file)
         print(f"Dataset {s} to cpg.")
-        shutil.rmtree(PATHS.joern)
+        shutil.rmtree(PATHS.joern)  # 无条件地删除指定的目录及其内容，包括所有的子目录和文件，且无法恢复。
     # Create CPG with graphs json files
     json_files = prepare.joern_create(context.joern_cli_dir, PATHS.cpg, PATHS.cpg, cpg_files)
     for (s, slice), json_file in zip(slices, json_files):
@@ -90,8 +91,9 @@ def embed_task():
         cpg_dataset["nodes"] = cpg_dataset.apply(lambda row: cpg.parse_to_nodes(row.cpg, context.nodes_dim), axis=1)
         # remove rows with no nodes
         cpg_dataset = cpg_dataset.loc[cpg_dataset.nodes.map(len) > 0]
-        cpg_dataset["input"] = cpg_dataset.apply(lambda row: prepare.nodes_to_input(row.nodes, row.target, context.nodes_dim,
-                                                                                    w2vmodel.wv, context.edge_type), axis=1)
+        cpg_dataset["input"] = cpg_dataset.apply(
+            lambda row: prepare.nodes_to_input(row.nodes, row.target, context.nodes_dim,
+                                               w2vmodel.wv, context.edge_type), axis=1)
         data.drop(cpg_dataset, ["nodes"])
         print(f"Saving input dataset {file_name} with size {len(cpg_dataset)}.")
         data.write(cpg_dataset[["input", "target"]], PATHS.input, f"{file_name}_{FILES.input}")
@@ -150,7 +152,6 @@ def main():
         process_task(False)
     if args.process_stopping:
         process_task(True)
-
 
 
 if __name__ == "__main__":

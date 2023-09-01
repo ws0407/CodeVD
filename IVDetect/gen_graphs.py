@@ -9,7 +9,7 @@ from torch_geometric.data import Data
 
 def generate_glove_file(data):
     print("Generating glove file")
-    sample_big_data_pdg = process.collect_code_data(data)
+    sample_big_data_pdg = process.collect_code_data(data)   # 预处理后的代码token序列
     sample_big_data_ast = process.collect_tree_info(data)
     with open('glove/pdg_word.txt', 'w') as file:
         for sentence in sample_big_data_pdg:
