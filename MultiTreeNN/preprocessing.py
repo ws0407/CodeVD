@@ -219,6 +219,11 @@ def json_process(in_path, json_file):
     return None
 
 
+def get_directory_files(directory):
+    """glob.glob获取所有pkl文件路径，使用os.path.basename只保留文件名"""
+    return [os.path.basename(file) for file in glob.glob(f"{directory}/*.pkl")]
+
+
 def select(dataset):
     """测试使用，选取FFmpeg中的200个函数作为测试"""
     result = dataset.loc[dataset['project'] == "FFmpeg"]

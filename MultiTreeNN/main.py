@@ -36,7 +36,7 @@ def prepare_task():
         cpg_file = pre.joern_parse(context.joern_cli_dir, PATHS.joern, PATHS.cpg, f"{s}_{FILES.cpg}")
         cpg_files.append(cpg_file)
         print(f"Dataset {s} to cpg.")
-        shutil.rmtree(PATHS.joern)  # 无条件地删除指定的目录及其内容，包括所有的子目录和文件，且无法恢复。
+        shutil.rmtree(PATHS.joern)  # 删除原有c文件
     # Create CPG with graphs json files
     json_files = pre.joern_create(context.joern_cli_dir, PATHS.cpg, PATHS.cpg, cpg_files)
     for (s, slice), json_file in zip(slices, json_files):
@@ -50,7 +50,6 @@ def prepare_task():
         pre.write(dataset, PATHS.cpg, f"{s}_{FILES.cpg}.pkl")
         del dataset
         gc.collect()
-    pass
 
 
 def embed_task():
