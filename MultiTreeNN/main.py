@@ -11,8 +11,13 @@ from argparse import ArgumentParser
 from gensim.models.word2vec import Word2Vec
 
 import config
-# from preprocessing import *
 import preprocessing as pre
+from MultiTreeNN.utils.embed.embeddings import nodes_to_input
+from MultiTreeNN.utils.process.data_pre import train_val_test_split, LoaderStep
+from MultiTreeNN.utils.process.stopping import EarlyStopping
+from MultiTreeNN.utils.process.train import Train, predict
+from .utils.functions import cpg
+from model import *
 
 PATHS = config.Paths()
 FILES = config.Files()
@@ -21,7 +26,7 @@ DEVICE = FILES.get_device()
 
 def prepare_task():
     context = config.Create()
-    raw = pre.read(PATHS.raw, FILES.raw)
+    raw = pre.read_json(PATHS.raw, FILES.raw)
     filtered = pre.apply_filter(raw, pre.select)
     filtered = pre.clean(filtered)
     pre.drop(filtered, ["commit_id", "project"])
@@ -47,19 +52,68 @@ def prepare_task():
         dataset = pre.create_with_index(graphs, ["Index", "cpg"])
         dataset = pre.inner_join_by_index(slice, dataset)
         print(f"Writing cpg dataset chunk {s}.")
-        pre.write(dataset, PATHS.cpg, f"{s}_{FILES.cpg}.pkl")
+        pre.df_to_pickle(dataset, PATHS.cpg, f"{s}_{FILES.cpg}.pkl")
         del dataset
         gc.collect()
 
 
 def embed_task():
-    print('embed')
-    pass
+    context = config.Embed()
+    # Tokenize source code into tokens
+    dataset_files = pre.get_directory_files(PATHS.cpg)
+    w2vmodel = Word2Vec(**context.w2v_args)
+    w2v_init = True
+    for pkl_file in dataset_files:
+        file_name = pkl_file.split(".")[0]
+        cpg_dataset = pre.load_pickle(PATHS.cpg, pkl_file)
+        tokens_dataset = pre.tokenize(cpg_dataset)
+        pre.df_to_pickle(tokens_dataset, PATHS.tokens, f"{file_name}_{FILES.tokens}")
+        # word2vec used to learn the initial embedding of each token
+        w2vmodel.build_vocab(sentences=tokens_dataset.tokens, update=not w2v_init)
+        w2vmodel.train(tokens_dataset.tokens, total_examples=w2vmodel.corpus_count, epochs=1)
+        if w2v_init:
+            w2v_init = False
+        # Embed cpg to node representation and pass to graph data structure
+        cpg_dataset["nodes"] = cpg_dataset.apply(lambda row: cpg.parse_to_nodes(row.cpg, context.nodes_dim), axis=1)
+        # remove rows with no nodes
+        cpg_dataset = cpg_dataset.loc[cpg_dataset.nodes.map(len) > 0]
+        cpg_dataset["input"] = cpg_dataset.apply(
+            lambda row: nodes_to_input(row.nodes, row.target, context.nodes_dim,
+                                       w2vmodel.wv, context.edge_type), axis=1)
+        pre.drop(cpg_dataset, ["nodes"])
+        print(f"Saving input dataset {file_name} with size {len(cpg_dataset)}.")
+        pre.df_to_pickle(cpg_dataset[["input", "target"]], PATHS.input, f"{file_name}_{FILES.input}")
+        del cpg_dataset
+        gc.collect()
+    print("Saving w2vmodel.")
+    w2vmodel.save(f"{PATHS.w2v}/{FILES.w2v}")
 
 
 def train_task(stopping):
-    print('train', stopping)
-    pass
+    context = config.Process()
+    devign = config.Devign()
+    model_path = PATHS.model + FILES.model
+    model = Devign(path=model_path, device=DEVICE, model=devign.model, learning_rate=devign.learning_rate,
+                   weight_decay=devign.weight_decay, loss_lambda=devign.loss_lambda)
+    train = Train(model, context.epochs)
+    input_dataset = pre.loads(PATHS.input)
+    # split the dataset and pass to DataLoader with batch size
+    train_loader, val_loader, test_loader = list(
+        map(lambda x: x.get_loader(context.batch_size, shuffle=context.shuffle),
+            train_val_test_split(input_dataset, shuffle=context.shuffle)))
+    train_loader_step = LoaderStep("Train", train_loader, DEVICE)
+    val_loader_step = LoaderStep("Validation", val_loader, DEVICE)
+    test_loader_step = LoaderStep("Test", test_loader, DEVICE)
+
+    if stopping:
+        early_stopping = EarlyStopping(model, patience=context.patience)
+        train(train_loader_step, val_loader_step, early_stopping)
+        model.load()
+    else:
+        train(train_loader_step, val_loader_step)
+        model.save()
+
+    predict(model, test_loader_step)
 
 
 def main():

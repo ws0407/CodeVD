@@ -1,15 +1,15 @@
 import json
-
 import glob
 import re
 import subprocess
-
 import pandas as pd
 import numpy as np
-import os
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 import os
+
+from .utils.functions import parse
+from .utils.objects.input_dataset import InputDataset
 
 
 def prepare_folder(input_json, key, out_path):
@@ -28,7 +28,7 @@ def prepare_folder(input_json, key, out_path):
         # break
 
 
-def read(path, json_file):
+def read_json(path, json_file):
     """读取path+json_file文件并返回DataFrame格式
     :param path: str
     :param json_file: str
@@ -47,7 +47,7 @@ def get_ratio(dataset, ratio):
     return dataset[:approx_size]
 
 
-def load(path, pickle_file, ratio=1):
+def load_pickle(path, pickle_file, ratio=1):
     """加载path+pickle_file的dataset文件
     :param path: str
     :param pickle_file: str
@@ -61,7 +61,19 @@ def load(path, pickle_file, ratio=1):
     return dataset
 
 
-def write(data_frame: pd.DataFrame, path, file_name):
+def loads(data_sets_dir, ratio=1):
+    """从给定目录加载并组合多个数据集"""
+    data_sets_files = sorted([f for f in os.listdir(data_sets_dir) if os.path.isfile(os.path.join(data_sets_dir, f))])
+    if ratio < 1:
+        data_sets_files = get_ratio(data_sets_files, ratio)
+    dataset = load_pickle(data_sets_dir, data_sets_files[0])    # ? 为什么要先加载第一个文件
+    data_sets_files.remove(data_sets_files[0])
+    for ds_file in data_sets_files:                             # ? 为什么加载一个后可以直接append
+        dataset = dataset.append(load_pickle(data_sets_dir, ds_file))
+    return dataset
+
+
+def df_to_pickle(data_frame: pd.DataFrame, path, file_name):
     """将数据集导出为pickle文件
     :param data_frame: pd.DataFrame
     :param path: str
@@ -222,6 +234,14 @@ def json_process(in_path, json_file):
 def get_directory_files(directory):
     """glob.glob获取所有pkl文件路径，使用os.path.basename只保留文件名"""
     return [os.path.basename(file) for file in glob.glob(f"{directory}/*.pkl")]
+
+
+def tokenize(data_frame: pd.DataFrame):
+    data_frame.func = data_frame.func.apply(parse.tokenizer)
+    # Change column name
+    data_frame = rename(data_frame, 'func', 'tokens')
+    # Keep just the tokens
+    return data_frame[["tokens"]]
 
 
 def select(dataset):
