@@ -54,9 +54,9 @@ final case class GraphForFuncsFunction(function: String,
 final case class GraphForFuncsResult(file: String, functions: List[GraphForFuncsFunction])
 
 
-@main def exec(sourceCode: String, outFile: String) = {
-    importCode.c(sourceCode)
-    run.ossdataflow
+@main def exec(): Json = {    // sourceCode: String, outFile: String
+    // importCode.c(sourceCode)
+    // run.ossdataflow
 
     val edges = cpg.graph.E.hasLabel("AST", "CFG").l
 
@@ -90,40 +90,40 @@ final case class GraphForFuncsResult(file: String, functions: List[GraphForFuncs
     implicit val encodeFuncResult: Encoder[GraphForFuncsResult] = deriveEncoder
 
     GraphForFuncsResult(
-    cpg.file.name.l.head,
-    cpg.method.map { method =>
-        val methodName = method.fullName
-        val methodId = method.toString
+        cpg.file.name.l.head,
+        cpg.method.map { method =>
+            val methodName = method.fullName
+            val methodId = method.toString
 
-        val astChildren = method.astMinusRoot.l
+            val astChildren = method.astMinusRoot.l
 
-        val cfgChildren = method.astMinusRoot.filter(_.isInstanceOf[nodes.CfgNode]).cast[nodes.CfgNode].l
+            val cfgChildren = method.astMinusRoot.filter(_.isInstanceOf[nodes.CfgNode]).cast[nodes.CfgNode].l
 
-        val pdgChildren = {
-            var pdgChildren: List[CfgNode] = List()
-            val local = method.out(EdgeTypes.CONTAINS).hasLabel(NodeTypes.BLOCK).out(EdgeTypes.AST).hasLabel(NodeTypes.LOCAL).cast[nodes.Local]
-            val sink = local.evalType(".*").referencingIdentifiers.l
-            if (sink.length > 0) {
-                val source = cpg.method.parameter
+            val pdgChildren = {
+                var pdgChildren: List[CfgNode] = List()
+                val local = method.out(EdgeTypes.CONTAINS).hasLabel(NodeTypes.BLOCK).out(EdgeTypes.AST).hasLabel(NodeTypes.LOCAL).cast[nodes.Local]
+                val sink = local.evalType(".*").referencingIdentifiers.l
+                if (sink.length > 0) {
+                    val source = cpg.method.parameter
 
-                (sink
-                    .reachableByFlows(source)
-                    .l
-                    .flatMap{ path =>
-                        path.elements.map {
-                            case trackingPoint @ (_: MethodParameterIn) => trackingPoint.start.method.head
-                            case trackingPoint                          => trackingPoint
+                    (sink
+                        .reachableByFlows(source)
+                        .l
+                        .flatMap{ path =>
+                            path.elements.map {
+                                case trackingPoint @ (_: MethodParameterIn) => trackingPoint.start.method.head
+                                case trackingPoint                          => trackingPoint
+                            }
                         }
-                    }
-                    .filter(_.toString != methodId)
-                )
+                        .filter(_.toString != methodId)
+                    )
+                }
+                else {
+                    List()
+                }
             }
-            else {
-                List()
-            }
-        }
 
-        GraphForFuncsFunction(methodName, methodId, astChildren, cfgChildren, pdgChildren)
-    }.l
-    ).asJson.toString |> outFile
+            GraphForFuncsFunction(methodName, methodId, astChildren, cfgChildren, pdgChildren)
+        }.l
+    ).asJson    // .toString |> outFile
 }

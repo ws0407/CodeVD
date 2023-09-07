@@ -84,6 +84,9 @@ def json_process(in_path, json_file):
         with open(in_path+json_file) as jf:
             cpg_string = jf.read()
             cpg_string = re.sub(r"io\.shiftleft\.codepropertygraph\.generated\.", '', cpg_string)
+
+            # TODO: 替换[label=BLOCK; id=2305843009213694036] 为 2305843009213694036
+
             cpg_json = json.loads(cpg_string)
             container = [graph_indexing(graph) for graph in cpg_json["functions"] if graph["file"] != "N/A"]
             return container

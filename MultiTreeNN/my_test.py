@@ -3,6 +3,7 @@ import os
 
 from torch.utils.data import DataLoader
 import pickle
+import pandas as pd
 
 # from IVDetect.main import MyDatset, collate_batch
 #
@@ -18,11 +19,14 @@ import pickle
 import pickle
 import json
 
-with open('data/input/0_cpg_input.pkl', 'rb') as f:
-    token = pickle.load(f)
+with open('data/cpg/0_cpg.pkl', 'rb') as f:
+    data: pd.DataFrame = pickle.load(f)
 
-with open('data/input/test.json', 'w', encoding="utf-8") as f:
-    json.dump(token['tokens'].iloc[6], f, ensure_ascii=False)
+print(data.columns)
+# print(data.head(2))
+
+with open('data/cpg/test.json', 'w', encoding="utf-8") as f:
+    json.dump(data.head(10).to_json(), f, ensure_ascii=False)
 
 
 # print(cpg['cpg'].iloc[6])
