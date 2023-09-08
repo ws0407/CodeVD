@@ -12,11 +12,9 @@ from gensim.models.word2vec import Word2Vec
 
 import config
 import preprocessing as pre
-from MultiTreeNN.utils.embed.embeddings import nodes_to_input
-from MultiTreeNN.utils.process.data_pre import train_val_test_split, LoaderStep
-from MultiTreeNN.utils.process.stopping import EarlyStopping
-from MultiTreeNN.utils.process.train import Train, predict
-from .utils.functions import cpg
+from utils.functions import parse_to_nodes
+from utils.embeddings import nodes_to_input
+from utils.process import *
 from model import *
 
 PATHS = config.Paths()
@@ -74,7 +72,7 @@ def embed_task():
         if w2v_init:
             w2v_init = False
         # Embed cpg to node representation and pass to graph data structure
-        cpg_dataset["nodes"] = cpg_dataset.apply(lambda row: cpg.parse_to_nodes(row.cpg, context.nodes_dim), axis=1)
+        cpg_dataset["nodes"] = cpg_dataset.apply(lambda row: parse_to_nodes(row.cpg, context.nodes_dim), axis=1)
         # remove rows with no nodes
         cpg_dataset = cpg_dataset.loc[cpg_dataset.nodes.map(len) > 0]
         cpg_dataset["input"] = cpg_dataset.apply(

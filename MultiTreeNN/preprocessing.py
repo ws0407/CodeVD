@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 import os
 
-from .utils.functions import parse
-from .utils.objects.input_dataset import InputDataset
+from utils import parse
+from utils.objects import InputDataset
 
 
 def prepare_folder(input_json, key, out_path):
@@ -143,7 +143,8 @@ def create_with_index(data, columns):
 
 
 def inner_join_by_index(df1, df2):
-    """按照索引进行内连接（内部联接），即只保留两个DataFrame中索引相同的行。"""
+    """按照索引进行内连接（内部联接），即只保留两个DataFrame中索引相同的行。
+    最终形成的df有['target', 'func', 'Index', 'cpg']"""
     return pd.merge(df1, df2, left_index=True, right_index=True)
 
 
@@ -156,7 +157,7 @@ def joern_parse(joern_path, input_path, output_path, file_name):
     :return: str
     """
     out_file = file_name + ".bin"
-    joern_parse_call = subprocess.run(["./" + joern_path + "joern-parse", input_path, "--out", output_path + out_file],
+    joern_parse_call = subprocess.run(["./" + joern_path + "joern-parse", input_path, "--output", output_path + out_file],
                                       stdout=subprocess.PIPE, text=True, check=True)
     print(str(joern_parse_call))
     return out_file
@@ -221,10 +222,13 @@ def graph_indexing(graph):
 
 def json_process(in_path, json_file):
     """处理json文件，移除无用字段，并返回函数的列表+索引"""
-    if os.path.exists(in_path+json_file):
-        with open(in_path+json_file) as jf:
+    if os.path.exists(in_path + json_file):
+        with open(in_path + json_file) as jf:
             cpg_string = jf.read()
-            cpg_string = re.sub(r"io\.shiftleft\.codepropertygraph\.generated\.", '', cpg_string)
+            # 替换：io.shiftleft.codepropertygraph.generated.nodes.Block[label=BLOCK; id=2305843009213694036]
+            # 为：nodes.Block@2305843009213694036
+            cpg_string = re.sub(r'io\.shiftleft\.codepropertygraph\.generated\.', '', cpg_string)
+            cpg_string = re.sub(r'(\[label)(\D+)(\d+)\]', lambda match: f'@{match.group(3)}', cpg_string)
             cpg_json = json.loads(cpg_string)
             container = [graph_indexing(graph) for graph in cpg_json["functions"] if graph["file"] != "N/A"]
             return container
@@ -237,6 +241,7 @@ def get_directory_files(directory):
 
 
 def tokenize(data_frame: pd.DataFrame):
+    """转化成token序列，按照关键字、运算符、括号等分割，并将自定义 变量/函数 替换为 VAR# 和 FUN# """
     data_frame.func = data_frame.func.apply(parse.tokenizer)
     # Change column name
     data_frame = rename(data_frame, 'func', 'tokens')

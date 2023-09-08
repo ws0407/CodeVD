@@ -4,7 +4,7 @@ from torch_geometric.data import Data
 from MultiTreeNN.utils import log as logger
 from gensim.models.keyedvectors import Word2VecKeyedVectors
 
-from MultiTreeNN.utils import tokenizer
+from parse import tokenizer
 
 
 class NodesEmbedding:

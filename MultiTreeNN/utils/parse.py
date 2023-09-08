@@ -7,6 +7,7 @@ import codecs
 # Removes content from string and character literals keywords up to C11 and C++17; immutable set
 from typing import List
 
+
 keywords = frozenset({'__asm', '__builtin', '__cdecl', '__declspec', '__except', '__export', '__far16', '__far32',
                       '__fastcall', '__finally', '__import', '__inline', '__int16', '__int32', '__int64', '__int8',
                       '__leave', '__optlink', '__packed', '__pascal', '__stdcall', '__system', '__thread', '__try',
@@ -160,8 +161,10 @@ def tokenizer(code, flag=False):
     return tokenized
 
 
-test = "((uint32_t *)(&s->boncop))[addr/sizeof(uint32_t)]"
-test2 = "(type_code[hw_breakpoint[n].type] << (16 + n*4)) |\n\n                ((uint32_t)len_code[hw_breakpoint[n].len] << (18 + n*4))"
-asd = re.split(regex_split_operators + r'|(\/)', test)
-print(list(filter(None, asd)))
-print(tokenizer(test2))
+if __name__ == '__main__':
+    test = "((uint32_t *)(&s->boncop))[addr/sizeof(uint32_t)]"
+    test2 = "(type_code[hw_breakpoint[n].type] << (16 + n*4)) |\n\n                ((uint32_t)len_code[hw_breakpoint[n].len] << (18 + n*4))"
+    asd = re.split(regex_split_operators + r'|(\/)', test)
+    print(list(filter(None, asd)))
+    print(tokenizer(test))
+    print(tokenizer(test2))
