@@ -78,8 +78,8 @@ class Paths(Data):
         super().__init__('paths')
 
     @property
-    def workspace(self):
-        return self.get_property('workspace')
+    def code(self):
+        return self.get_property('code')
 
 
 class Files(Data):

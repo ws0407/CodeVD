@@ -192,18 +192,17 @@ def joern_create(joern_path, script_path, in_path, out_path, cpg_files):
         if os.path.exists(in_path+cpg_file):
             json_out = f"{os.path.abspath(out_path)}/{json_file_name}"
             import_cpg_cmd = f"importCpg(\"{os.path.abspath(in_path)}/{cpg_file}\")\r".encode()
-            # script_path = f"{os.path.dirname(os.path.abspath(joern_path))}/graph-for-funcs.sc"
             run_script_cmd = f"cpg.runScript(\"{script_path}\").toString() |> \"{json_out}\"\r".encode()
             joern_process.stdin.write(import_cpg_cmd)
-            print(joern_process.stdout.readline().decode())
+            # print(joern_process.stdout.readline().decode())
             joern_process.stdin.write(run_script_cmd)
-            print(joern_process.stdout.readline().decode())
+            # print(joern_process.stdout.readline().decode())
             joern_process.stdin.write("delete\r".encode())
-            print(joern_process.stdout.readline().decode())
+            # print(joern_process.stdout.readline().decode())
     joern_process.stdin.write("exit\r".encode())
-    print(joern_process.stdout.readline().decode())
+    # print(joern_process.stdout.readline().decode())
     joern_process.stdin.write("N\r".encode())
-    print(joern_process.stdout.readline().decode())
+    # print(joern_process.stdout.readline().decode())
     try:
         outs, errs = joern_process.communicate(timeout=60)
     except subprocess.TimeoutExpired:

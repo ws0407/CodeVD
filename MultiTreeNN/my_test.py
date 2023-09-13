@@ -161,9 +161,9 @@ def test_joern_process():
     out = joern_create(
         joern_path='/data/data/ws/joern-1.0/joern-cli/',
         script_path='/data/data/ws/CodeVD/MultiTreeNN/script/graph-for-funcs.sc',
-        in_path='/data/data/ws/CodeVD/MultiTreeNN/test_data/',
-        out_path='/data/data/ws/CodeVD/MultiTreeNN/test_data/',
-        cpg_files=['multi.bin']
+        in_path='/data/data/ws/CodeVD/MultiTreeNN/data/cpg/',
+        out_path='/data/data/ws/CodeVD/MultiTreeNN/data/cpg/out/',
+        cpg_files=['{}_cpg.bin'.format(_) for _ in range(10)]
     )
     print(out)
 
@@ -178,10 +178,10 @@ def test_add_header():
     print(qemu_header)
 
 
-test_add_header()
+# test_add_header()
 
 
-# test_joern_process()
+test_joern_process()
 
 # test_joern_parse()
 

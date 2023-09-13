@@ -22,7 +22,7 @@
     },
     "paths" : {
         "cpg" : "data/cpg/",
-        "workspace" : "data/joern/",
+        "code" : "data/cpg/code/",
         "header": "data/raw/",
         "raw" : "data/raw/",
         "input" : "data/input/",

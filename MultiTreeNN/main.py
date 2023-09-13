@@ -35,11 +35,11 @@ def prepare_task():
     cpg_files = []
     # Create CPG binary files
     for s, slice in slices:
-        pre.to_files(slice, PATHS.workspace, PATHS.header)
-        cpg_file = pre.joern_parse(context.joern_cli_dir, PATHS.workspace, PATHS.cpg, f"{s}_{FILES.cpg}")
+        pre.to_files(slice, PATHS.code, PATHS.header)
+        cpg_file = pre.joern_parse(context.joern_cli_dir, PATHS.code, PATHS.cpg, f"{s}_{FILES.cpg}")
         cpg_files.append(cpg_file)
         print(f"Dataset {s} to cpg.")
-        shutil.rmtree(PATHS.workspace)  # 删除原有c文件
+        shutil.rmtree(PATHS.code)  # 删除原有c文件
     # Create CPG with graphs json files
     json_files = pre.joern_create(context.joern_cli_dir, context.script, PATHS.cpg, PATHS.cpg, cpg_files)
     for (s, slice), json_file in zip(slices, json_files):
