@@ -110,7 +110,85 @@ def out_dataset_errors(
     print(all_type)
 
 
-out_dataset_errors()
+def get_no_func(
+        input_json="/data/data/ws/CodeVD/IVDetect/data/FFMPeg_Qemu/function.json",
+        key="func",
+):
+    """"""
+    with open(input_json, 'r') as f:
+        data = json.load(f)
+    for idx, sample in tqdm(enumerate(data)):
+        # if sample["project"] != "FFmpeg":
+        #     continue
+        func: str = sample[key]
+        # while '\n\n' in func:
+        #     func = func.replace('\n\n', '\n')
+        func = re.sub(r'(/\*([^*]|(\*+[^*\/]))*\*+\/)|(\/\/.*)', '', func)  # 去除/**/ //--注释
+        func = re.sub(r'"([^"\\\n]|\\.|\\\n)*"', '""', func)                # 去除""包的字符串
+        func = re.sub(r'\'([^\'\\\n]|\\.|\\\n)*\'', '\'\'', func)           # 去除''包的字符
+        func_head = func[:func.find("{")]
+        func = func.replace('\n', '')
+        func = func.replace('\r', '')
+        func = func.replace('\t', '')
+        func = func.replace(' ', '')
+        left_bracket = func.find('(')
+        right_bracket = func.find(')')
+        left_brace = func.find('{')
+        if left_bracket < 0 or right_bracket < 0 or left_brace < 0:
+            print('{} brackets not find ({},{},{}) {}'.format(
+                '*' * 10, left_bracket, right_bracket, left_brace, '*' * 10))
+            print('[{}][target={}] {}'.format(sample['project'], sample['target'], func[:left_bracket]))
+            continue
+        if not (left_bracket < right_bracket < left_brace and func[left_brace-1] == ')'):
+            print('{} brackets not match ({},{},{}) {}'.format(
+                '*' * 10, left_bracket, right_bracket, left_brace, '*' * 10))
+            print('[{}][target={}] {}'.format(sample['project'], sample['target'], func_head))
+
+
+def test_joern_parse():
+    from preprocessing import joern_parse
+    cpg = joern_parse(
+        joern_path='/data/data/ws/joern-1.0/joern-cli/',
+        input_path='/data/data/ws/CodeVD/MultiTreeNN/test_data/multi/',
+        output_path='/data/data/ws/CodeVD/MultiTreeNN/test_data/',
+        file_name='multi'
+    )
+    print(cpg)
+
+
+def test_joern_process():
+    from preprocessing import joern_create
+    out = joern_create(
+        joern_path='/data/data/ws/joern-1.0/joern-cli/',
+        script_path='/data/data/ws/CodeVD/MultiTreeNN/script/graph-for-funcs.sc',
+        in_path='/data/data/ws/CodeVD/MultiTreeNN/test_data/',
+        out_path='/data/data/ws/CodeVD/MultiTreeNN/test_data/',
+        cpg_files=['multi.bin']
+    )
+    print(out)
+
+
+def test_add_header():
+    header_path = "/data/data/ws/CodeVD/MultiTreeNN/data/raw/"
+    with open(header_path + 'FFmpeg.h', 'r') as f:
+        FFmpeg_header = f.read()
+    with open(header_path + 'qemu.h', 'r') as f:
+        qemu_header = f.read()
+    print(FFmpeg_header)
+    print(qemu_header)
+
+
+test_add_header()
+
+
+# test_joern_process()
+
+# test_joern_parse()
+
+# get_no_func()
+
+
+# out_dataset_errors()
 #
 # count_dataset()
 #

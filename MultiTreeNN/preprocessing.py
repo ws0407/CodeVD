@@ -1,4 +1,5 @@
 import json
+import sys
 import glob
 import re
 import subprocess
@@ -99,18 +100,25 @@ def rename(data_frame: pd.DataFrame, old, new):
     return data_frame.rename(columns={old: new})
 
 
-def to_files(data_frame: pd.DataFrame, out_path):
+def to_files(data_frame: pd.DataFrame, out_path, header_path):
     """将数据集内每个函数导出为单个的c文件
     :param data_frame: 是一个slice，数据集的一部分
     :param out_path: str
+    :param header_path: 头文件的目录
     """
     # path = f"{self.out_path}/{self.dataset_name}/"
-    os.makedirs(out_path)
-
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
+    with open(header_path + 'FFmpeg.h', 'r') as f:
+        FFmpeg_header = f.read()
+    with open(header_path + 'qemu.h', 'r') as f:
+        qemu_header = f.read()
     for idx, row in data_frame.iterrows():
         file_name = f"{idx}.c"
+        # 添加头文件，防止编译错误，无法生成AST、PDG
+        func = (FFmpeg_header if row.project == 'FFmpeg' else qemu_header) + row.func
         with open(out_path + file_name, 'w') as f:
-            f.write(row.func)
+            f.write(func)
 
 
 def clean(data_frame: pd.DataFrame):
@@ -157,21 +165,24 @@ def joern_parse(joern_path, input_path, output_path, file_name):
     :return: str
     """
     out_file = file_name + ".bin"
-    joern_parse_call = subprocess.run(["./" + joern_path + "joern-parse", input_path, "--output", output_path + out_file],
-                                      stdout=subprocess.PIPE, text=True, check=True)
+    if sys.gettrace() is not None:
+        return out_file
+    joern_parse_call = subprocess.run([joern_path + "joern-parse", input_path, "--output", output_path + out_file],
+                                      stdout=subprocess.PIPE, check=True)
     print(str(joern_parse_call))
     return out_file
 
 
-def joern_create(joern_path, in_path, out_path, cpg_files):
+def joern_create(joern_path, script_path, in_path, out_path, cpg_files):
     """将所有的cpg的bin文件处理成json的格式，通过执行joern命令打开交互窗口，并运行script脚本处理
-    :param joern_path:
+    :param script_path: scala目录
+    :param joern_path: joern-cli安装目录
     :param in_path: 输入路径
     :param out_path: 输出路径
     :param cpg_files: bin文件，list
     :return:
     """
-    joern_process = subprocess.Popen(["./" + joern_path + "joern"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    joern_process = subprocess.Popen([joern_path + "joern"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     json_files = []
     for cpg_file in cpg_files:
         json_file_name = f"{cpg_file.split('.')[0]}.json"
@@ -181,7 +192,7 @@ def joern_create(joern_path, in_path, out_path, cpg_files):
         if os.path.exists(in_path+cpg_file):
             json_out = f"{os.path.abspath(out_path)}/{json_file_name}"
             import_cpg_cmd = f"importCpg(\"{os.path.abspath(in_path)}/{cpg_file}\")\r".encode()
-            script_path = f"{os.path.dirname(os.path.abspath(joern_path))}/graph-for-funcs.sc"
+            # script_path = f"{os.path.dirname(os.path.abspath(joern_path))}/graph-for-funcs.sc"
             run_script_cmd = f"cpg.runScript(\"{script_path}\").toString() |> \"{json_out}\"\r".encode()
             joern_process.stdin.write(import_cpg_cmd)
             print(joern_process.stdout.readline().decode())
@@ -189,6 +200,10 @@ def joern_create(joern_path, in_path, out_path, cpg_files):
             print(joern_process.stdout.readline().decode())
             joern_process.stdin.write("delete\r".encode())
             print(joern_process.stdout.readline().decode())
+    joern_process.stdin.write("exit\r".encode())
+    print(joern_process.stdout.readline().decode())
+    joern_process.stdin.write("N\r".encode())
+    print(joern_process.stdout.readline().decode())
     try:
         outs, errs = joern_process.communicate(timeout=60)
     except subprocess.TimeoutExpired:
@@ -215,8 +230,7 @@ def joern_create(joern_path, in_path, out_path, cpg_files):
 
 def graph_indexing(graph):
     """根据graph文件名提取graph的索引，并返回索引+函数"""
-    idx = int(graph["file"].split(".c")[0].split("/")[-1])
-    del graph["file"]
+    idx = int(graph["function"].split(".c")[0].split("/")[-1])
     return idx, {"functions": [graph]}
 
 
@@ -230,7 +244,7 @@ def json_process(in_path, json_file):
             cpg_string = re.sub(r'io\.shiftleft\.codepropertygraph\.generated\.', '', cpg_string)
             cpg_string = re.sub(r'(\[label)(\D+)(\d+)\]', lambda match: f'@{match.group(3)}', cpg_string)
             cpg_json = json.loads(cpg_string)
-            container = [graph_indexing(graph) for graph in cpg_json["functions"] if graph["file"] != "N/A"]
+            container = [graph_indexing(graph) for graph in cpg_json["functions"] if "<global>" in graph["function"]]
             return container
     return None
 

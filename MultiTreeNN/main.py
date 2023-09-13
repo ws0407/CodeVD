@@ -27,7 +27,7 @@ def prepare_task():
     raw = pre.read_json(PATHS.raw, FILES.raw)
     filtered = pre.apply_filter(raw, pre.select)
     filtered = pre.clean(filtered)
-    pre.drop(filtered, ["commit_id", "project"])
+    pre.drop(filtered, ["commit_id"])   # "project"
     slices = pre.slice_frame(filtered, context.slice_size)
     # s是序号(0,1,2,...), slice是切片，slice_size行n列的数据
     slices = [(s, slice.apply(lambda x: x)) for s, slice in slices]
@@ -35,13 +35,13 @@ def prepare_task():
     cpg_files = []
     # Create CPG binary files
     for s, slice in slices:
-        pre.to_files(slice, PATHS.joern)
-        cpg_file = pre.joern_parse(context.joern_cli_dir, PATHS.joern, PATHS.cpg, f"{s}_{FILES.cpg}")
+        pre.to_files(slice, PATHS.workspace, PATHS.header)
+        cpg_file = pre.joern_parse(context.joern_cli_dir, PATHS.workspace, PATHS.cpg, f"{s}_{FILES.cpg}")
         cpg_files.append(cpg_file)
         print(f"Dataset {s} to cpg.")
-        shutil.rmtree(PATHS.joern)  # 删除原有c文件
+        shutil.rmtree(PATHS.workspace)  # 删除原有c文件
     # Create CPG with graphs json files
-    json_files = pre.joern_create(context.joern_cli_dir, PATHS.cpg, PATHS.cpg, cpg_files)
+    json_files = pre.joern_create(context.joern_cli_dir, context.script, PATHS.cpg, PATHS.cpg, cpg_files)
     for (s, slice), json_file in zip(slices, json_files):
         graphs = pre.json_process(PATHS.cpg, json_file)
         if graphs is None:
@@ -125,6 +125,8 @@ def main():
     parser.add_argument('-ts', '--train_stopping', help='Train model with early stopping', action='store_true')
 
     args = parser.parse_args()
+
+    # print(args.prepare, args.embed, args.train, args.train_stopping)
 
     if args.prepare:
         prepare_task()

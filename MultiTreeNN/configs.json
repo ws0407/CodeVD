@@ -16,12 +16,14 @@
     },
     "create" : {
         "filter_column_value": {"project" : "qemu"},
-        "slice_size": 100,
-        "joern_cli_dir": "joern/joern-cli/"
+        "slice_size": 10,
+        "joern_cli_dir": "/data/data/ws/joern-1.0/joern-cli/",
+        "script": "/data/data/ws/CodeVD/MultiTreeNN/script/graph-for-funcs.sc"
     },
     "paths" : {
         "cpg" : "data/cpg/",
-        "joern" : "data/joern/",
+        "workspace" : "data/joern/",
+        "header": "data/raw/",
         "raw" : "data/raw/",
         "input" : "data/input/",
         "model" : "data/model/",

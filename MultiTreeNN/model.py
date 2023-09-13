@@ -3,8 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch_geometric.nn.conv import GatedGraphConv
-from MultiTreeNN.utils import log
-from MultiTreeNN.utils.objects import stats
+from utils import log
+from utils.objects import Stat
 
 torch.manual_seed(2020)
 
@@ -123,7 +123,7 @@ class Step:
             self.optimizer.zero_grad()
 
         # print(f"\tBatch: {i}; Loss: {round(loss.item(), 4)}", end="")
-        return stats.Stat(out.tolist(), loss.item(), acc.item(), y.tolist())
+        return Stat(out.tolist(), loss.item(), acc.item(), y.tolist())
 
     def train(self):
         self.model.train()

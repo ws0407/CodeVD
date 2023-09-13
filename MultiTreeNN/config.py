@@ -35,6 +35,10 @@ class Create(Config):
     def joern_cli_dir(self):
         return self.get_property('joern_cli_dir')
 
+    @property
+    def script(self):
+        return self.get_property('script')
+
 
 class Data(Config):
     def __init__(self, config):
@@ -47,6 +51,10 @@ class Data(Config):
     @property
     def raw(self):
         return self.get_property('raw')
+
+    @property
+    def header(self):
+        return self.get_property('header')
 
     @property
     def input(self):
@@ -70,8 +78,8 @@ class Paths(Data):
         super().__init__('paths')
 
     @property
-    def joern(self):
-        return self.get_property('joern')
+    def workspace(self):
+        return self.get_property('workspace')
 
 
 class Files(Data):
