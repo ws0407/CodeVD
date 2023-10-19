@@ -181,7 +181,7 @@ def test_add_header():
 # test_add_header()
 
 
-test_joern_process()
+# test_joern_process()
 
 # test_joern_parse()
 
@@ -243,11 +243,11 @@ test_joern_process()
 # import pickle
 # import json
 #
-# with open('data/cpg/0_cpg.pkl', 'rb') as f:
-#     data: pd.DataFrame = pickle.load(f)
-#
-# print(data.columns)
-# print(data.head(2))
+with open('data/cpg/0_cpg.pkl', 'rb') as f:
+    data: pd.DataFrame = pickle.load(f)
+
+print(data.columns)
+print(data.head(2))
 #
 # with open('data/cpg/test.json', 'w', encoding="utf-8") as f:
 #     json.dump(data.head(10).to_json(), f, ensure_ascii=False)

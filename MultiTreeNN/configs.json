@@ -16,7 +16,7 @@
     },
     "create" : {
         "filter_column_value": {"project" : "qemu"},
-        "slice_size": 10,
+        "slice_size": 100,
         "joern_cli_dir": "/data/data/ws/joern-1.0/joern-cli/",
         "script": "/data/data/ws/CodeVD/MultiTreeNN/script/graph-for-funcs.sc"
     },

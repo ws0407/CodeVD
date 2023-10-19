@@ -165,8 +165,8 @@ def joern_parse(joern_path, input_path, output_path, file_name):
     :return: str
     """
     out_file = file_name + ".bin"
-    if sys.gettrace() is not None:
-        return out_file
+    # if sys.gettrace() is not None:
+    #     return out_file
     joern_parse_call = subprocess.run([joern_path + "joern-parse", input_path, "--output", output_path + out_file],
                                       stdout=subprocess.PIPE, check=True)
     print(str(joern_parse_call))
@@ -187,10 +187,12 @@ def joern_create(joern_path, script_path, in_path, out_path, cpg_files):
     for cpg_file in cpg_files:
         json_file_name = f"{cpg_file.split('.')[0]}.json"
         json_files.append(json_file_name)
-
         print(in_path+cpg_file)
         if os.path.exists(in_path+cpg_file):
             json_out = f"{os.path.abspath(out_path)}/{json_file_name}"
+            if os.path.exists(json_out):
+                print('pass', json_out)
+                continue
             import_cpg_cmd = f"importCpg(\"{os.path.abspath(in_path)}/{cpg_file}\")\r".encode()
             run_script_cmd = f"cpg.runScript(\"{script_path}\").toString() |> \"{json_out}\"\r".encode()
             joern_process.stdin.write(import_cpg_cmd)

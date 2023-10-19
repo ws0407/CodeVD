@@ -6,6 +6,7 @@
 import argparse
 import gc
 import shutil
+import os
 from argparse import ArgumentParser
 
 from gensim.models.word2vec import Word2Vec
@@ -24,9 +25,9 @@ DEVICE = FILES.get_device()
 
 def prepare_task():
     context = config.Create()
-    raw = pre.read_json(PATHS.raw, FILES.raw)
-    filtered = pre.apply_filter(raw, pre.select)
-    filtered = pre.clean(filtered)
+    raw = pre.read_json(PATHS.raw, FILES.raw)   # pd.DataFrame类型
+    # filtered = pre.apply_filter(raw, pre.select)
+    filtered = pre.clean(raw)
     pre.drop(filtered, ["commit_id"])   # "project"
     slices = pre.slice_frame(filtered, context.slice_size)
     # s是序号(0,1,2,...), slice是切片，slice_size行n列的数据
@@ -35,9 +36,12 @@ def prepare_task():
     cpg_files = []
     # Create CPG binary files
     for s, slice in slices:
+        cpg_files.append(f"{s}_{FILES.cpg}.bin")
+        if os.path.exists(PATHS.cpg + f"{s}_{FILES.cpg}.bin"):
+            print(f"pass: {s}_{FILES.cpg}.bin")
+            continue
         pre.to_files(slice, PATHS.code, PATHS.header)
         cpg_file = pre.joern_parse(context.joern_cli_dir, PATHS.code, PATHS.cpg, f"{s}_{FILES.cpg}")
-        cpg_files.append(cpg_file)
         print(f"Dataset {s} to cpg.")
         shutil.rmtree(PATHS.code)  # 删除原有c文件
     # Create CPG with graphs json files
