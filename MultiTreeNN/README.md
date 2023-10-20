@@ -15,3 +15,29 @@
 - 然后利用一层带有attention的RNN将特征结合起来（由于输入树的个数不知道，不方便用MLP）
 
 ## 训练
+
+## 服务器
+
+wutiru：387G √
+
+xiaowentao：123G
+
+maokelong：66G
+
+xiaorenjie：109G
+
+yangzhenyu：48G
+
+chenyuzhao：32K
+
+pengzhendong：5.5M
+
+zawnpn：32G
+
+liyi：139G
+
+lifuyang：29G
+
+wuruohao：2G
+
+zlp：21G

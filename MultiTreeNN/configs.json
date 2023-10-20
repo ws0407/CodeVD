@@ -21,14 +21,14 @@
         "script": "/data/data/ws/CodeVD/MultiTreeNN/script/graph-for-funcs.sc"
     },
     "paths" : {
-        "cpg" : "data/cpg/",
-        "code" : "data/cpg/code/",
-        "header": "data/raw/",
-        "raw" : "data/raw/",
-        "input" : "data/input/",
-        "model" : "data/model/",
-        "tokens" : "data/tokens/",
-        "w2v" : "data/w2v/"
+        "cpg" : "/data/data/ws/CodeVD/MultiTreeNN/data/cpg/",
+        "code" : "/data/data/ws/CodeVD/MultiTreeNN/data/cpg/code/",
+        "header": "/data/data/ws/CodeVD/MultiTreeNN/data/raw/",
+        "raw" : "/data/data/ws/CodeVD/MultiTreeNN/data/raw/",
+        "input" : "/data/data/ws/CodeVD/MultiTreeNN/data/input/",
+        "model" : "/data/data/ws/CodeVD/MultiTreeNN/data/model/",
+        "tokens" : "/data/data/ws/CodeVD/MultiTreeNN/data/tokens/",
+        "w2v" : "/data/data/ws/CodeVD/MultiTreeNN/data/w2v/"
     },
     "files" : {
         "raw" : "dataset.json",
