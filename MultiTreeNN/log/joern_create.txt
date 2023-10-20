@@ -378,3 +378,171 @@ Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/119_cpg.bin/cp
 Creating project `120_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/120_cpg.bin`
 Creating working copy of CPG to be safe
 Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/120_cpg.bin/cpg.bin.tmp
+Creating project `121_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/121_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/121_cpg.bin/cpg.bin.tmp
+Creating project `122_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/122_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/122_cpg.bin/cpg.bin.tmp
+Creating project `123_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/123_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/123_cpg.bin/cpg.bin.tmp
+Creating project `124_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/124_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/124_cpg.bin/cpg.bin.tmp
+Creating project `125_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/125_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/125_cpg.bin/cpg.bin.tmp
+java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+  java.lang.String.encodeWithEncoder(String.java:882)
+  java.lang.String.encode(String.java:855)
+  java.lang.String.getBytes(String.java:1793)
+  better.files.File.write(File.scala:386)
+  io.joern.console.package$StringOps.$bar$greater(package.scala:27)
+  ammonite.$sess.cmd361$.<clinit>(cmd361.sc:1)
+
+Creating project `126_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/126_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/126_cpg.bin/cpg.bin.tmp
+Creating project `127_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/127_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/127_cpg.bin/cpg.bin.tmp
+Creating project `128_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/128_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/128_cpg.bin/cpg.bin.tmp
+Creating project `129_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/129_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/129_cpg.bin/cpg.bin.tmp
+Creating project `130_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/130_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/130_cpg.bin/cpg.bin.tmp
+Creating project `131_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/131_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/131_cpg.bin/cpg.bin.tmp
+Creating project `132_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/132_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/132_cpg.bin/cpg.bin.tmp
+Creating project `133_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/133_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/133_cpg.bin/cpg.bin.tmp
+Creating project `134_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/134_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/134_cpg.bin/cpg.bin.tmp
+Creating project `135_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/135_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/135_cpg.bin/cpg.bin.tmp
+Creating project `136_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/136_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/136_cpg.bin/cpg.bin.tmp
+Creating project `137_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/137_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/137_cpg.bin/cpg.bin.tmp
+Creating project `138_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/138_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/138_cpg.bin/cpg.bin.tmp
+Creating project `139_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/139_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/139_cpg.bin/cpg.bin.tmp
+Creating project `140_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/140_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/140_cpg.bin/cpg.bin.tmp
+Creating project `141_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/141_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/141_cpg.bin/cpg.bin.tmp
+Creating project `142_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/142_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/142_cpg.bin/cpg.bin.tmp
+Creating project `143_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/143_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/143_cpg.bin/cpg.bin.tmp
+Creating project `144_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/144_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/144_cpg.bin/cpg.bin.tmp
+Creating project `145_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/145_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/145_cpg.bin/cpg.bin.tmp
+Creating project `146_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/146_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/146_cpg.bin/cpg.bin.tmp
+Creating project `147_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/147_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/147_cpg.bin/cpg.bin.tmp
+Creating project `148_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/148_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/148_cpg.bin/cpg.bin.tmp
+Creating project `149_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/149_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/149_cpg.bin/cpg.bin.tmp
+Creating project `150_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/150_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/150_cpg.bin/cpg.bin.tmp
+Creating project `151_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/151_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/151_cpg.bin/cpg.bin.tmp
+Creating project `152_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/152_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/152_cpg.bin/cpg.bin.tmp
+Creating project `153_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/153_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/153_cpg.bin/cpg.bin.tmp
+Creating project `154_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/154_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/154_cpg.bin/cpg.bin.tmp
+Creating project `155_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/155_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/155_cpg.bin/cpg.bin.tmp
+Creating project `156_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/156_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/156_cpg.bin/cpg.bin.tmp
+Creating project `157_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/157_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/157_cpg.bin/cpg.bin.tmp
+Creating project `158_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/158_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/158_cpg.bin/cpg.bin.tmp
+Creating project `159_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/159_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/159_cpg.bin/cpg.bin.tmp
+Creating project `160_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/160_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/160_cpg.bin/cpg.bin.tmp
+Creating project `161_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/161_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/161_cpg.bin/cpg.bin.tmp
+Creating project `162_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/162_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/162_cpg.bin/cpg.bin.tmp
+Creating project `163_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/163_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/163_cpg.bin/cpg.bin.tmp
+Creating project `164_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/164_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/164_cpg.bin/cpg.bin.tmp
+Creating project `165_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/165_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/165_cpg.bin/cpg.bin.tmp
+Creating project `166_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/166_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/166_cpg.bin/cpg.bin.tmp
+Creating project `167_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/167_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/167_cpg.bin/cpg.bin.tmp
+Creating project `168_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/168_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/168_cpg.bin/cpg.bin.tmp
+Creating project `169_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/169_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/169_cpg.bin/cpg.bin.tmp
+Creating project `170_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/170_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/170_cpg.bin/cpg.bin.tmp
+Creating project `171_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/171_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/171_cpg.bin/cpg.bin.tmp
+Creating project `172_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/172_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/172_cpg.bin/cpg.bin.tmp
+Creating project `173_cpg.bin` for CPG at `/data/data/ws/CodeVD/MultiTreeNN/data/cpg/173_cpg.bin`
+Creating working copy of CPG to be safe
+Loading base CPG from: /data/data/ws/CodeVD/MultiTreeNN/workspace/173_cpg.bin/cpg.bin.tmp
+2023-10-20 16:09:13.284 WARN HeapUsageMonitor: heap usage after GC: 96% -> will clear some references (if possible)

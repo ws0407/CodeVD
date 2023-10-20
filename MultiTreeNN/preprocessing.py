@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 import os
 
+from typing import List
+
 from utils import parse
 from utils.objects import InputDataset
 
@@ -173,7 +175,7 @@ def joern_parse(joern_path, input_path, output_path, file_name):
     return out_file
 
 
-def joern_create(joern_path, script_path, in_path, out_path, cpg_files):
+def joern_create(joern_path, script_path, in_path, out_path, cpg_files: List[str]):
     """将所有的cpg的bin文件处理成json的格式，通过执行joern命令打开交互窗口，并运行script脚本处理
     :param script_path: scala目录
     :param joern_path: joern-cli安装目录
@@ -190,7 +192,8 @@ def joern_create(joern_path, script_path, in_path, out_path, cpg_files):
         print(in_path+cpg_file)
         if os.path.exists(in_path+cpg_file):
             json_out = f"{os.path.abspath(out_path)}/{json_file_name}"
-            if os.path.exists(json_out):
+            if os.path.exists(json_out) or \
+                    os.path.exists(out_path+str(int(cpg_file[:cpg_file.find('_')])+1)+'_cpg.json'):
                 print('pass', json_out)
                 continue
             import_cpg_cmd = f"importCpg(\"{os.path.abspath(in_path)}/{cpg_file}\")\r".encode()
