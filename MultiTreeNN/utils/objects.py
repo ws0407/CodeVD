@@ -5,7 +5,7 @@ from torch.utils.data import Dataset as TorchDataset
 from torch_geometric.data import DataLoader
 import pandas as pd
 
-import log as logger
+from .log import *
 from sklearn.metrics import confusion_matrix
 from sklearn import metrics
 
@@ -191,7 +191,7 @@ class Node:
         self.type = node_labels.get(self.label)  # Label embedding
 
         if self.type is None:
-            logger.log_warning("node", f"LABEL {self.label} not in labels!")
+            log_warning("node", f"LABEL {self.label} not in labels!")
             self.type = len(node_labels) + 1
 
 
@@ -248,7 +248,7 @@ class Metrics:
         msg = ' - '.join(
             [f"({name[:3]} {round(metric, 3)})" for name, metric in _metrics.items() if name not in excluded])
 
-        logger.log_info('metrics', msg)
+        log_info('metrics', msg)
 
     def error(self):
         errors = [(abs(score - (1 if score >= 0.5 else 0)) / score) * 100 for score, label in

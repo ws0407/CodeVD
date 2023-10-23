@@ -16,7 +16,7 @@
     },
     "create" : {
         "filter_column_value": {"project" : "qemu"},
-        "slice_size": 100,
+        "slice_size": 50,
         "joern_cli_dir": "/data/data/ws/joern-1.0/joern-cli/",
         "script": "/data/data/ws/CodeVD/MultiTreeNN/script/graph-for-funcs.sc"
     },
@@ -40,7 +40,7 @@
     },
     "embed" : {
         "nodes_dim" : 205,
-        "word2vec_args": {"size" : 100, "alpha" : 0.01, "window" : 5, "min_count" : 3, "sample" : 1e-5,
+        "word2vec_args": {"vector_size" : 100, "alpha" : 0.01, "window" : 5, "min_count" : 3, "sample" : 1e-5,
                 "workers" : 4, "sg" : 1, "hs" : 0, "negative" : 5
             },
         "edge_type": "Ast"

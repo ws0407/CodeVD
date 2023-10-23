@@ -66,12 +66,14 @@ def embed_task():
     w2vmodel = Word2Vec(**context.w2v_args)
     w2v_init = True
     for pkl_file in dataset_files:
+        if pkl_file != '117_cpg.pkl':
+            continue
         file_name = pkl_file.split(".")[0]
         cpg_dataset = pre.load_pickle(PATHS.cpg, pkl_file)
         tokens_dataset = pre.tokenize(cpg_dataset)
         pre.df_to_pickle(tokens_dataset, PATHS.tokens, f"{file_name}_{FILES.tokens}")
         # word2vec used to learn the initial embedding of each token
-        w2vmodel.build_vocab(sentences=tokens_dataset.tokens, update=not w2v_init)
+        w2vmodel.build_vocab(tokens_dataset.tokens, update=not w2v_init)
         w2vmodel.train(tokens_dataset.tokens, total_examples=w2vmodel.corpus_count, epochs=1)
         if w2v_init:
             w2v_init = False
@@ -127,7 +129,6 @@ def main():
     parser.add_argument('-e', '--embed', help='Embed dataset', action='store_true')
     parser.add_argument('-t', '--train', help='Train model', action='store_true')
     parser.add_argument('-ts', '--train_stopping', help='Train model with early stopping', action='store_true')
-
     args = parser.parse_args()
 
     # print(args.prepare, args.embed, args.train, args.train_stopping)

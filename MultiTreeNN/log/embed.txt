@@ -1,0 +1,3126 @@
+/data/data/ws/anaconda3/envs/CodeVD/bin/python3 /data/data/ws/CodeVD/MultiTreeNN/main.py -e
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 25265 to 25314
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 111.1 KB
+CPG cut - original nodes: 787 to max: 205
+CPG cut - original nodes: 746 to max: 205
+CPG cut - original nodes: 314 to max: 205
+CPG cut - original nodes: 344 to max: 205
+CPG cut - original nodes: 384 to max: 205
+CPG cut - original nodes: 477 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 629 to max: 205
+CPG cut - original nodes: 1312 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 1050 to max: 205
+CPG cut - original nodes: 415 to max: 205
+CPG cut - original nodes: 263 to max: 205
+Saving input dataset 503_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 25215 to 25264
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 126.4 KB
+CPG cut - original nodes: 299 to max: 205
+CPG cut - original nodes: 295 to max: 205
+CPG cut - original nodes: 1011 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 672 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 1495 to max: 205
+CPG cut - original nodes: 1243 to max: 205
+CPG cut - original nodes: 503 to max: 205
+CPG cut - original nodes: 265 to max: 205
+CPG cut - original nodes: 334 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 574 to max: 205
+CPG cut - original nodes: 475 to max: 205
+CPG cut - original nodes: 662 to max: 205
+Saving input dataset 502_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 0 to 49
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 140.3 KB
+CPG cut - original nodes: 206 to max: 205
+CPG cut - original nodes: 3824 to max: 205
+CPG cut - original nodes: 405 to max: 205
+CPG cut - original nodes: 631 to max: 205
+CPG cut - original nodes: 551 to max: 205
+CPG cut - original nodes: 245 to max: 205
+CPG cut - original nodes: 1573 to max: 205
+CPG cut - original nodes: 295 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 225 to max: 205
+CPG cut - original nodes: 266 to max: 205
+CPG cut - original nodes: 368 to max: 205
+CPG cut - original nodes: 522 to max: 205
+CPG cut - original nodes: 695 to max: 205
+CPG cut - original nodes: 306 to max: 205
+CPG cut - original nodes: 338 to max: 205
+CPG cut - original nodes: 705 to max: 205
+Saving input dataset 0_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 50 to 99
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 86.1 KB
+CPG cut - original nodes: 371 to max: 205
+CPG cut - original nodes: 477 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 394 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 646 to max: 205
+CPG cut - original nodes: 286 to max: 205
+CPG cut - original nodes: 315 to max: 205
+CPG cut - original nodes: 236 to max: 205
+CPG cut - original nodes: 649 to max: 205
+Saving input dataset 1_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 100 to 149
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 100.0 KB
+CPG cut - original nodes: 256 to max: 205
+CPG cut - original nodes: 290 to max: 205
+CPG cut - original nodes: 357 to max: 205
+CPG cut - original nodes: 663 to max: 205
+CPG cut - original nodes: 219 to max: 205
+CPG cut - original nodes: 366 to max: 205
+CPG cut - original nodes: 340 to max: 205
+CPG cut - original nodes: 1429 to max: 205
+CPG cut - original nodes: 255 to max: 205
+CPG cut - original nodes: 357 to max: 205
+CPG cut - original nodes: 1065 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 428 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 217 to max: 205
+Saving input dataset 2_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 150 to 199
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 121.5 KB
+CPG cut - original nodes: 732 to max: 205
+CPG cut - original nodes: 330 to max: 205
+CPG cut - original nodes: 492 to max: 205
+CPG cut - original nodes: 646 to max: 205
+CPG cut - original nodes: 603 to max: 205
+CPG cut - original nodes: 225 to max: 205
+CPG cut - original nodes: 302 to max: 205
+CPG cut - original nodes: 621 to max: 205
+CPG cut - original nodes: 782 to max: 205
+CPG cut - original nodes: 322 to max: 205
+CPG cut - original nodes: 309 to max: 205
+CPG cut - original nodes: 577 to max: 205
+CPG cut - original nodes: 402 to max: 205
+CPG cut - original nodes: 1774 to max: 205
+Saving input dataset 3_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 200 to 249
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 78.9 KB
+CPG cut - original nodes: 272 to max: 205
+CPG cut - original nodes: 297 to max: 205
+CPG cut - original nodes: 438 to max: 205
+CPG cut - original nodes: 269 to max: 205
+CPG cut - original nodes: 248 to max: 205
+CPG cut - original nodes: 247 to max: 205
+CPG cut - original nodes: 1284 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 391 to max: 205
+Saving input dataset 4_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 250 to 299
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 116.2 KB
+CPG cut - original nodes: 538 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 245 to max: 205
+CPG cut - original nodes: 506 to max: 205
+CPG cut - original nodes: 1556 to max: 205
+CPG cut - original nodes: 478 to max: 205
+CPG cut - original nodes: 518 to max: 205
+CPG cut - original nodes: 896 to max: 205
+CPG cut - original nodes: 321 to max: 205
+CPG cut - original nodes: 417 to max: 205
+CPG cut - original nodes: 214 to max: 205
+CPG cut - original nodes: 506 to max: 205
+CPG cut - original nodes: 301 to max: 205
+Saving input dataset 5_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 300 to 349
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 105.9 KB
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 742 to max: 205
+CPG cut - original nodes: 641 to max: 205
+CPG cut - original nodes: 488 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 410 to max: 205
+CPG cut - original nodes: 434 to max: 205
+CPG cut - original nodes: 1096 to max: 205
+CPG cut - original nodes: 299 to max: 205
+CPG cut - original nodes: 617 to max: 205
+CPG cut - original nodes: 248 to max: 205
+Saving input dataset 6_cpg with size 48.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 350 to 399
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 119.3 KB
+CPG cut - original nodes: 268 to max: 205
+CPG cut - original nodes: 290 to max: 205
+CPG cut - original nodes: 269 to max: 205
+CPG cut - original nodes: 467 to max: 205
+CPG cut - original nodes: 858 to max: 205
+CPG cut - original nodes: 297 to max: 205
+CPG cut - original nodes: 2859 to max: 205
+CPG cut - original nodes: 521 to max: 205
+CPG cut - original nodes: 366 to max: 205
+CPG cut - original nodes: 569 to max: 205
+CPG cut - original nodes: 608 to max: 205
+CPG cut - original nodes: 770 to max: 205
+CPG cut - original nodes: 315 to max: 205
+Saving input dataset 7_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 400 to 449
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 103.5 KB
+CPG cut - original nodes: 407 to max: 205
+CPG cut - original nodes: 951 to max: 205
+CPG cut - original nodes: 576 to max: 205
+CPG cut - original nodes: 733 to max: 205
+CPG cut - original nodes: 356 to max: 205
+CPG cut - original nodes: 438 to max: 205
+CPG cut - original nodes: 617 to max: 205
+CPG cut - original nodes: 269 to max: 205
+CPG cut - original nodes: 217 to max: 205
+CPG cut - original nodes: 811 to max: 205
+Saving input dataset 8_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 450 to 499
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 120.6 KB
+CPG cut - original nodes: 243 to max: 205
+CPG cut - original nodes: 308 to max: 205
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 378 to max: 205
+CPG cut - original nodes: 664 to max: 205
+CPG cut - original nodes: 1774 to max: 205
+CPG cut - original nodes: 654 to max: 205
+CPG cut - original nodes: 1653 to max: 205
+CPG cut - original nodes: 435 to max: 205
+CPG cut - original nodes: 246 to max: 205
+CPG cut - original nodes: 296 to max: 205
+CPG cut - original nodes: 495 to max: 205
+CPG cut - original nodes: 285 to max: 205
+CPG cut - original nodes: 366 to max: 205
+Saving input dataset 9_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 500 to 549
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 91.2 KB
+CPG cut - original nodes: 406 to max: 205
+CPG cut - original nodes: 357 to max: 205
+CPG cut - original nodes: 265 to max: 205
+CPG cut - original nodes: 461 to max: 205
+CPG cut - original nodes: 1498 to max: 205
+CPG cut - original nodes: 797 to max: 205
+CPG cut - original nodes: 212 to max: 205
+Saving input dataset 10_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 550 to 599
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 258.1 KB
+CPG cut - original nodes: 324 to max: 205
+CPG cut - original nodes: 303 to max: 205
+CPG cut - original nodes: 500 to max: 205
+CPG cut - original nodes: 430 to max: 205
+CPG cut - original nodes: 808 to max: 205
+CPG cut - original nodes: 11156 to max: 205
+CPG cut - original nodes: 238 to max: 205
+CPG cut - original nodes: 229 to max: 205
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 631 to max: 205
+CPG cut - original nodes: 528 to max: 205
+CPG cut - original nodes: 730 to max: 205
+CPG cut - original nodes: 462 to max: 205
+CPG cut - original nodes: 573 to max: 205
+CPG cut - original nodes: 526 to max: 205
+CPG cut - original nodes: 732 to max: 205
+CPG cut - original nodes: 209 to max: 205
+CPG cut - original nodes: 253 to max: 205
+Saving input dataset 11_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 600 to 649
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 78.1 KB
+CPG cut - original nodes: 252 to max: 205
+CPG cut - original nodes: 780 to max: 205
+CPG cut - original nodes: 250 to max: 205
+CPG cut - original nodes: 320 to max: 205
+CPG cut - original nodes: 420 to max: 205
+CPG cut - original nodes: 427 to max: 205
+CPG cut - original nodes: 626 to max: 205
+CPG cut - original nodes: 594 to max: 205
+CPG cut - original nodes: 511 to max: 205
+CPG cut - original nodes: 223 to max: 205
+Saving input dataset 12_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 650 to 699
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 102.5 KB
+CPG cut - original nodes: 217 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 340 to max: 205
+CPG cut - original nodes: 585 to max: 205
+CPG cut - original nodes: 236 to max: 205
+CPG cut - original nodes: 489 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 395 to max: 205
+CPG cut - original nodes: 284 to max: 205
+CPG cut - original nodes: 458 to max: 205
+CPG cut - original nodes: 443 to max: 205
+CPG cut - original nodes: 651 to max: 205
+CPG cut - original nodes: 785 to max: 205
+CPG cut - original nodes: 354 to max: 205
+Saving input dataset 13_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 700 to 749
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 108.0 KB
+CPG cut - original nodes: 309 to max: 205
+CPG cut - original nodes: 471 to max: 205
+CPG cut - original nodes: 438 to max: 205
+CPG cut - original nodes: 218 to max: 205
+CPG cut - original nodes: 1386 to max: 205
+CPG cut - original nodes: 834 to max: 205
+CPG cut - original nodes: 214 to max: 205
+CPG cut - original nodes: 300 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 375 to max: 205
+CPG cut - original nodes: 348 to max: 205
+CPG cut - original nodes: 393 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 329 to max: 205
+Saving input dataset 14_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 750 to 799
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 102.4 KB
+CPG cut - original nodes: 268 to max: 205
+CPG cut - original nodes: 1099 to max: 205
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 340 to max: 205
+CPG cut - original nodes: 344 to max: 205
+CPG cut - original nodes: 2088 to max: 205
+CPG cut - original nodes: 1141 to max: 205
+CPG cut - original nodes: 240 to max: 205
+Saving input dataset 15_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 800 to 851
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 121.1 KB
+CPG cut - original nodes: 1332 to max: 205
+CPG cut - original nodes: 811 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 413 to max: 205
+CPG cut - original nodes: 782 to max: 205
+CPG cut - original nodes: 446 to max: 205
+CPG cut - original nodes: 1325 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 241 to max: 205
+CPG cut - original nodes: 213 to max: 205
+CPG cut - original nodes: 255 to max: 205
+CPG cut - original nodes: 324 to max: 205
+CPG cut - original nodes: 750 to max: 205
+Saving input dataset 16_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 852 to 901
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 76.7 KB
+CPG cut - original nodes: 425 to max: 205
+CPG cut - original nodes: 488 to max: 205
+CPG cut - original nodes: 224 to max: 205
+CPG cut - original nodes: 350 to max: 205
+CPG cut - original nodes: 251 to max: 205
+CPG cut - original nodes: 266 to max: 205
+CPG cut - original nodes: 228 to max: 205
+CPG cut - original nodes: 208 to max: 205
+CPG cut - original nodes: 284 to max: 205
+CPG cut - original nodes: 213 to max: 205
+CPG cut - original nodes: 226 to max: 205
+Saving input dataset 17_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 902 to 951
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 112.0 KB
+CPG cut - original nodes: 399 to max: 205
+CPG cut - original nodes: 212 to max: 205
+CPG cut - original nodes: 344 to max: 205
+CPG cut - original nodes: 600 to max: 205
+CPG cut - original nodes: 292 to max: 205
+CPG cut - original nodes: 290 to max: 205
+CPG cut - original nodes: 263 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 248 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 553 to max: 205
+CPG cut - original nodes: 751 to max: 205
+CPG cut - original nodes: 408 to max: 205
+CPG cut - original nodes: 501 to max: 205
+CPG cut - original nodes: 901 to max: 205
+CPG cut - original nodes: 922 to max: 205
+Saving input dataset 18_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 952 to 1002
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 214.6 KB
+CPG cut - original nodes: 1172 to max: 205
+CPG cut - original nodes: 3625 to max: 205
+CPG cut - original nodes: 338 to max: 205
+CPG cut - original nodes: 1596 to max: 205
+CPG cut - original nodes: 331 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 227 to max: 205
+Saving input dataset 19_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1003 to 1052
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 113.3 KB
+CPG cut - original nodes: 323 to max: 205
+CPG cut - original nodes: 268 to max: 205
+CPG cut - original nodes: 271 to max: 205
+CPG cut - original nodes: 248 to max: 205
+CPG cut - original nodes: 504 to max: 205
+CPG cut - original nodes: 499 to max: 205
+CPG cut - original nodes: 416 to max: 205
+CPG cut - original nodes: 224 to max: 205
+CPG cut - original nodes: 1130 to max: 205
+CPG cut - original nodes: 250 to max: 205
+CPG cut - original nodes: 282 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 1435 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 545 to max: 205
+CPG cut - original nodes: 356 to max: 205
+Saving input dataset 20_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1053 to 1102
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 245.4 KB
+CPG cut - original nodes: 1078 to max: 205
+CPG cut - original nodes: 252 to max: 205
+CPG cut - original nodes: 226 to max: 205
+CPG cut - original nodes: 356 to max: 205
+CPG cut - original nodes: 302 to max: 205
+CPG cut - original nodes: 1052 to max: 205
+CPG cut - original nodes: 775 to max: 205
+CPG cut - original nodes: 273 to max: 205
+CPG cut - original nodes: 452 to max: 205
+CPG cut - original nodes: 527 to max: 205
+CPG cut - original nodes: 910 to max: 205
+CPG cut - original nodes: 292 to max: 205
+CPG cut - original nodes: 11138 to max: 205
+Saving input dataset 21_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1103 to 1152
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 104.8 KB
+CPG cut - original nodes: 465 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 299 to max: 205
+CPG cut - original nodes: 414 to max: 205
+CPG cut - original nodes: 533 to max: 205
+CPG cut - original nodes: 504 to max: 205
+CPG cut - original nodes: 212 to max: 205
+CPG cut - original nodes: 250 to max: 205
+CPG cut - original nodes: 328 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 343 to max: 205
+CPG cut - original nodes: 708 to max: 205
+CPG cut - original nodes: 566 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 312 to max: 205
+CPG cut - original nodes: 305 to max: 205
+Saving input dataset 22_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1153 to 1202
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 95.2 KB
+CPG cut - original nodes: 704 to max: 205
+CPG cut - original nodes: 334 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 328 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 238 to max: 205
+CPG cut - original nodes: 914 to max: 205
+CPG cut - original nodes: 224 to max: 205
+CPG cut - original nodes: 572 to max: 205
+CPG cut - original nodes: 377 to max: 205
+Saving input dataset 23_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1203 to 1252
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 123.7 KB
+CPG cut - original nodes: 863 to max: 205
+CPG cut - original nodes: 1454 to max: 205
+CPG cut - original nodes: 282 to max: 205
+CPG cut - original nodes: 237 to max: 205
+CPG cut - original nodes: 292 to max: 205
+CPG cut - original nodes: 412 to max: 205
+CPG cut - original nodes: 896 to max: 205
+CPG cut - original nodes: 677 to max: 205
+CPG cut - original nodes: 283 to max: 205
+CPG cut - original nodes: 1017 to max: 205
+CPG cut - original nodes: 311 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 612 to max: 205
+CPG cut - original nodes: 387 to max: 205
+CPG cut - original nodes: 355 to max: 205
+Saving input dataset 24_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1253 to 1302
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 97.0 KB
+CPG cut - original nodes: 408 to max: 205
+CPG cut - original nodes: 268 to max: 205
+CPG cut - original nodes: 938 to max: 205
+CPG cut - original nodes: 744 to max: 205
+CPG cut - original nodes: 788 to max: 205
+CPG cut - original nodes: 206 to max: 205
+CPG cut - original nodes: 286 to max: 205
+CPG cut - original nodes: 263 to max: 205
+CPG cut - original nodes: 427 to max: 205
+CPG cut - original nodes: 317 to max: 205
+CPG cut - original nodes: 358 to max: 205
+Saving input dataset 25_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1303 to 1352
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 117.0 KB
+CPG cut - original nodes: 272 to max: 205
+CPG cut - original nodes: 284 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 846 to max: 205
+CPG cut - original nodes: 355 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 377 to max: 205
+CPG cut - original nodes: 531 to max: 205
+CPG cut - original nodes: 787 to max: 205
+CPG cut - original nodes: 354 to max: 205
+CPG cut - original nodes: 272 to max: 205
+CPG cut - original nodes: 211 to max: 205
+Saving input dataset 26_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1353 to 1402
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 97.8 KB
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 332 to max: 205
+CPG cut - original nodes: 233 to max: 205
+CPG cut - original nodes: 379 to max: 205
+CPG cut - original nodes: 808 to max: 205
+CPG cut - original nodes: 311 to max: 205
+CPG cut - original nodes: 774 to max: 205
+CPG cut - original nodes: 391 to max: 205
+CPG cut - original nodes: 271 to max: 205
+CPG cut - original nodes: 428 to max: 205
+CPG cut - original nodes: 672 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 404 to max: 205
+CPG cut - original nodes: 363 to max: 205
+Saving input dataset 27_cpg with size 48.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1403 to 1452
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 97.2 KB
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 359 to max: 205
+CPG cut - original nodes: 272 to max: 205
+CPG cut - original nodes: 477 to max: 205
+CPG cut - original nodes: 234 to max: 205
+CPG cut - original nodes: 241 to max: 205
+CPG cut - original nodes: 339 to max: 205
+CPG cut - original nodes: 453 to max: 205
+CPG cut - original nodes: 332 to max: 205
+CPG cut - original nodes: 252 to max: 205
+CPG cut - original nodes: 453 to max: 205
+CPG cut - original nodes: 426 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 253 to max: 205
+CPG cut - original nodes: 234 to max: 205
+CPG cut - original nodes: 378 to max: 205
+CPG cut - original nodes: 965 to max: 205
+CPG cut - original nodes: 918 to max: 205
+Saving input dataset 28_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1453 to 1502
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 101.6 KB
+CPG cut - original nodes: 287 to max: 205
+CPG cut - original nodes: 333 to max: 205
+CPG cut - original nodes: 773 to max: 205
+CPG cut - original nodes: 425 to max: 205
+CPG cut - original nodes: 344 to max: 205
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 458 to max: 205
+CPG cut - original nodes: 837 to max: 205
+CPG cut - original nodes: 442 to max: 205
+CPG cut - original nodes: 463 to max: 205
+CPG cut - original nodes: 282 to max: 205
+CPG cut - original nodes: 1444 to max: 205
+CPG cut - original nodes: 265 to max: 205
+CPG cut - original nodes: 281 to max: 205
+CPG cut - original nodes: 245 to max: 205
+Saving input dataset 29_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1503 to 1552
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 89.8 KB
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 303 to max: 205
+CPG cut - original nodes: 395 to max: 205
+CPG cut - original nodes: 244 to max: 205
+CPG cut - original nodes: 417 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 333 to max: 205
+CPG cut - original nodes: 494 to max: 205
+CPG cut - original nodes: 285 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 1120 to max: 205
+CPG cut - original nodes: 465 to max: 205
+Saving input dataset 30_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1553 to 1602
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 190.1 KB
+CPG cut - original nodes: 483 to max: 205
+CPG cut - original nodes: 2942 to max: 205
+CPG cut - original nodes: 454 to max: 205
+CPG cut - original nodes: 3220 to max: 205
+CPG cut - original nodes: 379 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 271 to max: 205
+CPG cut - original nodes: 633 to max: 205
+CPG cut - original nodes: 356 to max: 205
+CPG cut - original nodes: 241 to max: 205
+CPG cut - original nodes: 571 to max: 205
+CPG cut - original nodes: 441 to max: 205
+CPG cut - original nodes: 955 to max: 205
+CPG cut - original nodes: 323 to max: 205
+CPG cut - original nodes: 261 to max: 205
+CPG cut - original nodes: 1307 to max: 205
+Saving input dataset 31_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1603 to 1653
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 154.1 KB
+CPG cut - original nodes: 262 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 328 to max: 205
+CPG cut - original nodes: 4347 to max: 205
+CPG cut - original nodes: 249 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 916 to max: 205
+CPG cut - original nodes: 417 to max: 205
+CPG cut - original nodes: 301 to max: 205
+CPG cut - original nodes: 408 to max: 205
+CPG cut - original nodes: 775 to max: 205
+CPG cut - original nodes: 1308 to max: 205
+CPG cut - original nodes: 465 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 302 to max: 205
+Saving input dataset 32_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1654 to 1703
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 81.3 KB
+CPG cut - original nodes: 540 to max: 205
+CPG cut - original nodes: 618 to max: 205
+CPG cut - original nodes: 266 to max: 205
+CPG cut - original nodes: 289 to max: 205
+CPG cut - original nodes: 393 to max: 205
+CPG cut - original nodes: 501 to max: 205
+CPG cut - original nodes: 364 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 486 to max: 205
+CPG cut - original nodes: 250 to max: 205
+Saving input dataset 33_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1704 to 1753
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 123.0 KB
+CPG cut - original nodes: 450 to max: 205
+CPG cut - original nodes: 705 to max: 205
+CPG cut - original nodes: 225 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 383 to max: 205
+CPG cut - original nodes: 753 to max: 205
+CPG cut - original nodes: 2010 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 445 to max: 205
+CPG cut - original nodes: 304 to max: 205
+CPG cut - original nodes: 206 to max: 205
+Saving input dataset 34_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1754 to 1803
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 111.7 KB
+CPG cut - original nodes: 547 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 484 to max: 205
+CPG cut - original nodes: 738 to max: 205
+CPG cut - original nodes: 264 to max: 205
+CPG cut - original nodes: 289 to max: 205
+CPG cut - original nodes: 333 to max: 205
+CPG cut - original nodes: 381 to max: 205
+CPG cut - original nodes: 384 to max: 205
+CPG cut - original nodes: 379 to max: 205
+CPG cut - original nodes: 721 to max: 205
+CPG cut - original nodes: 1144 to max: 205
+Saving input dataset 35_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1804 to 1853
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 131.5 KB
+CPG cut - original nodes: 222 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 1055 to max: 205
+CPG cut - original nodes: 1045 to max: 205
+CPG cut - original nodes: 1554 to max: 205
+CPG cut - original nodes: 298 to max: 205
+CPG cut - original nodes: 649 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 334 to max: 205
+CPG cut - original nodes: 206 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 1377 to max: 205
+CPG cut - original nodes: 216 to max: 205
+Saving input dataset 36_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1904 to 1954
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 110.4 KB
+CPG cut - original nodes: 456 to max: 205
+CPG cut - original nodes: 480 to max: 205
+CPG cut - original nodes: 415 to max: 205
+CPG cut - original nodes: 394 to max: 205
+CPG cut - original nodes: 824 to max: 205
+CPG cut - original nodes: 1523 to max: 205
+CPG cut - original nodes: 351 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 879 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 285 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 598 to max: 205
+Saving input dataset 38_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 1955 to 2004
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 78.1 KB
+CPG cut - original nodes: 497 to max: 205
+CPG cut - original nodes: 210 to max: 205
+CPG cut - original nodes: 526 to max: 205
+CPG cut - original nodes: 409 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 210 to max: 205
+CPG cut - original nodes: 337 to max: 205
+CPG cut - original nodes: 294 to max: 205
+CPG cut - original nodes: 507 to max: 205
+Saving input dataset 39_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2005 to 2054
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 161.3 KB
+CPG cut - original nodes: 310 to max: 205
+CPG cut - original nodes: 311 to max: 205
+CPG cut - original nodes: 251 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 656 to max: 205
+CPG cut - original nodes: 7560 to max: 205
+CPG cut - original nodes: 337 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 232 to max: 205
+CPG cut - original nodes: 241 to max: 205
+CPG cut - original nodes: 1348 to max: 205
+Saving input dataset 40_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2055 to 2104
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 109.1 KB
+CPG cut - original nodes: 300 to max: 205
+CPG cut - original nodes: 329 to max: 205
+CPG cut - original nodes: 290 to max: 205
+CPG cut - original nodes: 217 to max: 205
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 472 to max: 205
+CPG cut - original nodes: 288 to max: 205
+CPG cut - original nodes: 320 to max: 205
+CPG cut - original nodes: 1383 to max: 205
+CPG cut - original nodes: 354 to max: 205
+CPG cut - original nodes: 306 to max: 205
+CPG cut - original nodes: 839 to max: 205
+Saving input dataset 41_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2105 to 2154
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 111.9 KB
+CPG cut - original nodes: 294 to max: 205
+CPG cut - original nodes: 517 to max: 205
+CPG cut - original nodes: 832 to max: 205
+CPG cut - original nodes: 543 to max: 205
+CPG cut - original nodes: 266 to max: 205
+CPG cut - original nodes: 280 to max: 205
+CPG cut - original nodes: 469 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 485 to max: 205
+CPG cut - original nodes: 290 to max: 205
+CPG cut - original nodes: 609 to max: 205
+CPG cut - original nodes: 330 to max: 205
+CPG cut - original nodes: 460 to max: 205
+CPG cut - original nodes: 1588 to max: 205
+CPG cut - original nodes: 763 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 482 to max: 205
+Saving input dataset 42_cpg with size 48.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2155 to 2204
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 128.2 KB
+CPG cut - original nodes: 391 to max: 205
+CPG cut - original nodes: 218 to max: 205
+CPG cut - original nodes: 440 to max: 205
+CPG cut - original nodes: 530 to max: 205
+CPG cut - original nodes: 245 to max: 205
+CPG cut - original nodes: 241 to max: 205
+CPG cut - original nodes: 476 to max: 205
+CPG cut - original nodes: 662 to max: 205
+CPG cut - original nodes: 405 to max: 205
+CPG cut - original nodes: 336 to max: 205
+CPG cut - original nodes: 1879 to max: 205
+CPG cut - original nodes: 526 to max: 205
+CPG cut - original nodes: 975 to max: 205
+CPG cut - original nodes: 247 to max: 205
+Saving input dataset 43_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2205 to 2254
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 87.5 KB
+CPG cut - original nodes: 791 to max: 205
+CPG cut - original nodes: 378 to max: 205
+CPG cut - original nodes: 313 to max: 205
+CPG cut - original nodes: 299 to max: 205
+CPG cut - original nodes: 401 to max: 205
+CPG cut - original nodes: 255 to max: 205
+CPG cut - original nodes: 535 to max: 205
+CPG cut - original nodes: 442 to max: 205
+CPG cut - original nodes: 309 to max: 205
+CPG cut - original nodes: 328 to max: 205
+CPG cut - original nodes: 529 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 389 to max: 205
+CPG cut - original nodes: 455 to max: 205
+Saving input dataset 44_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2255 to 2304
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 109.3 KB
+CPG cut - original nodes: 444 to max: 205
+CPG cut - original nodes: 292 to max: 205
+CPG cut - original nodes: 358 to max: 205
+CPG cut - original nodes: 274 to max: 205
+CPG cut - original nodes: 446 to max: 205
+CPG cut - original nodes: 313 to max: 205
+CPG cut - original nodes: 344 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 285 to max: 205
+CPG cut - original nodes: 2762 to max: 205
+CPG cut - original nodes: 548 to max: 205
+CPG cut - original nodes: 720 to max: 205
+Saving input dataset 45_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2305 to 2354
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 121.2 KB
+CPG cut - original nodes: 606 to max: 205
+CPG cut - original nodes: 652 to max: 205
+CPG cut - original nodes: 664 to max: 205
+CPG cut - original nodes: 398 to max: 205
+CPG cut - original nodes: 229 to max: 205
+CPG cut - original nodes: 266 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 578 to max: 205
+CPG cut - original nodes: 501 to max: 205
+CPG cut - original nodes: 379 to max: 205
+CPG cut - original nodes: 971 to max: 205
+CPG cut - original nodes: 1156 to max: 205
+CPG cut - original nodes: 371 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 845 to max: 205
+CPG cut - original nodes: 386 to max: 205
+Saving input dataset 46_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2355 to 2405
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 116.7 KB
+CPG cut - original nodes: 287 to max: 205
+CPG cut - original nodes: 1999 to max: 205
+CPG cut - original nodes: 861 to max: 205
+CPG cut - original nodes: 626 to max: 205
+CPG cut - original nodes: 213 to max: 205
+CPG cut - original nodes: 290 to max: 205
+CPG cut - original nodes: 354 to max: 205
+CPG cut - original nodes: 482 to max: 205
+CPG cut - original nodes: 678 to max: 205
+CPG cut - original nodes: 261 to max: 205
+CPG cut - original nodes: 348 to max: 205
+CPG cut - original nodes: 731 to max: 205
+CPG cut - original nodes: 240 to max: 205
+Saving input dataset 47_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2406 to 2455
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 115.0 KB
+CPG cut - original nodes: 527 to max: 205
+CPG cut - original nodes: 486 to max: 205
+CPG cut - original nodes: 636 to max: 205
+CPG cut - original nodes: 300 to max: 205
+CPG cut - original nodes: 281 to max: 205
+CPG cut - original nodes: 444 to max: 205
+CPG cut - original nodes: 1550 to max: 205
+CPG cut - original nodes: 480 to max: 205
+CPG cut - original nodes: 517 to max: 205
+CPG cut - original nodes: 539 to max: 205
+CPG cut - original nodes: 453 to max: 205
+CPG cut - original nodes: 365 to max: 205
+CPG cut - original nodes: 334 to max: 205
+CPG cut - original nodes: 347 to max: 205
+CPG cut - original nodes: 680 to max: 205
+Saving input dataset 48_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2456 to 2505
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 137.9 KB
+CPG cut - original nodes: 665 to max: 205
+CPG cut - original nodes: 436 to max: 205
+CPG cut - original nodes: 265 to max: 205
+CPG cut - original nodes: 402 to max: 205
+CPG cut - original nodes: 328 to max: 205
+CPG cut - original nodes: 674 to max: 205
+CPG cut - original nodes: 821 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 336 to max: 205
+CPG cut - original nodes: 817 to max: 205
+CPG cut - original nodes: 2094 to max: 205
+CPG cut - original nodes: 335 to max: 205
+CPG cut - original nodes: 1032 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 296 to max: 205
+Saving input dataset 49_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2506 to 2555
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 97.4 KB
+CPG cut - original nodes: 575 to max: 205
+CPG cut - original nodes: 427 to max: 205
+CPG cut - original nodes: 2101 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 214 to max: 205
+CPG cut - original nodes: 255 to max: 205
+CPG cut - original nodes: 333 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 311 to max: 205
+CPG cut - original nodes: 574 to max: 205
+CPG cut - original nodes: 240 to max: 205
+Saving input dataset 50_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2556 to 2605
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 84.6 KB
+CPG cut - original nodes: 402 to max: 205
+CPG cut - original nodes: 529 to max: 205
+CPG cut - original nodes: 642 to max: 205
+CPG cut - original nodes: 422 to max: 205
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 304 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 634 to max: 205
+CPG cut - original nodes: 250 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 225 to max: 205
+CPG cut - original nodes: 413 to max: 205
+CPG cut - original nodes: 416 to max: 205
+CPG cut - original nodes: 718 to max: 205
+Saving input dataset 51_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2606 to 2655
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 187.3 KB
+CPG cut - original nodes: 768 to max: 205
+CPG cut - original nodes: 460 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 422 to max: 205
+CPG cut - original nodes: 637 to max: 205
+CPG cut - original nodes: 3988 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 4347 to max: 205
+CPG cut - original nodes: 340 to max: 205
+CPG cut - original nodes: 465 to max: 205
+CPG cut - original nodes: 264 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 1113 to max: 205
+CPG cut - original nodes: 457 to max: 205
+CPG cut - original nodes: 371 to max: 205
+CPG cut - original nodes: 434 to max: 205
+CPG cut - original nodes: 319 to max: 205
+Saving input dataset 52_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2656 to 2705
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 194.4 KB
+CPG cut - original nodes: 310 to max: 205
+CPG cut - original nodes: 515 to max: 205
+CPG cut - original nodes: 384 to max: 205
+CPG cut - original nodes: 499 to max: 205
+CPG cut - original nodes: 991 to max: 205
+CPG cut - original nodes: 813 to max: 205
+CPG cut - original nodes: 566 to max: 205
+CPG cut - original nodes: 478 to max: 205
+CPG cut - original nodes: 317 to max: 205
+CPG cut - original nodes: 249 to max: 205
+CPG cut - original nodes: 254 to max: 205
+CPG cut - original nodes: 394 to max: 205
+CPG cut - original nodes: 299 to max: 205
+Saving input dataset 53_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2706 to 2755
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 112.3 KB
+CPG cut - original nodes: 1080 to max: 205
+CPG cut - original nodes: 270 to max: 205
+CPG cut - original nodes: 444 to max: 205
+CPG cut - original nodes: 403 to max: 205
+CPG cut - original nodes: 572 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 1184 to max: 205
+CPG cut - original nodes: 484 to max: 205
+CPG cut - original nodes: 482 to max: 205
+CPG cut - original nodes: 271 to max: 205
+CPG cut - original nodes: 256 to max: 205
+CPG cut - original nodes: 425 to max: 205
+CPG cut - original nodes: 252 to max: 205
+CPG cut - original nodes: 295 to max: 205
+CPG cut - original nodes: 240 to max: 205
+Saving input dataset 54_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2756 to 2805
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 88.9 KB
+CPG cut - original nodes: 358 to max: 205
+CPG cut - original nodes: 606 to max: 205
+CPG cut - original nodes: 451 to max: 205
+CPG cut - original nodes: 245 to max: 205
+CPG cut - original nodes: 389 to max: 205
+CPG cut - original nodes: 254 to max: 205
+CPG cut - original nodes: 279 to max: 205
+CPG cut - original nodes: 218 to max: 205
+CPG cut - original nodes: 336 to max: 205
+CPG cut - original nodes: 591 to max: 205
+CPG cut - original nodes: 207 to max: 205
+Saving input dataset 55_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2806 to 2855
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 85.4 KB
+CPG cut - original nodes: 264 to max: 205
+CPG cut - original nodes: 338 to max: 205
+CPG cut - original nodes: 259 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 303 to max: 205
+CPG cut - original nodes: 232 to max: 205
+CPG cut - original nodes: 634 to max: 205
+CPG cut - original nodes: 209 to max: 205
+CPG cut - original nodes: 216 to max: 205
+CPG cut - original nodes: 222 to max: 205
+CPG cut - original nodes: 535 to max: 205
+Saving input dataset 56_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2856 to 2905
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 208.6 KB
+CPG cut - original nodes: 238 to max: 205
+CPG cut - original nodes: 541 to max: 205
+CPG cut - original nodes: 693 to max: 205
+CPG cut - original nodes: 259 to max: 205
+CPG cut - original nodes: 11235 to max: 205
+CPG cut - original nodes: 954 to max: 205
+CPG cut - original nodes: 1097 to max: 205
+Saving input dataset 57_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2906 to 2955
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 88.8 KB
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 420 to max: 205
+CPG cut - original nodes: 407 to max: 205
+CPG cut - original nodes: 281 to max: 205
+CPG cut - original nodes: 461 to max: 205
+CPG cut - original nodes: 796 to max: 205
+CPG cut - original nodes: 354 to max: 205
+CPG cut - original nodes: 381 to max: 205
+CPG cut - original nodes: 324 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 209 to max: 205
+Saving input dataset 58_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 2956 to 3005
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 99.1 KB
+CPG cut - original nodes: 355 to max: 205
+CPG cut - original nodes: 1096 to max: 205
+CPG cut - original nodes: 450 to max: 205
+CPG cut - original nodes: 929 to max: 205
+CPG cut - original nodes: 247 to max: 205
+CPG cut - original nodes: 261 to max: 205
+CPG cut - original nodes: 548 to max: 205
+CPG cut - original nodes: 367 to max: 205
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 478 to max: 205
+CPG cut - original nodes: 245 to max: 205
+Saving input dataset 59_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3006 to 3055
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 92.8 KB
+CPG cut - original nodes: 219 to max: 205
+CPG cut - original nodes: 1184 to max: 205
+CPG cut - original nodes: 498 to max: 205
+CPG cut - original nodes: 339 to max: 205
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 460 to max: 205
+CPG cut - original nodes: 539 to max: 205
+CPG cut - original nodes: 309 to max: 205
+CPG cut - original nodes: 569 to max: 205
+CPG cut - original nodes: 410 to max: 205
+Saving input dataset 60_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3056 to 3105
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 92.9 KB
+CPG cut - original nodes: 483 to max: 205
+CPG cut - original nodes: 307 to max: 205
+CPG cut - original nodes: 651 to max: 205
+CPG cut - original nodes: 1088 to max: 205
+CPG cut - original nodes: 219 to max: 205
+CPG cut - original nodes: 484 to max: 205
+CPG cut - original nodes: 464 to max: 205
+CPG cut - original nodes: 313 to max: 205
+CPG cut - original nodes: 398 to max: 205
+CPG cut - original nodes: 245 to max: 205
+Saving input dataset 61_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3106 to 3155
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 191.9 KB
+CPG cut - original nodes: 253 to max: 205
+CPG cut - original nodes: 468 to max: 205
+CPG cut - original nodes: 414 to max: 205
+CPG cut - original nodes: 353 to max: 205
+CPG cut - original nodes: 624 to max: 205
+CPG cut - original nodes: 301 to max: 205
+CPG cut - original nodes: 4943 to max: 205
+CPG cut - original nodes: 837 to max: 205
+CPG cut - original nodes: 469 to max: 205
+CPG cut - original nodes: 1044 to max: 205
+CPG cut - original nodes: 243 to max: 205
+CPG cut - original nodes: 367 to max: 205
+CPG cut - original nodes: 246 to max: 205
+CPG cut - original nodes: 416 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 228 to max: 205
+CPG cut - original nodes: 333 to max: 205
+CPG cut - original nodes: 741 to max: 205
+CPG cut - original nodes: 1719 to max: 205
+CPG cut - original nodes: 691 to max: 205
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 538 to max: 205
+CPG cut - original nodes: 781 to max: 205
+Saving input dataset 62_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3156 to 3206
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 125.1 KB
+CPG cut - original nodes: 1781 to max: 205
+CPG cut - original nodes: 355 to max: 205
+CPG cut - original nodes: 420 to max: 205
+CPG cut - original nodes: 298 to max: 205
+CPG cut - original nodes: 630 to max: 205
+CPG cut - original nodes: 662 to max: 205
+CPG cut - original nodes: 283 to max: 205
+CPG cut - original nodes: 461 to max: 205
+CPG cut - original nodes: 662 to max: 205
+CPG cut - original nodes: 1189 to max: 205
+CPG cut - original nodes: 351 to max: 205
+CPG cut - original nodes: 261 to max: 205
+CPG cut - original nodes: 1085 to max: 205
+CPG cut - original nodes: 226 to max: 205
+Saving input dataset 63_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3207 to 3256
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 99.8 KB
+CPG cut - original nodes: 528 to max: 205
+CPG cut - original nodes: 1201 to max: 205
+CPG cut - original nodes: 2193 to max: 205
+CPG cut - original nodes: 728 to max: 205
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 235 to max: 205
+CPG cut - original nodes: 357 to max: 205
+CPG cut - original nodes: 278 to max: 205
+CPG cut - original nodes: 410 to max: 205
+Saving input dataset 64_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3257 to 3306
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 160.8 KB
+CPG cut - original nodes: 1191 to max: 205
+CPG cut - original nodes: 213 to max: 205
+CPG cut - original nodes: 275 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 391 to max: 205
+CPG cut - original nodes: 833 to max: 205
+CPG cut - original nodes: 222 to max: 205
+CPG cut - original nodes: 563 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 4846 to max: 205
+Saving input dataset 65_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3307 to 3356
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 80.7 KB
+CPG cut - original nodes: 212 to max: 205
+CPG cut - original nodes: 368 to max: 205
+CPG cut - original nodes: 589 to max: 205
+CPG cut - original nodes: 606 to max: 205
+CPG cut - original nodes: 364 to max: 205
+CPG cut - original nodes: 293 to max: 205
+Saving input dataset 66_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3357 to 3406
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 91.0 KB
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 326 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 871 to max: 205
+CPG cut - original nodes: 428 to max: 205
+CPG cut - original nodes: 252 to max: 205
+CPG cut - original nodes: 485 to max: 205
+CPG cut - original nodes: 241 to max: 205
+CPG cut - original nodes: 216 to max: 205
+CPG cut - original nodes: 683 to max: 205
+CPG cut - original nodes: 298 to max: 205
+Saving input dataset 67_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3407 to 3456
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 142.2 KB
+CPG cut - original nodes: 443 to max: 205
+CPG cut - original nodes: 338 to max: 205
+CPG cut - original nodes: 558 to max: 205
+CPG cut - original nodes: 313 to max: 205
+CPG cut - original nodes: 415 to max: 205
+CPG cut - original nodes: 284 to max: 205
+CPG cut - original nodes: 353 to max: 205
+CPG cut - original nodes: 512 to max: 205
+CPG cut - original nodes: 368 to max: 205
+CPG cut - original nodes: 392 to max: 205
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 1026 to max: 205
+CPG cut - original nodes: 328 to max: 205
+CPG cut - original nodes: 279 to max: 205
+CPG cut - original nodes: 297 to max: 205
+CPG cut - original nodes: 673 to max: 205
+CPG cut - original nodes: 1722 to max: 205
+CPG cut - original nodes: 558 to max: 205
+CPG cut - original nodes: 266 to max: 205
+CPG cut - original nodes: 395 to max: 205
+CPG cut - original nodes: 380 to max: 205
+CPG cut - original nodes: 299 to max: 205
+CPG cut - original nodes: 268 to max: 205
+CPG cut - original nodes: 371 to max: 205
+Saving input dataset 68_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3457 to 3506
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 111.2 KB
+CPG cut - original nodes: 210 to max: 205
+CPG cut - original nodes: 272 to max: 205
+CPG cut - original nodes: 607 to max: 205
+CPG cut - original nodes: 308 to max: 205
+CPG cut - original nodes: 317 to max: 205
+CPG cut - original nodes: 236 to max: 205
+CPG cut - original nodes: 483 to max: 205
+CPG cut - original nodes: 1411 to max: 205
+CPG cut - original nodes: 410 to max: 205
+CPG cut - original nodes: 463 to max: 205
+CPG cut - original nodes: 341 to max: 205
+CPG cut - original nodes: 323 to max: 205
+CPG cut - original nodes: 403 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 341 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 281 to max: 205
+Saving input dataset 69_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3507 to 3556
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 212.5 KB
+CPG cut - original nodes: 274 to max: 205
+CPG cut - original nodes: 503 to max: 205
+CPG cut - original nodes: 661 to max: 205
+CPG cut - original nodes: 333 to max: 205
+CPG cut - original nodes: 430 to max: 205
+CPG cut - original nodes: 232 to max: 205
+CPG cut - original nodes: 404 to max: 205
+CPG cut - original nodes: 295 to max: 205
+CPG cut - original nodes: 224 to max: 205
+CPG cut - original nodes: 544 to max: 205
+CPG cut - original nodes: 10776 to max: 205
+Saving input dataset 70_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3557 to 3607
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 119.5 KB
+CPG cut - original nodes: 982 to max: 205
+CPG cut - original nodes: 663 to max: 205
+CPG cut - original nodes: 320 to max: 205
+CPG cut - original nodes: 257 to max: 205
+CPG cut - original nodes: 642 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 281 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 506 to max: 205
+CPG cut - original nodes: 686 to max: 205
+CPG cut - original nodes: 2747 to max: 205
+Saving input dataset 71_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3608 to 3658
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 115.3 KB
+CPG cut - original nodes: 296 to max: 205
+CPG cut - original nodes: 1185 to max: 205
+CPG cut - original nodes: 218 to max: 205
+CPG cut - original nodes: 314 to max: 205
+CPG cut - original nodes: 408 to max: 205
+CPG cut - original nodes: 322 to max: 205
+CPG cut - original nodes: 246 to max: 205
+CPG cut - original nodes: 238 to max: 205
+CPG cut - original nodes: 270 to max: 205
+CPG cut - original nodes: 465 to max: 205
+CPG cut - original nodes: 213 to max: 205
+CPG cut - original nodes: 420 to max: 205
+CPG cut - original nodes: 1918 to max: 205
+CPG cut - original nodes: 355 to max: 205
+CPG cut - original nodes: 706 to max: 205
+CPG cut - original nodes: 236 to max: 205
+CPG cut - original nodes: 222 to max: 205
+CPG cut - original nodes: 251 to max: 205
+CPG cut - original nodes: 290 to max: 205
+Saving input dataset 72_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3659 to 3708
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 108.5 KB
+CPG cut - original nodes: 1091 to max: 205
+CPG cut - original nodes: 1524 to max: 205
+CPG cut - original nodes: 346 to max: 205
+CPG cut - original nodes: 253 to max: 205
+CPG cut - original nodes: 275 to max: 205
+CPG cut - original nodes: 517 to max: 205
+CPG cut - original nodes: 932 to max: 205
+CPG cut - original nodes: 214 to max: 205
+CPG cut - original nodes: 575 to max: 205
+CPG cut - original nodes: 395 to max: 205
+Saving input dataset 73_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3709 to 3758
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 116.4 KB
+CPG cut - original nodes: 236 to max: 205
+CPG cut - original nodes: 507 to max: 205
+CPG cut - original nodes: 371 to max: 205
+CPG cut - original nodes: 546 to max: 205
+CPG cut - original nodes: 216 to max: 205
+CPG cut - original nodes: 375 to max: 205
+CPG cut - original nodes: 508 to max: 205
+CPG cut - original nodes: 702 to max: 205
+CPG cut - original nodes: 685 to max: 205
+CPG cut - original nodes: 544 to max: 205
+CPG cut - original nodes: 395 to max: 205
+CPG cut - original nodes: 395 to max: 205
+CPG cut - original nodes: 350 to max: 205
+CPG cut - original nodes: 484 to max: 205
+CPG cut - original nodes: 233 to max: 205
+CPG cut - original nodes: 348 to max: 205
+CPG cut - original nodes: 272 to max: 205
+Saving input dataset 74_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3759 to 3808
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 100.8 KB
+CPG cut - original nodes: 719 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 2047 to max: 205
+CPG cut - original nodes: 398 to max: 205
+CPG cut - original nodes: 1574 to max: 205
+CPG cut - original nodes: 285 to max: 205
+CPG cut - original nodes: 207 to max: 205
+CPG cut - original nodes: 667 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 247 to max: 205
+Saving input dataset 75_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3809 to 3858
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 80.2 KB
+CPG cut - original nodes: 302 to max: 205
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 238 to max: 205
+CPG cut - original nodes: 344 to max: 205
+CPG cut - original nodes: 703 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 673 to max: 205
+Saving input dataset 76_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3859 to 3908
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 147.7 KB
+CPG cut - original nodes: 243 to max: 205
+CPG cut - original nodes: 377 to max: 205
+CPG cut - original nodes: 460 to max: 205
+CPG cut - original nodes: 269 to max: 205
+CPG cut - original nodes: 347 to max: 205
+CPG cut - original nodes: 229 to max: 205
+CPG cut - original nodes: 314 to max: 205
+CPG cut - original nodes: 397 to max: 205
+CPG cut - original nodes: 905 to max: 205
+CPG cut - original nodes: 222 to max: 205
+CPG cut - original nodes: 1797 to max: 205
+CPG cut - original nodes: 419 to max: 205
+CPG cut - original nodes: 314 to max: 205
+CPG cut - original nodes: 281 to max: 205
+CPG cut - original nodes: 2064 to max: 205
+CPG cut - original nodes: 806 to max: 205
+CPG cut - original nodes: 414 to max: 205
+CPG cut - original nodes: 336 to max: 205
+CPG cut - original nodes: 357 to max: 205
+CPG cut - original nodes: 228 to max: 205
+CPG cut - original nodes: 402 to max: 205
+Saving input dataset 77_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3909 to 3958
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 95.6 KB
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 627 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 292 to max: 205
+CPG cut - original nodes: 773 to max: 205
+CPG cut - original nodes: 246 to max: 205
+CPG cut - original nodes: 450 to max: 205
+CPG cut - original nodes: 462 to max: 205
+CPG cut - original nodes: 612 to max: 205
+CPG cut - original nodes: 477 to max: 205
+CPG cut - original nodes: 327 to max: 205
+Saving input dataset 78_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 3959 to 4008
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 148.4 KB
+CPG cut - original nodes: 1077 to max: 205
+CPG cut - original nodes: 362 to max: 205
+CPG cut - original nodes: 355 to max: 205
+CPG cut - original nodes: 1903 to max: 205
+CPG cut - original nodes: 307 to max: 205
+CPG cut - original nodes: 612 to max: 205
+CPG cut - original nodes: 495 to max: 205
+CPG cut - original nodes: 234 to max: 205
+CPG cut - original nodes: 256 to max: 205
+CPG cut - original nodes: 1949 to max: 205
+CPG cut - original nodes: 206 to max: 205
+CPG cut - original nodes: 1313 to max: 205
+CPG cut - original nodes: 458 to max: 205
+Saving input dataset 79_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4009 to 4059
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 163.0 KB
+CPG cut - original nodes: 420 to max: 205
+CPG cut - original nodes: 321 to max: 205
+CPG cut - original nodes: 942 to max: 205
+CPG cut - original nodes: 379 to max: 205
+CPG cut - original nodes: 285 to max: 205
+CPG cut - original nodes: 728 to max: 205
+CPG cut - original nodes: 1170 to max: 205
+CPG cut - original nodes: 834 to max: 205
+CPG cut - original nodes: 418 to max: 205
+CPG cut - original nodes: 566 to max: 205
+CPG cut - original nodes: 2662 to max: 205
+CPG cut - original nodes: 385 to max: 205
+CPG cut - original nodes: 549 to max: 205
+CPG cut - original nodes: 436 to max: 205
+CPG cut - original nodes: 491 to max: 205
+CPG cut - original nodes: 377 to max: 205
+CPG cut - original nodes: 718 to max: 205
+CPG cut - original nodes: 493 to max: 205
+Saving input dataset 80_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4060 to 4109
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 122.8 KB
+CPG cut - original nodes: 1602 to max: 205
+CPG cut - original nodes: 299 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 275 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 1511 to max: 205
+CPG cut - original nodes: 892 to max: 205
+CPG cut - original nodes: 405 to max: 205
+CPG cut - original nodes: 978 to max: 205
+CPG cut - original nodes: 329 to max: 205
+CPG cut - original nodes: 351 to max: 205
+CPG cut - original nodes: 269 to max: 205
+Saving input dataset 81_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4110 to 4160
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 85.5 KB
+CPG cut - original nodes: 365 to max: 205
+CPG cut - original nodes: 236 to max: 205
+CPG cut - original nodes: 216 to max: 205
+CPG cut - original nodes: 279 to max: 205
+CPG cut - original nodes: 322 to max: 205
+CPG cut - original nodes: 222 to max: 205
+CPG cut - original nodes: 218 to max: 205
+CPG cut - original nodes: 650 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 418 to max: 205
+CPG cut - original nodes: 333 to max: 205
+CPG cut - original nodes: 424 to max: 205
+CPG cut - original nodes: 230 to max: 205
+CPG cut - original nodes: 231 to max: 205
+Saving input dataset 82_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4161 to 4210
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 102.4 KB
+CPG cut - original nodes: 774 to max: 205
+CPG cut - original nodes: 279 to max: 205
+CPG cut - original nodes: 301 to max: 205
+CPG cut - original nodes: 1474 to max: 205
+CPG cut - original nodes: 216 to max: 205
+CPG cut - original nodes: 234 to max: 205
+CPG cut - original nodes: 350 to max: 205
+CPG cut - original nodes: 1391 to max: 205
+CPG cut - original nodes: 245 to max: 205
+Saving input dataset 83_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4211 to 4260
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 121.1 KB
+CPG cut - original nodes: 553 to max: 205
+CPG cut - original nodes: 218 to max: 205
+CPG cut - original nodes: 420 to max: 205
+CPG cut - original nodes: 212 to max: 205
+CPG cut - original nodes: 893 to max: 205
+CPG cut - original nodes: 273 to max: 205
+CPG cut - original nodes: 263 to max: 205
+CPG cut - original nodes: 701 to max: 205
+CPG cut - original nodes: 541 to max: 205
+CPG cut - original nodes: 835 to max: 205
+CPG cut - original nodes: 278 to max: 205
+CPG cut - original nodes: 526 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 302 to max: 205
+CPG cut - original nodes: 1129 to max: 205
+CPG cut - original nodes: 925 to max: 205
+Saving input dataset 84_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4261 to 4310
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 100.0 KB
+CPG cut - original nodes: 487 to max: 205
+CPG cut - original nodes: 428 to max: 205
+CPG cut - original nodes: 1329 to max: 205
+CPG cut - original nodes: 250 to max: 205
+CPG cut - original nodes: 412 to max: 205
+CPG cut - original nodes: 303 to max: 205
+CPG cut - original nodes: 308 to max: 205
+CPG cut - original nodes: 232 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 363 to max: 205
+CPG cut - original nodes: 256 to max: 205
+CPG cut - original nodes: 281 to max: 205
+CPG cut - original nodes: 739 to max: 205
+CPG cut - original nodes: 274 to max: 205
+Saving input dataset 85_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4311 to 4360
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 150.4 KB
+CPG cut - original nodes: 314 to max: 205
+CPG cut - original nodes: 363 to max: 205
+CPG cut - original nodes: 222 to max: 205
+CPG cut - original nodes: 462 to max: 205
+CPG cut - original nodes: 226 to max: 205
+CPG cut - original nodes: 3956 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 275 to max: 205
+CPG cut - original nodes: 1072 to max: 205
+CPG cut - original nodes: 546 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 280 to max: 205
+CPG cut - original nodes: 368 to max: 205
+CPG cut - original nodes: 312 to max: 205
+CPG cut - original nodes: 274 to max: 205
+CPG cut - original nodes: 354 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 439 to max: 205
+Saving input dataset 86_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4361 to 4410
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 119.5 KB
+CPG cut - original nodes: 305 to max: 205
+CPG cut - original nodes: 1800 to max: 205
+CPG cut - original nodes: 273 to max: 205
+CPG cut - original nodes: 250 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 550 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 229 to max: 205
+CPG cut - original nodes: 225 to max: 205
+CPG cut - original nodes: 360 to max: 205
+CPG cut - original nodes: 1523 to max: 205
+CPG cut - original nodes: 794 to max: 205
+CPG cut - original nodes: 282 to max: 205
+CPG cut - original nodes: 273 to max: 205
+CPG cut - original nodes: 310 to max: 205
+Saving input dataset 87_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4411 to 4460
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 81.9 KB
+CPG cut - original nodes: 475 to max: 205
+CPG cut - original nodes: 569 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 282 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 549 to max: 205
+CPG cut - original nodes: 480 to max: 205
+CPG cut - original nodes: 511 to max: 205
+Saving input dataset 88_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4461 to 4511
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 121.6 KB
+CPG cut - original nodes: 411 to max: 205
+CPG cut - original nodes: 325 to max: 205
+CPG cut - original nodes: 449 to max: 205
+CPG cut - original nodes: 347 to max: 205
+CPG cut - original nodes: 381 to max: 205
+CPG cut - original nodes: 373 to max: 205
+CPG cut - original nodes: 404 to max: 205
+CPG cut - original nodes: 321 to max: 205
+CPG cut - original nodes: 273 to max: 205
+CPG cut - original nodes: 208 to max: 205
+CPG cut - original nodes: 3561 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 761 to max: 205
+CPG cut - original nodes: 222 to max: 205
+Saving input dataset 89_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4512 to 4561
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 111.3 KB
+CPG cut - original nodes: 575 to max: 205
+CPG cut - original nodes: 400 to max: 205
+CPG cut - original nodes: 217 to max: 205
+CPG cut - original nodes: 300 to max: 205
+CPG cut - original nodes: 315 to max: 205
+CPG cut - original nodes: 490 to max: 205
+CPG cut - original nodes: 542 to max: 205
+CPG cut - original nodes: 379 to max: 205
+CPG cut - original nodes: 784 to max: 205
+CPG cut - original nodes: 547 to max: 205
+CPG cut - original nodes: 766 to max: 205
+CPG cut - original nodes: 631 to max: 205
+CPG cut - original nodes: 232 to max: 205
+CPG cut - original nodes: 262 to max: 205
+CPG cut - original nodes: 482 to max: 205
+Saving input dataset 90_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4562 to 4611
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 115.3 KB
+CPG cut - original nodes: 216 to max: 205
+CPG cut - original nodes: 262 to max: 205
+CPG cut - original nodes: 756 to max: 205
+CPG cut - original nodes: 268 to max: 205
+CPG cut - original nodes: 271 to max: 205
+CPG cut - original nodes: 239 to max: 205
+CPG cut - original nodes: 295 to max: 205
+CPG cut - original nodes: 270 to max: 205
+CPG cut - original nodes: 2412 to max: 205
+CPG cut - original nodes: 269 to max: 205
+CPG cut - original nodes: 445 to max: 205
+CPG cut - original nodes: 218 to max: 205
+CPG cut - original nodes: 1802 to max: 205
+CPG cut - original nodes: 424 to max: 205
+CPG cut - original nodes: 479 to max: 205
+Saving input dataset 91_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4612 to 4661
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 94.9 KB
+CPG cut - original nodes: 644 to max: 205
+CPG cut - original nodes: 251 to max: 205
+CPG cut - original nodes: 390 to max: 205
+CPG cut - original nodes: 695 to max: 205
+CPG cut - original nodes: 238 to max: 205
+CPG cut - original nodes: 210 to max: 205
+CPG cut - original nodes: 430 to max: 205
+CPG cut - original nodes: 358 to max: 205
+CPG cut - original nodes: 345 to max: 205
+CPG cut - original nodes: 406 to max: 205
+CPG cut - original nodes: 662 to max: 205
+CPG cut - original nodes: 308 to max: 205
+CPG cut - original nodes: 367 to max: 205
+Saving input dataset 92_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4662 to 4711
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 145.6 KB
+CPG cut - original nodes: 3747 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 1097 to max: 205
+CPG cut - original nodes: 341 to max: 205
+CPG cut - original nodes: 476 to max: 205
+CPG cut - original nodes: 646 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 414 to max: 205
+CPG cut - original nodes: 347 to max: 205
+CPG cut - original nodes: 395 to max: 205
+CPG cut - original nodes: 445 to max: 205
+CPG cut - original nodes: 867 to max: 205
+CPG cut - original nodes: 362 to max: 205
+CPG cut - original nodes: 537 to max: 205
+CPG cut - original nodes: 351 to max: 205
+CPG cut - original nodes: 267 to max: 205
+CPG cut - original nodes: 461 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 539 to max: 205
+CPG cut - original nodes: 227 to max: 205
+Saving input dataset 93_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4712 to 4762
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 100.3 KB
+CPG cut - original nodes: 796 to max: 205
+CPG cut - original nodes: 211 to max: 205
+CPG cut - original nodes: 491 to max: 205
+CPG cut - original nodes: 605 to max: 205
+CPG cut - original nodes: 1456 to max: 205
+CPG cut - original nodes: 386 to max: 205
+CPG cut - original nodes: 244 to max: 205
+CPG cut - original nodes: 416 to max: 205
+CPG cut - original nodes: 271 to max: 205
+CPG cut - original nodes: 220 to max: 205
+CPG cut - original nodes: 375 to max: 205
+CPG cut - original nodes: 319 to max: 205
+CPG cut - original nodes: 251 to max: 205
+Saving input dataset 94_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4763 to 4813
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 131.7 KB
+CPG cut - original nodes: 401 to max: 205
+CPG cut - original nodes: 346 to max: 205
+CPG cut - original nodes: 210 to max: 205
+CPG cut - original nodes: 243 to max: 205
+CPG cut - original nodes: 1139 to max: 205
+CPG cut - original nodes: 286 to max: 205
+CPG cut - original nodes: 209 to max: 205
+CPG cut - original nodes: 701 to max: 205
+CPG cut - original nodes: 496 to max: 205
+CPG cut - original nodes: 424 to max: 205
+CPG cut - original nodes: 526 to max: 205
+CPG cut - original nodes: 237 to max: 205
+CPG cut - original nodes: 887 to max: 205
+CPG cut - original nodes: 355 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 721 to max: 205
+CPG cut - original nodes: 564 to max: 205
+CPG cut - original nodes: 504 to max: 205
+CPG cut - original nodes: 828 to max: 205
+CPG cut - original nodes: 503 to max: 205
+CPG cut - original nodes: 412 to max: 205
+Saving input dataset 95_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4814 to 4864
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 124.9 KB
+CPG cut - original nodes: 337 to max: 205
+CPG cut - original nodes: 432 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 2002 to max: 205
+CPG cut - original nodes: 961 to max: 205
+CPG cut - original nodes: 504 to max: 205
+CPG cut - original nodes: 265 to max: 205
+CPG cut - original nodes: 642 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 231 to max: 205
+CPG cut - original nodes: 217 to max: 205
+CPG cut - original nodes: 219 to max: 205
+Saving input dataset 96_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4865 to 4914
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 99.9 KB
+CPG cut - original nodes: 1241 to max: 205
+CPG cut - original nodes: 595 to max: 205
+CPG cut - original nodes: 237 to max: 205
+CPG cut - original nodes: 313 to max: 205
+CPG cut - original nodes: 212 to max: 205
+CPG cut - original nodes: 500 to max: 205
+CPG cut - original nodes: 819 to max: 205
+CPG cut - original nodes: 345 to max: 205
+CPG cut - original nodes: 527 to max: 205
+Saving input dataset 97_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4915 to 4965
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 98.8 KB
+CPG cut - original nodes: 1909 to max: 205
+CPG cut - original nodes: 241 to max: 205
+CPG cut - original nodes: 371 to max: 205
+CPG cut - original nodes: 981 to max: 205
+CPG cut - original nodes: 592 to max: 205
+CPG cut - original nodes: 452 to max: 205
+CPG cut - original nodes: 406 to max: 205
+Saving input dataset 98_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 4966 to 5015
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 133.3 KB
+CPG cut - original nodes: 575 to max: 205
+CPG cut - original nodes: 283 to max: 205
+CPG cut - original nodes: 462 to max: 205
+CPG cut - original nodes: 262 to max: 205
+CPG cut - original nodes: 1174 to max: 205
+CPG cut - original nodes: 807 to max: 205
+CPG cut - original nodes: 289 to max: 205
+CPG cut - original nodes: 257 to max: 205
+CPG cut - original nodes: 362 to max: 205
+CPG cut - original nodes: 381 to max: 205
+CPG cut - original nodes: 602 to max: 205
+CPG cut - original nodes: 210 to max: 205
+CPG cut - original nodes: 789 to max: 205
+CPG cut - original nodes: 763 to max: 205
+CPG cut - original nodes: 1358 to max: 205
+CPG cut - original nodes: 357 to max: 205
+Saving input dataset 99_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5016 to 5065
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 78.6 KB
+CPG cut - original nodes: 626 to max: 205
+CPG cut - original nodes: 225 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 826 to max: 205
+CPG cut - original nodes: 269 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 271 to max: 205
+CPG cut - original nodes: 447 to max: 205
+CPG cut - original nodes: 293 to max: 205
+Saving input dataset 100_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5066 to 5115
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 62.6 KB
+CPG cut - original nodes: 301 to max: 205
+CPG cut - original nodes: 715 to max: 205
+CPG cut - original nodes: 277 to max: 205
+CPG cut - original nodes: 260 to max: 205
+Saving input dataset 101_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5116 to 5165
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 132.4 KB
+CPG cut - original nodes: 257 to max: 205
+CPG cut - original nodes: 3361 to max: 205
+CPG cut - original nodes: 605 to max: 205
+CPG cut - original nodes: 603 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 279 to max: 205
+CPG cut - original nodes: 560 to max: 205
+CPG cut - original nodes: 496 to max: 205
+CPG cut - original nodes: 245 to max: 205
+CPG cut - original nodes: 302 to max: 205
+CPG cut - original nodes: 368 to max: 205
+CPG cut - original nodes: 352 to max: 205
+CPG cut - original nodes: 208 to max: 205
+CPG cut - original nodes: 282 to max: 205
+CPG cut - original nodes: 278 to max: 205
+CPG cut - original nodes: 350 to max: 205
+CPG cut - original nodes: 340 to max: 205
+CPG cut - original nodes: 232 to max: 205
+CPG cut - original nodes: 274 to max: 205
+CPG cut - original nodes: 459 to max: 205
+Saving input dataset 102_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5166 to 5216
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 128.0 KB
+CPG cut - original nodes: 331 to max: 205
+CPG cut - original nodes: 942 to max: 205
+CPG cut - original nodes: 489 to max: 205
+CPG cut - original nodes: 749 to max: 205
+CPG cut - original nodes: 738 to max: 205
+CPG cut - original nodes: 319 to max: 205
+CPG cut - original nodes: 553 to max: 205
+CPG cut - original nodes: 228 to max: 205
+CPG cut - original nodes: 394 to max: 205
+CPG cut - original nodes: 895 to max: 205
+CPG cut - original nodes: 1429 to max: 205
+CPG cut - original nodes: 270 to max: 205
+CPG cut - original nodes: 586 to max: 205
+CPG cut - original nodes: 399 to max: 205
+CPG cut - original nodes: 700 to max: 205
+Saving input dataset 103_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5217 to 5266
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 114.1 KB
+CPG cut - original nodes: 255 to max: 205
+CPG cut - original nodes: 255 to max: 205
+CPG cut - original nodes: 307 to max: 205
+CPG cut - original nodes: 244 to max: 205
+CPG cut - original nodes: 2323 to max: 205
+CPG cut - original nodes: 2416 to max: 205
+CPG cut - original nodes: 287 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 486 to max: 205
+Saving input dataset 104_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5267 to 5317
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 95.7 KB
+CPG cut - original nodes: 361 to max: 205
+CPG cut - original nodes: 1929 to max: 205
+CPG cut - original nodes: 286 to max: 205
+CPG cut - original nodes: 396 to max: 205
+CPG cut - original nodes: 510 to max: 205
+Saving input dataset 105_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5318 to 5367
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 99.0 KB
+CPG cut - original nodes: 318 to max: 205
+CPG cut - original nodes: 1478 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 257 to max: 205
+CPG cut - original nodes: 322 to max: 205
+CPG cut - original nodes: 1495 to max: 205
+CPG cut - original nodes: 247 to max: 205
+CPG cut - original nodes: 428 to max: 205
+CPG cut - original nodes: 1211 to max: 205
+CPG cut - original nodes: 229 to max: 205
+Saving input dataset 106_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5368 to 5417
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 83.9 KB
+CPG cut - original nodes: 475 to max: 205
+CPG cut - original nodes: 291 to max: 205
+CPG cut - original nodes: 525 to max: 205
+CPG cut - original nodes: 326 to max: 205
+CPG cut - original nodes: 342 to max: 205
+CPG cut - original nodes: 368 to max: 205
+CPG cut - original nodes: 763 to max: 205
+Saving input dataset 107_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5418 to 5467
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 127.7 KB
+CPG cut - original nodes: 286 to max: 205
+CPG cut - original nodes: 1997 to max: 205
+CPG cut - original nodes: 384 to max: 205
+CPG cut - original nodes: 1726 to max: 205
+CPG cut - original nodes: 225 to max: 205
+CPG cut - original nodes: 274 to max: 205
+CPG cut - original nodes: 461 to max: 205
+CPG cut - original nodes: 284 to max: 205
+CPG cut - original nodes: 655 to max: 205
+CPG cut - original nodes: 311 to max: 205
+CPG cut - original nodes: 214 to max: 205
+CPG cut - original nodes: 321 to max: 205
+CPG cut - original nodes: 663 to max: 205
+CPG cut - original nodes: 350 to max: 205
+CPG cut - original nodes: 309 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 254 to max: 205
+CPG cut - original nodes: 461 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 389 to max: 205
+Saving input dataset 108_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5468 to 5517
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 80.0 KB
+CPG cut - original nodes: 315 to max: 205
+CPG cut - original nodes: 562 to max: 205
+CPG cut - original nodes: 316 to max: 205
+CPG cut - original nodes: 498 to max: 205
+CPG cut - original nodes: 301 to max: 205
+CPG cut - original nodes: 339 to max: 205
+CPG cut - original nodes: 445 to max: 205
+CPG cut - original nodes: 415 to max: 205
+CPG cut - original nodes: 299 to max: 205
+CPG cut - original nodes: 434 to max: 205
+CPG cut - original nodes: 729 to max: 205
+Saving input dataset 109_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5518 to 5567
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 124.5 KB
+CPG cut - original nodes: 221 to max: 205
+CPG cut - original nodes: 565 to max: 205
+CPG cut - original nodes: 366 to max: 205
+CPG cut - original nodes: 743 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 424 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 209 to max: 205
+CPG cut - original nodes: 439 to max: 205
+CPG cut - original nodes: 640 to max: 205
+CPG cut - original nodes: 728 to max: 205
+CPG cut - original nodes: 626 to max: 205
+CPG cut - original nodes: 806 to max: 205
+CPG cut - original nodes: 228 to max: 205
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 206 to max: 205
+CPG cut - original nodes: 253 to max: 205
+CPG cut - original nodes: 346 to max: 205
+CPG cut - original nodes: 2093 to max: 205
+Saving input dataset 110_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5568 to 5617
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 136.2 KB
+CPG cut - original nodes: 773 to max: 205
+CPG cut - original nodes: 887 to max: 205
+CPG cut - original nodes: 373 to max: 205
+CPG cut - original nodes: 259 to max: 205
+CPG cut - original nodes: 258 to max: 205
+CPG cut - original nodes: 366 to max: 205
+CPG cut - original nodes: 1099 to max: 205
+CPG cut - original nodes: 716 to max: 205
+CPG cut - original nodes: 293 to max: 205
+CPG cut - original nodes: 948 to max: 205
+CPG cut - original nodes: 352 to max: 205
+CPG cut - original nodes: 708 to max: 205
+Saving input dataset 111_cpg with size 49.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5618 to 5668
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 122.5 KB
+CPG cut - original nodes: 245 to max: 205
+CPG cut - original nodes: 1187 to max: 205
+CPG cut - original nodes: 717 to max: 205
+CPG cut - original nodes: 276 to max: 205
+CPG cut - original nodes: 2335 to max: 205
+CPG cut - original nodes: 249 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 448 to max: 205
+CPG cut - original nodes: 340 to max: 205
+CPG cut - original nodes: 316 to max: 205
+CPG cut - original nodes: 252 to max: 205
+Saving input dataset 112_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5669 to 5720
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 137.9 KB
+CPG cut - original nodes: 1159 to max: 205
+CPG cut - original nodes: 223 to max: 205
+CPG cut - original nodes: 452 to max: 205
+CPG cut - original nodes: 596 to max: 205
+CPG cut - original nodes: 2006 to max: 205
+CPG cut - original nodes: 455 to max: 205
+CPG cut - original nodes: 273 to max: 205
+CPG cut - original nodes: 206 to max: 205
+CPG cut - original nodes: 1297 to max: 205
+CPG cut - original nodes: 568 to max: 205
+CPG cut - original nodes: 302 to max: 205
+Saving input dataset 113_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5721 to 5770
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 126.8 KB
+CPG cut - original nodes: 542 to max: 205
+CPG cut - original nodes: 462 to max: 205
+CPG cut - original nodes: 774 to max: 205
+CPG cut - original nodes: 1268 to max: 205
+CPG cut - original nodes: 206 to max: 205
+CPG cut - original nodes: 449 to max: 205
+CPG cut - original nodes: 653 to max: 205
+CPG cut - original nodes: 229 to max: 205
+CPG cut - original nodes: 232 to max: 205
+CPG cut - original nodes: 1404 to max: 205
+CPG cut - original nodes: 1710 to max: 205
+CPG cut - original nodes: 931 to max: 205
+CPG cut - original nodes: 420 to max: 205
+Saving input dataset 114_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5771 to 5820
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 84.2 KB
+CPG cut - original nodes: 244 to max: 205
+CPG cut - original nodes: 539 to max: 205
+CPG cut - original nodes: 208 to max: 205
+CPG cut - original nodes: 1428 to max: 205
+CPG cut - original nodes: 292 to max: 205
+CPG cut - original nodes: 511 to max: 205
+CPG cut - original nodes: 410 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 243 to max: 205
+CPG cut - original nodes: 369 to max: 205
+Saving input dataset 115_cpg with size 48.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5821 to 5870
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 92.2 KB
+CPG cut - original nodes: 317 to max: 205
+CPG cut - original nodes: 252 to max: 205
+CPG cut - original nodes: 540 to max: 205
+CPG cut - original nodes: 214 to max: 205
+CPG cut - original nodes: 482 to max: 205
+CPG cut - original nodes: 300 to max: 205
+CPG cut - original nodes: 470 to max: 205
+CPG cut - original nodes: 233 to max: 205
+CPG cut - original nodes: 1024 to max: 205
+CPG cut - original nodes: 242 to max: 205
+CPG cut - original nodes: 656 to max: 205
+Saving input dataset 116_cpg with size 50.
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 50 entries, 5871 to 5920
+Data columns (total 5 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   project  50 non-null     object
+ 1   target   50 non-null     int64
+ 2   func     50 non-null     object
+ 3   Index    50 non-null     int64
+ 4   cpg      50 non-null     object
+dtypes: int64(2), object(3)
+memory usage: 123.5 KB
+CPG cut - original nodes: 215 to max: 205
+CPG cut - original nodes: 227 to max: 205
+CPG cut - original nodes: 416 to max: 205
+CPG cut - original nodes: 382 to max: 205
+CPG cut - original nodes: 1914 to max: 205
+CPG cut - original nodes: 487 to max: 205
+CPG cut - original nodes: 321 to max: 205
+CPG cut - original nodes: 240 to max: 205
+CPG cut - original nodes: 327 to max: 205
+CPG cut - original nodes: 383 to max: 205
+CPG cut - original nodes: 338 to max: 205
+CPG cut - original nodes: 303 to max: 205
+CPG cut - original nodes: 255 to max: 205
+CPG cut - original nodes: 287 to max: 205
+Traceback (most recent call last):
+  File "/data/data/ws/CodeVD/MultiTreeNN/main.py", line 145, in <module>
+    main()
+  File "/data/data/ws/CodeVD/MultiTreeNN/main.py", line 137, in main
+    embed_task()
+  File "/data/data/ws/CodeVD/MultiTreeNN/main.py", line 84, in embed_task
+    w2vmodel.wv, context.edge_type), axis=1)
+  File "/data/data/ws/.local/lib/python3.6/site-packages/pandas/core/frame.py", line 7552, in apply
+    return op.get_result()
+  File "/data/data/ws/.local/lib/python3.6/site-packages/pandas/core/apply.py", line 185, in get_result
+    return self.apply_standard()
+  File "/data/data/ws/.local/lib/python3.6/site-packages/pandas/core/apply.py", line 276, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "/data/data/ws/.local/lib/python3.6/site-packages/pandas/core/apply.py", line 305, in apply_series_generator
+    results[i] = self.f(v)
+  File "/data/data/ws/CodeVD/MultiTreeNN/main.py", line 84, in <lambda>
+    w2vmodel.wv, context.edge_type), axis=1)
+  File "/data/data/ws/CodeVD/MultiTreeNN/utils/embeddings.py", line 116, in nodes_to_input
+    return Data(x=nodes_embedding(nodes), edge_index=graphs_embedding(nodes), y=label)
+  File "/data/data/ws/CodeVD/MultiTreeNN/utils/embeddings.py", line 22, in __call__
+    embedded_nodes = self.embed_nodes(nodes)
+  File "/data/data/ws/CodeVD/MultiTreeNN/utils/embeddings.py", line 36, in embed_nodes
+    tokenized_code = tokenizer(node_code, True)
+  File "/data/data/ws/CodeVD/MultiTreeNN/utils/parse.py", line 129, in tokenizer
+    code = codecs.getdecoder("unicode_escape")(no_char_lit_line)[0]
+UnicodeDecodeError: 'unicodeescape' codec can't decode bytes in position 26-27: truncated \UXXXXXXXX escape
+
+进程已结束，退出代码为 1

@@ -67,213 +67,213 @@ model: DevignModel(
 [10/19/2023 - 15:09:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
 [10/19/2023 - 15:09:40] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 255		Train Loss    170.186	Valid Loss   163.593	f1: 38.00	Patience 0	
 [10/19/2023 - 15:09:40] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:10:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 319		Train Loss    169.168	Valid Loss   162.959	f1: 50.64	Patience 0	
+[10/19/2023 - 15:10:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 319		Train Loss    169.168	Valid Loss   162.959	f1: 59.64	Patience 0	
 [10/19/2023 - 15:10:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:10:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 383		Train Loss    164.645	Valid Loss   162.281	f1: 54.73	Patience 0	
+[10/19/2023 - 15:10:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 383		Train Loss    164.645	Valid Loss   162.281	f1: 64.73	Patience 0	
 [10/19/2023 - 15:10:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
 [10/19/2023 - 15:10:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 447		Train Loss    160.862	Valid Loss   165.775	f1: 46.08	Patience 1	
 [10/19/2023 - 15:10:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:11:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 511		Train Loss    156.214	Valid Loss   168.822	f1: 59.33	Patience 0	
+[10/19/2023 - 15:11:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 511		Train Loss    156.214	Valid Loss   168.822	f1: 65.33	Patience 0	
 [10/19/2023 - 15:11:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:11:42] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 575		Train Loss    152.578	Valid Loss   165.557	f1: 53.44	Patience 1	
+[10/19/2023 - 15:11:42] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 575		Train Loss    152.578	Valid Loss   165.557	f1: 63.44	Patience 1	
 [10/19/2023 - 15:11:42] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:12:06] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 639		Train Loss    144.176	Valid Loss   177.444	f1: 53.40	Patience 2	
+[10/19/2023 - 15:12:06] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 639		Train Loss    144.176	Valid Loss   177.444	f1: 63.40	Patience 2	
 [10/19/2023 - 15:12:06] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:12:30] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 703		Train Loss    136.992	Valid Loss   189.297	f1: 56.45	Patience 3	
+[10/19/2023 - 15:12:30] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 703		Train Loss    136.992	Valid Loss   189.297	f1: 65.45	Patience 3	
 [10/19/2023 - 15:12:30] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:12:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 767		Train Loss    133.229	Valid Loss   219.019	f1: 56.11	Patience 4	
+[10/19/2023 - 15:12:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 767		Train Loss    133.229	Valid Loss   219.019	f1: 65.11	Patience 4	
 [10/19/2023 - 15:12:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:13:18] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 831		Train Loss    127.760	Valid Loss   202.053	f1: 51.32	Patience 5	
+[10/19/2023 - 15:13:18] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 831		Train Loss    127.760	Valid Loss   202.053	f1: 60.32	Patience 5	
 [10/19/2023 - 15:13:18] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:13:42] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 895		Train Loss    116.901	Valid Loss   244.393	f1: 54.20	Patience 6	
+[10/19/2023 - 15:13:42] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 895		Train Loss    116.901	Valid Loss   244.393	f1: 64.20	Patience 6	
 [10/19/2023 - 15:13:42] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:14:06] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 959		Train Loss    106.518	Valid Loss   243.909	f1: 56.45	Patience 7	
+[10/19/2023 - 15:14:06] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 959		Train Loss    106.518	Valid Loss   243.909	f1: 65.45	Patience 7	
 [10/19/2023 - 15:14:06] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:14:30] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1023		Train Loss    100.982	Valid Loss   306.472	f1: 55.58	Patience 8	
+[10/19/2023 - 15:14:30] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1023		Train Loss    100.982	Valid Loss   306.472	f1: 64.58	Patience 8	
 [10/19/2023 - 15:14:30] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:14:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1087		Train Loss     94.099	Valid Loss   327.753	f1: 52.48	Patience 9	
+[10/19/2023 - 15:14:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1087		Train Loss     94.099	Valid Loss   327.753	f1: 62.48	Patience 9	
 [10/19/2023 - 15:14:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:15:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1151		Train Loss     85.522	Valid Loss   362.893	f1: 53.37	Patience 10	
+[10/19/2023 - 15:15:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1151		Train Loss     85.522	Valid Loss   362.893	f1: 63.37	Patience 10	
 [10/19/2023 - 15:15:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:15:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1215		Train Loss     73.697	Valid Loss   385.035	f1: 53.29	Patience 11	
+[10/19/2023 - 15:15:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1215		Train Loss     73.697	Valid Loss   385.035	f1: 63.29	Patience 11	
 [10/19/2023 - 15:15:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:16:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1279		Train Loss     66.510	Valid Loss   457.323	f1: 54.34	Patience 12	
+[10/19/2023 - 15:16:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1279		Train Loss     66.510	Valid Loss   457.323	f1: 64.34	Patience 12	
 [10/19/2023 - 15:16:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:16:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1343		Train Loss     64.202	Valid Loss   512.620	f1: 53.64	Patience 13	
+[10/19/2023 - 15:16:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1343		Train Loss     64.202	Valid Loss   512.620	f1: 63.64	Patience 13	
 [10/19/2023 - 15:16:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:16:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1407		Train Loss     57.354	Valid Loss   557.524	f1: 50.81	Patience 14	
+[10/19/2023 - 15:16:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1407		Train Loss     57.354	Valid Loss   557.524	f1: 59.81	Patience 14	
 [10/19/2023 - 15:16:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:17:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1471		Train Loss     44.398	Valid Loss   545.401	f1: 50.61	Patience 15	
+[10/19/2023 - 15:17:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1471		Train Loss     44.398	Valid Loss   545.401	f1: 59.61	Patience 15	
 [10/19/2023 - 15:17:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:17:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1535		Train Loss     45.148	Valid Loss   684.296	f1: 52.45	Patience 16	
+[10/19/2023 - 15:17:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1535		Train Loss     45.148	Valid Loss   684.296	f1: 62.45	Patience 16	
 [10/19/2023 - 15:17:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:18:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1599		Train Loss     42.679	Valid Loss   746.004	f1: 52.30	Patience 17	
+[10/19/2023 - 15:18:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1599		Train Loss     42.679	Valid Loss   746.004	f1: 62.30	Patience 17	
 [10/19/2023 - 15:18:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:18:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1663		Train Loss     37.233	Valid Loss   640.876	f1: 52.87	Patience 18	
+[10/19/2023 - 15:18:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1663		Train Loss     37.233	Valid Loss   640.876	f1: 62.87	Patience 18	
 [10/19/2023 - 15:18:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:18:51] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1727		Train Loss     34.200	Valid Loss   784.543	f1: 53.26	Patience 19	
+[10/19/2023 - 15:18:51] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1727		Train Loss     34.200	Valid Loss   784.543	f1: 63.26	Patience 19	
 [10/19/2023 - 15:18:51] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:19:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1791		Train Loss     34.661	Valid Loss   958.797	f1: 52.39	Patience 20	
+[10/19/2023 - 15:19:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1791		Train Loss     34.661	Valid Loss   958.797	f1: 62.39	Patience 20	
 [10/19/2023 - 15:19:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:19:40] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1855		Train Loss     20.824	Valid Loss  1019.347	f1: 52.60	Patience 21	
+[10/19/2023 - 15:19:40] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1855		Train Loss     20.824	Valid Loss  1019.347	f1: 62.60	Patience 21	
 [10/19/2023 - 15:19:40] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:20:04] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1919		Train Loss     25.026	Valid Loss  1171.879	f1: 50.29	Patience 22	
+[10/19/2023 - 15:20:04] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1919		Train Loss     25.026	Valid Loss  1171.879	f1: 59.29	Patience 22	
 [10/19/2023 - 15:20:04] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:20:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1983		Train Loss     32.148	Valid Loss  1049.949	f1: 50.85	Patience 23	
+[10/19/2023 - 15:20:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 1983		Train Loss     32.148	Valid Loss  1049.949	f1: 59.85	Patience 23	
 [10/19/2023 - 15:20:28] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:20:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2047		Train Loss     31.331	Valid Loss  1114.152	f1: 50.76	Patience 24	
+[10/19/2023 - 15:20:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2047		Train Loss     31.331	Valid Loss  1114.152	f1: 59.76	Patience 24	
 [10/19/2023 - 15:20:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:21:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2111		Train Loss     25.783	Valid Loss  1140.665	f1: 50.59	Patience 25	
+[10/19/2023 - 15:21:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2111		Train Loss     25.783	Valid Loss  1140.665	f1: 59.59	Patience 25	
 [10/19/2023 - 15:21:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:21:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2175		Train Loss     24.865	Valid Loss  1220.621	f1: 52.46	Patience 26	
+[10/19/2023 - 15:21:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2175		Train Loss     24.865	Valid Loss  1220.621	f1: 62.46	Patience 26	
 [10/19/2023 - 15:21:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:22:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2239		Train Loss     22.517	Valid Loss  1331.151	f1: 51.57	Patience 27	
+[10/19/2023 - 15:22:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2239		Train Loss     22.517	Valid Loss  1331.151	f1: 60.57	Patience 27	
 [10/19/2023 - 15:22:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:22:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2303		Train Loss     18.431	Valid Loss  1541.596	f1: 53.54	Patience 28	
+[10/19/2023 - 15:22:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2303		Train Loss     18.431	Valid Loss  1541.596	f1: 63.54	Patience 28	
 [10/19/2023 - 15:22:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:22:52] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2367		Train Loss     13.674	Valid Loss  1425.369	f1: 52.18	Patience 29	
+[10/19/2023 - 15:22:52] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2367		Train Loss     13.674	Valid Loss  1425.369	f1: 62.18	Patience 29	
 [10/19/2023 - 15:22:52] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:23:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2431		Train Loss     24.882	Valid Loss  1725.742	f1: 53.50	Patience 30	
+[10/19/2023 - 15:23:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2431		Train Loss     24.882	Valid Loss  1725.742	f1: 63.50	Patience 30	
 [10/19/2023 - 15:23:17] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:23:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2495		Train Loss     21.221	Valid Loss  1510.494	f1: 55.94	Patience 31	
+[10/19/2023 - 15:23:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2495		Train Loss     21.221	Valid Loss  1510.494	f1: 64.94	Patience 31	
 [10/19/2023 - 15:23:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:24:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2559		Train Loss     17.606	Valid Loss  1428.333	f1: 52.97	Patience 32	
+[10/19/2023 - 15:24:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2559		Train Loss     17.606	Valid Loss  1428.333	f1: 62.97	Patience 32	
 [10/19/2023 - 15:24:05] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:24:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2623		Train Loss     21.227	Valid Loss  1771.187	f1: 52.60	Patience 33	
+[10/19/2023 - 15:24:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2623		Train Loss     21.227	Valid Loss  1771.187	f1: 62.60	Patience 33	
 [10/19/2023 - 15:24:29] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:24:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2687		Train Loss     14.668	Valid Loss  1847.979	f1: 53.12	Patience 34	
+[10/19/2023 - 15:24:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2687		Train Loss     14.668	Valid Loss  1847.979	f1: 63.12	Patience 34	
 [10/19/2023 - 15:24:54] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:25:19] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2751		Train Loss     13.806	Valid Loss  1840.917	f1: 50.35	Patience 35	
+[10/19/2023 - 15:25:19] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2751		Train Loss     13.806	Valid Loss  1840.917	f1: 59.35	Patience 35	
 [10/19/2023 - 15:25:19] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:25:43] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2815		Train Loss     15.710	Valid Loss  2071.871	f1: 52.34	Patience 36	
+[10/19/2023 - 15:25:43] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2815		Train Loss     15.710	Valid Loss  2071.871	f1: 62.34	Patience 36	
 [10/19/2023 - 15:25:43] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:26:07] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2879		Train Loss     11.299	Valid Loss  2358.342	f1: 54.05	Patience 37	
+[10/19/2023 - 15:26:07] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2879		Train Loss     11.299	Valid Loss  2358.342	f1: 64.05	Patience 37	
 [10/19/2023 - 15:26:07] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:26:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2943		Train Loss     15.402	Valid Loss  2205.835	f1: 53.10	Patience 38	
+[10/19/2023 - 15:26:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 2943		Train Loss     15.402	Valid Loss  2205.835	f1: 63.10	Patience 38	
 [10/19/2023 - 15:26:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:26:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3007		Train Loss     16.897	Valid Loss  2276.987	f1: 53.27	Patience 39	
+[10/19/2023 - 15:26:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3007		Train Loss     16.897	Valid Loss  2276.987	f1: 63.27	Patience 39	
 [10/19/2023 - 15:26:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:27:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3071		Train Loss     20.399	Valid Loss  1698.141	f1: 49.61	Patience 40	
+[10/19/2023 - 15:27:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3071		Train Loss     20.399	Valid Loss  1698.141	f1: 57.61	Patience 40	
 [10/19/2023 - 15:27:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:27:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3135		Train Loss     25.412	Valid Loss  1669.502	f1: 52.62	Patience 41	
+[10/19/2023 - 15:27:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3135		Train Loss     25.412	Valid Loss  1669.502	f1: 62.62	Patience 41	
 [10/19/2023 - 15:27:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:28:08] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3199		Train Loss     20.385	Valid Loss  1661.016	f1: 53.25	Patience 42	
+[10/19/2023 - 15:28:08] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3199		Train Loss     20.385	Valid Loss  1661.016	f1: 63.25	Patience 42	
 [10/19/2023 - 15:28:08] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:28:32] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3263		Train Loss     24.845	Valid Loss  1855.012	f1: 52.69	Patience 43	
+[10/19/2023 - 15:28:32] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3263		Train Loss     24.845	Valid Loss  1855.012	f1: 62.69	Patience 43	
 [10/19/2023 - 15:28:32] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:28:56] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3327		Train Loss     16.609	Valid Loss  1763.833	f1: 52.78	Patience 44	
+[10/19/2023 - 15:28:56] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3327		Train Loss     16.609	Valid Loss  1763.833	f1: 62.78	Patience 44	
 [10/19/2023 - 15:28:56] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:29:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3391		Train Loss     15.311	Valid Loss  1764.572	f1: 51.34	Patience 45	
+[10/19/2023 - 15:29:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3391		Train Loss     15.311	Valid Loss  1764.572	f1: 60.34	Patience 45	
 [10/19/2023 - 15:29:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:29:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3455		Train Loss     15.517	Valid Loss  1927.777	f1: 50.47	Patience 46	
+[10/19/2023 - 15:29:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3455		Train Loss     15.517	Valid Loss  1927.777	f1: 59.47	Patience 46	
 [10/19/2023 - 15:29:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:30:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3519		Train Loss      9.679	Valid Loss  1794.280	f1: 52.41	Patience 47	
+[10/19/2023 - 15:30:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3519		Train Loss      9.679	Valid Loss  1794.280	f1: 62.41	Patience 47	
 [10/19/2023 - 15:30:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:30:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3583		Train Loss     19.480	Valid Loss  2096.728	f1: 55.00	Patience 48	
+[10/19/2023 - 15:30:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3583		Train Loss     19.480	Valid Loss  2096.728	f1: 64.00	Patience 48	
 [10/19/2023 - 15:30:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:30:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3647		Train Loss     22.593	Valid Loss  1558.896	f1: 54.08	Patience 49	
+[10/19/2023 - 15:30:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3647		Train Loss     22.593	Valid Loss  1558.896	f1: 64.08	Patience 49	
 [10/19/2023 - 15:30:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:31:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3711		Train Loss     19.033	Valid Loss  1812.434	f1: 53.81	Patience 50	
+[10/19/2023 - 15:31:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3711		Train Loss     19.033	Valid Loss  1812.434	f1: 63.81	Patience 50	
 [10/19/2023 - 15:31:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:31:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3775		Train Loss     18.381	Valid Loss  1797.361	f1: 52.10	Patience 51	
+[10/19/2023 - 15:31:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3775		Train Loss     18.381	Valid Loss  1797.361	f1: 62.10	Patience 51	
 [10/19/2023 - 15:31:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:32:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3839		Train Loss     15.526	Valid Loss  2315.443	f1: 55.03	Patience 52	
+[10/19/2023 - 15:32:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3839		Train Loss     15.526	Valid Loss  2315.443	f1: 64.03	Patience 52	
 [10/19/2023 - 15:32:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:32:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3903		Train Loss     18.579	Valid Loss  1447.339	f1: 54.09	Patience 53	
+[10/19/2023 - 15:32:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3903		Train Loss     18.579	Valid Loss  1447.339	f1: 64.09	Patience 53	
 [10/19/2023 - 15:32:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:32:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3967		Train Loss     21.903	Valid Loss  1642.777	f1: 51.56	Patience 54	
+[10/19/2023 - 15:32:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 3967		Train Loss     21.903	Valid Loss  1642.777	f1: 60.56	Patience 54	
 [10/19/2023 - 15:32:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:33:24] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4031		Train Loss     18.499	Valid Loss  1656.166	f1: 50.86	Patience 55	
+[10/19/2023 - 15:33:24] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4031		Train Loss     18.499	Valid Loss  1656.166	f1: 59.86	Patience 55	
 [10/19/2023 - 15:33:24] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:33:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4095		Train Loss     13.492	Valid Loss  2156.413	f1: 54.79	Patience 56	
+[10/19/2023 - 15:33:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4095		Train Loss     13.492	Valid Loss  2156.413	f1: 64.79	Patience 56	
 [10/19/2023 - 15:33:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:34:11] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4159		Train Loss      5.321	Valid Loss  1950.864	f1: 52.21	Patience 57	
+[10/19/2023 - 15:34:11] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4159		Train Loss      5.321	Valid Loss  1950.864	f1: 62.21	Patience 57	
 [10/19/2023 - 15:34:11] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:34:35] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4223		Train Loss     10.359	Valid Loss  2072.945	f1: 53.27	Patience 58	
+[10/19/2023 - 15:34:35] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4223		Train Loss     10.359	Valid Loss  2072.945	f1: 63.27	Patience 58	
 [10/19/2023 - 15:34:35] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:34:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4287		Train Loss      8.739	Valid Loss  2223.004	f1: 53.04	Patience 59	
+[10/19/2023 - 15:34:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4287		Train Loss      8.739	Valid Loss  2223.004	f1: 63.04	Patience 59	
 [10/19/2023 - 15:34:58] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:35:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4351		Train Loss      5.987	Valid Loss  2377.148	f1: 52.25	Patience 60	
+[10/19/2023 - 15:35:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4351		Train Loss      5.987	Valid Loss  2377.148	f1: 62.25	Patience 60	
 [10/19/2023 - 15:35:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:35:46] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4415		Train Loss      6.962	Valid Loss  2429.914	f1: 53.30	Patience 61	
+[10/19/2023 - 15:35:46] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4415		Train Loss      6.962	Valid Loss  2429.914	f1: 63.30	Patience 61	
 [10/19/2023 - 15:35:46] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:36:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4479		Train Loss     21.948	Valid Loss  1943.460	f1: 53.50	Patience 62	
+[10/19/2023 - 15:36:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4479		Train Loss     21.948	Valid Loss  1943.460	f1: 63.50	Patience 62	
 [10/19/2023 - 15:36:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:36:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4543		Train Loss     24.843	Valid Loss  1496.664	f1: 51.67	Patience 63	
+[10/19/2023 - 15:36:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4543		Train Loss     24.843	Valid Loss  1496.664	f1: 60.67	Patience 63	
 [10/19/2023 - 15:36:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:36:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4607		Train Loss     13.964	Valid Loss  1502.242	f1: 52.56	Patience 64	
+[10/19/2023 - 15:36:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4607		Train Loss     13.964	Valid Loss  1502.242	f1: 62.56	Patience 64	
 [10/19/2023 - 15:36:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:37:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4671		Train Loss     14.042	Valid Loss  2012.843	f1: 54.25	Patience 65	
+[10/19/2023 - 15:37:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4671		Train Loss     14.042	Valid Loss  2012.843	f1: 64.25	Patience 65	
 [10/19/2023 - 15:37:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:37:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4735		Train Loss      9.134	Valid Loss  1945.765	f1: 51.98	Patience 66	
+[10/19/2023 - 15:37:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4735		Train Loss      9.134	Valid Loss  1945.765	f1: 60.98	Patience 66	
 [10/19/2023 - 15:37:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:38:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4799		Train Loss      6.751	Valid Loss  2181.837	f1: 51.82	Patience 67	
+[10/19/2023 - 15:38:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4799		Train Loss      6.751	Valid Loss  2181.837	f1: 60.82	Patience 67	
 [10/19/2023 - 15:38:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:38:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4863		Train Loss      7.641	Valid Loss  2346.759	f1: 54.49	Patience 68	
+[10/19/2023 - 15:38:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4863		Train Loss      7.641	Valid Loss  2346.759	f1: 64.49	Patience 68	
 [10/19/2023 - 15:38:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:38:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4927		Train Loss     10.522	Valid Loss  2170.317	f1: 53.07	Patience 69	
+[10/19/2023 - 15:38:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4927		Train Loss     10.522	Valid Loss  2170.317	f1: 63.07	Patience 69	
 [10/19/2023 - 15:38:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:39:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4991		Train Loss      7.911	Valid Loss  2369.661	f1: 53.21	Patience 70	
+[10/19/2023 - 15:39:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 4991		Train Loss      7.911	Valid Loss  2369.661	f1: 63.21	Patience 70	
 [10/19/2023 - 15:39:21] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:39:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5055		Train Loss      5.637	Valid Loss  2485.715	f1: 52.63	Patience 71	
+[10/19/2023 - 15:39:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5055		Train Loss      5.637	Valid Loss  2485.715	f1: 62.63	Patience 71	
 [10/19/2023 - 15:39:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:40:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5119		Train Loss      8.310	Valid Loss  2595.088	f1: 52.58	Patience 72	
+[10/19/2023 - 15:40:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5119		Train Loss      8.310	Valid Loss  2595.088	f1: 62.58	Patience 72	
 [10/19/2023 - 15:40:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:40:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5183		Train Loss      2.115	Valid Loss  2741.903	f1: 52.83	Patience 73	
+[10/19/2023 - 15:40:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5183		Train Loss      2.115	Valid Loss  2741.903	f1: 62.83	Patience 73	
 [10/19/2023 - 15:40:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:40:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5247		Train Loss      8.001	Valid Loss  2785.042	f1: 53.47	Patience 74	
+[10/19/2023 - 15:40:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5247		Train Loss      8.001	Valid Loss  2785.042	f1: 63.47	Patience 74	
 [10/19/2023 - 15:40:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:41:20] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5311		Train Loss      6.161	Valid Loss  2869.746	f1: 53.32	Patience 75	
+[10/19/2023 - 15:41:20] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5311		Train Loss      6.161	Valid Loss  2869.746	f1: 63.32	Patience 75	
 [10/19/2023 - 15:41:20] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:41:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5375		Train Loss      6.053	Valid Loss  2915.670	f1: 53.36	Patience 76	
+[10/19/2023 - 15:41:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5375		Train Loss      6.053	Valid Loss  2915.670	f1: 63.36	Patience 76	
 [10/19/2023 - 15:41:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:42:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5439		Train Loss      4.461	Valid Loss  2876.005	f1: 52.16	Patience 77	
+[10/19/2023 - 15:42:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5439		Train Loss      4.461	Valid Loss  2876.005	f1: 62.16	Patience 77	
 [10/19/2023 - 15:42:09] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:42:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5503		Train Loss      8.347	Valid Loss  2927.147	f1: 52.84	Patience 78	
+[10/19/2023 - 15:42:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5503		Train Loss      8.347	Valid Loss  2927.147	f1: 62.84	Patience 78	
 [10/19/2023 - 15:42:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:42:56] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5567		Train Loss      6.344	Valid Loss  3027.868	f1: 52.74	Patience 79	
+[10/19/2023 - 15:42:56] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5567		Train Loss      6.344	Valid Loss  3027.868	f1: 62.74	Patience 79	
 [10/19/2023 - 15:42:56] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:43:20] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5631		Train Loss      3.391	Valid Loss  2971.286	f1: 52.40	Patience 80	
+[10/19/2023 - 15:43:20] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5631		Train Loss      3.391	Valid Loss  2971.286	f1: 62.40	Patience 80	
 [10/19/2023 - 15:43:20] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:43:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5695		Train Loss      8.310	Valid Loss  2989.413	f1: 52.57	Patience 81	
+[10/19/2023 - 15:43:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5695		Train Loss      8.310	Valid Loss  2989.413	f1: 62.57	Patience 81	
 [10/19/2023 - 15:43:45] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:44:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5759		Train Loss      2.613	Valid Loss  3065.605	f1: 52.84	Patience 82	
+[10/19/2023 - 15:44:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5759		Train Loss      2.613	Valid Loss  3065.605	f1: 62.84	Patience 82	
 [10/19/2023 - 15:44:10] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:44:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5823		Train Loss     11.470	Valid Loss  2993.966	f1: 52.52	Patience 83	
+[10/19/2023 - 15:44:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5823		Train Loss     11.470	Valid Loss  2993.966	f1: 62.52	Patience 83	
 [10/19/2023 - 15:44:33] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:44:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5887		Train Loss      4.412	Valid Loss  3116.381	f1: 52.82	Patience 84	
+[10/19/2023 - 15:44:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5887		Train Loss      4.412	Valid Loss  3116.381	f1: 62.82	Patience 84	
 [10/19/2023 - 15:44:57] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:45:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5951		Train Loss      7.482	Valid Loss  3082.571	f1: 52.73	Patience 85	
+[10/19/2023 - 15:45:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 5951		Train Loss      7.482	Valid Loss  3082.571	f1: 62.73	Patience 85	
 [10/19/2023 - 15:45:22] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:45:46] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6015		Train Loss      6.486	Valid Loss  3049.602	f1: 53.23	Patience 86	
+[10/19/2023 - 15:45:46] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6015		Train Loss      6.486	Valid Loss  3049.602	f1: 63.23	Patience 86	
 [10/19/2023 - 15:45:46] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:46:11] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6079		Train Loss      3.632	Valid Loss  3079.164	f1: 53.24	Patience 87	
+[10/19/2023 - 15:46:11] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6079		Train Loss      3.632	Valid Loss  3079.164	f1: 63.24	Patience 87	
 [10/19/2023 - 15:46:11] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:46:36] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6143		Train Loss      6.106	Valid Loss  3014.097	f1: 51.45	Patience 88	
+[10/19/2023 - 15:46:36] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6143		Train Loss      6.106	Valid Loss  3014.097	f1: 60.45	Patience 88	
 [10/19/2023 - 15:46:36] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:47:02] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6207		Train Loss      8.453	Valid Loss  2726.351	f1: 53.59	Patience 89	
+[10/19/2023 - 15:47:02] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6207		Train Loss      8.453	Valid Loss  2726.351	f1: 63.59	Patience 89	
 [10/19/2023 - 15:47:02] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:47:26] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6271		Train Loss     22.528	Valid Loss  1746.499	f1: 52.19	Patience 90	
+[10/19/2023 - 15:47:26] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6271		Train Loss     22.528	Valid Loss  1746.499	f1: 62.19	Patience 90	
 [10/19/2023 - 15:47:26] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:47:51] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6335		Train Loss     19.003	Valid Loss  1600.556	f1: 51.28	Patience 91	
+[10/19/2023 - 15:47:51] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6335		Train Loss     19.003	Valid Loss  1600.556	f1: 60.28	Patience 91	
 [10/19/2023 - 15:47:51] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:48:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6399		Train Loss     10.161	Valid Loss  1792.967	f1: 50.26	Patience 92	
+[10/19/2023 - 15:48:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6399		Train Loss     10.161	Valid Loss  1792.967	f1: 59.26	Patience 92	
 [10/19/2023 - 15:48:16] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:48:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6463		Train Loss     17.360	Valid Loss  1687.159	f1: 52.40	Patience 93	
+[10/19/2023 - 15:48:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6463		Train Loss     17.360	Valid Loss  1687.159	f1: 62.40	Patience 93	
 [10/19/2023 - 15:48:41] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:49:07] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6527		Train Loss     13.142	Valid Loss  1753.619	f1: 51.75	Patience 94	
+[10/19/2023 - 15:49:07] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6527		Train Loss     13.142	Valid Loss  1753.619	f1: 60.75	Patience 94	
 [10/19/2023 - 15:49:07] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:49:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6591		Train Loss     10.188	Valid Loss  1853.765	f1: 52.19	Patience 95	
+[10/19/2023 - 15:49:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6591		Train Loss     10.188	Valid Loss  1853.765	f1: 62.19	Patience 95	
 [10/19/2023 - 15:49:34] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:50:00] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6655		Train Loss     10.563	Valid Loss  2120.849	f1: 52.22	Patience 96	
+[10/19/2023 - 15:50:00] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6655		Train Loss     10.563	Valid Loss  2120.849	f1: 62.22	Patience 96	
 [10/19/2023 - 15:50:00] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:50:25] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6719		Train Loss      5.605	Valid Loss  2106.529	f1: 51.95	Patience 97	
+[10/19/2023 - 15:50:25] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6719		Train Loss      5.605	Valid Loss  2106.529	f1: 60.95	Patience 97	
 [10/19/2023 - 15:50:25] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:50:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6783		Train Loss     17.253	Valid Loss  1996.473	f1: 52.26	Patience 98	
+[10/19/2023 - 15:50:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6783		Train Loss     17.253	Valid Loss  1996.473	f1: 62.26	Patience 98	
 [10/19/2023 - 15:50:53] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:51:19] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6847		Train Loss     12.787	Valid Loss  1625.880	f1: 51.85	Patience 99	
+[10/19/2023 - 15:51:19] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6847		Train Loss     12.787	Valid Loss  1625.880	f1: 60.85	Patience 99	
 [10/19/2023 - 15:51:19] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:51:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6911		Train Loss     14.604	Valid Loss  2003.709	f1: 52.41	Patience 100	
+[10/19/2023 - 15:51:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 97  	Step 6911		Train Loss     14.604	Valid Loss  2003.709	f1: 62.41	Patience 100	
 [10/19/2023 - 15:51:47] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 99  	====================================================================================================	
-[10/19/2023 - 15:51:50] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 114  	models/devign/devign/vcodexglue/1/GGNNSumModel	Test Accuracy: 57.01	Precision: 62.50	Recall: 71.59	F1: 66.73
+[10/19/2023 - 15:51:50] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 114  	models/devign/devign/vcodexglue/1/GGNNSumModel	Test Accuracy: 67.01	Precision: 62.50	Recall: 71.59	F1: 66.73
 [10/19/2023 - 15:51:50] File "/data/data/ws/CodeVD/MultiTree/trainer.py", line 115  	====================================================================================================	

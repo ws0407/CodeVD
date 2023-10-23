@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 from torch_geometric.data import Data
-import log as logger
+from .log import *
 from gensim.models.keyedvectors import Word2VecKeyedVectors
 
 from .parse import tokenizer
@@ -37,7 +37,7 @@ class NodesEmbedding:
             if not tokenized_code:
                 # print(f"Dropped node {node}: tokenized code is empty.")
                 msg = f"Empty TOKENIZED from node CODE {node_code}"
-                logger.log_warning('embeddings', msg)
+                log_warning('embeddings', msg)
                 continue
             # Get each token's learned embedding vector
             vectorized_code = np.array(self.get_vectors(tokenized_code, node))
@@ -55,14 +55,14 @@ class NodesEmbedding:
         vectors = []
 
         for token in tokenized_code:
-            if token in self.w2v_keyed_vectors.vocab:
+            if token in self.w2v_keyed_vectors.key_to_index:
                 vectors.append(self.w2v_keyed_vectors[token])
             else:
                 # print(node.label, token, node.get_code(), tokenized_code)
                 vectors.append(np.zeros(self.kv_size))
                 if node.label not in ["Identifier", "Literal", "MethodParameterIn", "MethodParameterOut"]:
                     msg = f"No vector for TOKEN {token} in {node.get_code()}."
-                    logger.log_warning('embeddings', msg)
+                    log_warning('embeddings', msg)
 
         return vectors
 
@@ -101,6 +101,14 @@ class GraphsEmbedding:
 
 
 def nodes_to_input(nodes, target, nodes_dim, keyed_vectors, edge_type):
+    """
+    :param nodes: Series, (idx, ordered nodes)
+    :param target: Buffer for embeddings with padding
+    :param nodes_dim: max nodes number
+    :param keyed_vectors: w2v_model.wv
+    :param edge_type: "Ast", "Cfg", ...
+    :return:
+    """
     nodes_embedding = NodesEmbedding(nodes_dim, keyed_vectors)
     graphs_embedding = GraphsEmbedding(edge_type)
     label = torch.tensor([target]).float()

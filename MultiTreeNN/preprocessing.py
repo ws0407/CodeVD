@@ -119,6 +119,10 @@ def to_files(data_frame: pd.DataFrame, out_path, header_path):
         file_name = f"{idx}.c"
         # 添加头文件，防止编译错误，无法生成AST、PDG
         func = (FFmpeg_header if row.project == 'FFmpeg' else qemu_header) + row.func
+        # 去除注释，字符串
+        func = re.sub(r'(/\*([^*]|(\*+[^*\/]))*\*+\/)|(\/\/.*)', '', func)  # 去除/**/ //--注释
+        func = re.sub(r'"([^"\\\n]|\\.|\\\n)*"', '""', func)  # 去除""包的字符串
+        func = re.sub(r'\n+', '\n', func)   # 去除多余的回车
         with open(out_path + file_name, 'w') as f:
             f.write(func)
 
@@ -238,18 +242,26 @@ def graph_indexing(graph):
     return idx, {"functions": [graph]}
 
 
-def json_process(in_path, json_file):
+def json_process(in_path, json_file: str):
     """处理json文件，移除无用字段，并返回函数的列表+索引"""
-    if os.path.exists(in_path + json_file):
-        with open(in_path + json_file) as jf:
-            cpg_string = jf.read()
-            # 替换：io.shiftleft.codepropertygraph.generated.nodes.Block[label=BLOCK; id=2305843009213694036]
-            # 为：nodes.Block@2305843009213694036
-            cpg_string = re.sub(r'io\.shiftleft\.codepropertygraph\.generated\.', '', cpg_string)
-            cpg_string = re.sub(r'(\[label)(\D+)(\d+)\]', lambda match: f'@{match.group(3)}', cpg_string)
-            cpg_json = json.loads(cpg_string)
-            container = [graph_indexing(graph) for graph in cpg_json["functions"] if "<global>" in graph["function"]]
-            return container
+    # if os.path.exists(in_path + json_file.replace('json', 'pkl')):
+    #     return None
+    try:
+        if os.path.exists(in_path + json_file):
+            with open(in_path + json_file) as jf:
+                cpg_string = jf.read()
+                # 替换：io.shiftleft.codepropertygraph.generated.nodes.Block[label=BLOCK; id=2305843009213694036]
+                # 为：nodes.Block@2305843009213694036
+                # 去除/**/ //--注释
+                # cpg_string = re.sub(r'(/\*([^*]|(\*+[^*\/]))*\*+\/)|(\/\/.*)', '', cpg_string)
+                cpg_string = re.sub(r'io\.shiftleft\.codepropertygraph\.generated\.', '', cpg_string)
+                cpg_string = re.sub(r'(\[label)(\D+)(\d+)\]', lambda match: f'@{match.group(3)}', cpg_string)
+                cpg_json = json.loads(cpg_string)
+                container = [graph_indexing(graph) for graph in cpg_json["functions"] if "<global>" in graph["function"]]
+                return container
+    except Exception as e:
+        print('Exception:', e)
+        return None
     return None
 
 

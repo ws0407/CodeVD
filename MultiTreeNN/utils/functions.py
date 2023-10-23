@@ -47,8 +47,8 @@ def to_digraph(name, nodes):
 def order_nodes(nodes, max_nodes):
     # sorts nodes by line and column
 
-    nodes_by_column = sorted(nodes.items(), key=lambda n: n[1].get_column_number())
-    nodes_by_line = sorted(nodes_by_column, key=lambda n: n[1].get_line_number())
+    # nodes_by_column = sorted(nodes.items(), key=lambda n: n[1].get_column_number())
+    nodes_by_line = sorted(nodes.items(), key=lambda n: n[1].get_line_number())
 
     for i, node in enumerate(nodes_by_line):
         node[1].order = i
