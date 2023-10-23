@@ -2,4 +2,5 @@
 *.zip
 /*/data
 /MultiTreeNN/test_data/
+/MultiTreeNN/log/
 /*/glove
